@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/convennience.css"/>
+	</head>
+	<body ng-controller="govCtrl" style="padding-bottom: 60px;">
+		<header class="productIndex" style="height: 60px">
+			<div class="commHead"></div>
+				<div class="weatherWrap" style="display: none;">
+					<!--<h1>成都</h1>-->
+					<!--<div class="address">
+						<img src="../img/addressShape.png"/>
+						<span>蜀都中心二期</span>
+					</div>-->
+					<!--<div class="weather">
+						<div class="tempBox">
+							<img src="../img/gov/day.png"/>
+							<span>多云转晴</span>
+							<div class="temp">
+								34~35°
+							</div>
+							<div class="date">
+								2016-03-13
+							</div>
+						</div>
+						<div class="dayGroup">
+							<div class="item">
+								<div class="date">
+									1月1日
+								</div>
+								<img src="../img/gov/yun.png"/>
+								<div class="temp">
+									27°
+								</div>
+							</div>
+							<div class="item">
+								<div class="date">
+									1月1日
+								</div>
+								<img src="../img/gov/yun.png"/>
+								<div class="temp">
+									27°
+								</div>
+							</div>
+							<div class="item">
+								<div class="date">
+									1月1日
+								</div>
+								<img src="../img/gov/yun.png"/>
+								<div class="temp">
+									27°
+								</div>
+							</div>
+							<div class="item">
+								<div class="date">
+									1月1日
+								</div>
+								<img src="../img/gov/yun.png"/>
+								<div class="temp">
+									27°
+								</div>
+							</div>
+							<div class="item">
+								<div class="date">
+									1月1日
+								</div>
+								<img src="../img/gov/yun.png"/>
+								<div class="temp">
+									27°
+								</div>
+							</div>
+						</div>
+					</div>
+					-->
+				</div>
+			
+		</header>
+		
+		<div class="commCutAddress">
+			<span>
+				当前地址：
+			</span>
+			<span>
+				的萨芬撒大法师大法师
+			</span>
+			<span>
+				<a>切换地址</a>
+			</span>
+		</div>
+		
+		<div class="menu">
+			<ul>
+				<li><span class="active">周边政务</span></li>
+				<li><span>应急开锁</span></li>
+				<li><span>快递公司</span></li>
+				<li><span>新闻资讯</span></li>
+				<li><span>交通查询</span></li>
+			</ul>
+		</div>
+		
+		<div class="content gov" style="display: block;">
+			<div class="comm1100">
+				<!--<div class="empty" ng-if="user == null" ng-bind='emptyMsg'>
+
+				</div>-->
+				<div class="empty" ng-if="govs.length == 0" ng-bind='emptyMsg'>
+					暂无数据
+				</div>
+				<div class="item" ng-repeat="gov in govs">
+					<img ng-cloak class="iconImg" ng-src="{{gov.image}}"/>
+					<p ng-cloak class="title">{{gov.fullName}}</p>
+					<p ng-cloak class="address">地址：{{gov.address}}</p>
+					<p ng-cloak class="tel">联系电话：{{gov.phone}}</p>
+				</div>
+				<div ng-cloak class="pageSite"  ng-if="pages.length > 0">
+					<img class="" src="../img/2.png" ng-click="govBack()"/>
+					<span>
+					<i ng-repeat="page in pages" data-index="{{page}}" ng-class="{active:page == pageActive}" ng-click="govList(page)">{{page}}</i>
+					
+					</span>
+					<img class="" src="../img/1.png"/ ng-click="govForward()">
+				</div>
+			</div>
+		</div>
+		
+		<div class="content openDoor">
+			<div class="comm1100">
+				<div class="empty" ng-if="locks.length == 0" ng-bind='emptyMsg'>
+					暂无数据
+				</div>
+				
+				<div ng-cloak class="item" ng-repeat="lock in locks">
+					<img ng-cloak class="iconImg" ng-src="{{lock.image}}"/>
+					<p class="title">{{lock.name}}</p>
+					<p class="address">地址：{{lock.address}}</p>
+					<p class="tel">联系电话：{{lock.phone}}</p>
+				</div>	
+				<div ng-cloak class="pageSite">
+					<img class="" src="../img/2.png" ng-click="lockBack()" />
+					<span>
+					<i ng-repeat="page in lockpages" data-index="{{page}}" ng-class="{active:page == lockpageActive}" ng-click="locksmith(page)">{{page}}</i>
+					
+					</span>
+					<img class="" src="../img/1.png" ng-click="lockForward()" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="content express">
+			<div class="comm1100">
+				<div class="empty" ng-if="delivers.length == 0" ng-bind='emptyMsg'>
+					暂无数据
+				</div>
+			<ul>
+				<li ng-repeat="deliver in delivers">
+					<img ng-src="{{deliver.image}}"/>
+					<div class="ex-title">
+						{{deliver.name}}
+					</div>
+					<div class="tel">
+						联系电话：{{deliver.phone}}
+					</div>
+				</li>
+			</ul>
+			<div ng-cloak class="pageSite">
+					<img class="" src="../img/2.png" ng-click="deliverBack()"/>
+					<span>
+					<i ng-repeat="page in deliverpages" data-index="{{page}}" ng-class="{active:page == deliverActive}" ng-click="deliveryCorp(page)">{{page}}</i>
+					
+					</span>
+					<img class="" src="../img/1.png" ng-click="deliverForward()"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content news">
+			<div class="comm1100">
+				<div class="empty" ng-if="news.length == 0" ng-bind='emptyMsg'>
+					暂无数据
+				</div>
+				<div class="news-item" ng-repeat="new in news" ng-click='articleDetail(new.articleId)'>
+					<img ng-src="{{new.image}}" />
+					<div class="textContent">
+						<div class="title">{{new.title}}</div>
+						<p style="max-height: 120px;overflow: hidden;">{{new.summary}}</p>
+					</div>
+				</div>
+				<div ng-cloak class="pageSite">
+					<img class="" src="../img/2.png" ng-click="newBack()"/>
+					<span>
+					<i ng-repeat="page in articlepages" data-index="{{page}}" ng-class="{active:page == articleactive}" ng-click="article(page)">{{page}}</i>
+					
+					</span>
+					<img class="" src="../img/1.png" ng-click="newForward()"/>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="content traffic">
+			<div class="comm1100">
+				<div class="trafficSearch">
+					<input type="text" placeholder="查公交、找路线" />
+					<button id="goMap" class="green">搜索</button>
+				</div>
+			</div>
+			<div class="map">
+				<img src="../img/gov/mapEx.png"/>
+			</div>
+		</div>
+		
+		
+		
+		<div class="footer">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+		<div ng-cloak class="alertMsg" ng-if="user == null || user.communityId == ''">
+			<p>
+				{{emptyMsg}}
+			</p>
+		</div>
+
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/controller.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../js/gov.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$(".menu li").click(function(){
+				var $this = $(this);
+				$(".menu span").removeClass('active');
+				$this.children().addClass('active');
+				var index = $(this).index();
+				$('.content').hide();
+				$('.content').eq(index).show();
+			})
+			
+			$("#goMap").click(function(){
+				window.open('http://ditu.amap.com/search?query=' + $(".trafficSearch input").val());
+			})
+		</script>
+	</body>
+</html>

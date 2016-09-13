@@ -1,0 +1,81 @@
+/*个人中心  左边导航*/
+
+.profile {
+	overflow: hidden;
+	clear: both;
+}
+
+ul.profile-sidebar {
+	width: 140px;
+	float: left;
+	margin-top: 10px;
+}
+
+ul.profile-sidebar h2 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+ul.profile-sidebar li {
+	margin-bottom: 20px;
+}
+
+ul.profile-sidebar li dl dd {
+	line-height: 20px;
+	height: 20px;
+	padding: 4px 0px;
+	color: #666;
+}
+
+ul.profile-sidebar li a.active {
+	color: #01bf71 !important;
+}
+
+.profile-panel {
+	margin-left: 140px;
+	background: #fff;
+	min-height: 500px;
+	margin-bottom: 50px;
+	width: 960px;
+}
+
+.profile-panel marquee {
+	color: #d20c1c;
+	height: 60px;
+	line-height: 60px;
+}
+
+
+/*个人中心  头部最外层*/
+
+header {
+	background: #01bf71;
+}
+
+
+/*个人中心的  container的外部样式*/
+
+.container {
+	background: #f7f7f7;
+	height: 100%;
+	clear: both;
+}
+/*切换房产*/
+
+.location {
+	padding: 10px 0px;
+	
+}
+
+.location span {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	margin-right: 10px;
+}
+
+.location span a {
+	color: #0089dc;
+	cursor: pointer;
+}

@@ -1,0 +1,147 @@
+/*
+ * 登录页面的是style
+ */
+html, body{
+	height: 100%;
+	width: 100%;
+}
+/*最外层的div*/
+.loginWrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../../img/photo-1436812911242-3d475df4bdd1.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*登录的主体部分*/
+.login{
+	width: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 560px;
+	font-family: "微软雅黑";
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+/*
+ * 图片水平垂直居中
+ */
+.login .pic-wrap{
+	display: table-cell;
+    vertical-align: middle;
+    width: 500px;
+    height: 270px;
+    text-align: center;
+    /*ie6、7不支持display:table-cell*/
+    *display: block;
+    *font-size: 192px; /*字体大小为height*0.783或者height/1.14,这里约为192px*/
+    _font-family: sans-serif; /*设置字体，否则在ie6下会有一个像素的偏差*/
+}
+.pic-wrap img{
+	border: none;
+   	vertical-align: middle; /*由于ie下空文本节点有默认高度，所以设置*/      
+}
+/*
+ * loginform style
+ */
+.login .loginform{
+	width: 390px;
+	margin: 0 auto;
+	height: 290px;
+}
+.login .loginform .form-group{
+	height: 50px;
+	background-color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.login .loginform .form-group .form-control{
+	height: 100% !important;
+	text-align: center;
+	padding: 0px !important;
+	outline: none !important;
+}
+/*当文本框获得焦点时的样式*/
+.login .loginform .form-group .activeinput{
+	color: #333333 !important;
+	font-size: 18px !important;
+	border: 1px solid #01BF71;
+}
+/*修改输入框的文字颜色*/
+/*::-webkit-input-placeholder {
+	color: #cccccc;
+	font-size: 18px !important;
+	font-family: "微软雅黑";
+}
+:-moz-placeholder {
+	color: #cccccc;
+	font-size: 18px !important;
+	font-family: "微软雅黑";
+}
+:-ms-input-placeholder {
+	color: #cccccc;
+	font-size: 18px !important;
+	font-family: "微软雅黑";
+}*/
+/*单选框 style*/
+.autologin{
+	display: inline-block;
+	text-align: left;
+}
+.autologin input[type="radio"] {
+	margin: 3px 3px 0px 5px;
+	display: none;
+}
+.autologin label {
+	padding-left: 20px;
+	cursor: pointer;
+	background: url(../../img/椭圆-1.png) no-repeat left center;
+	padding-right: 10px;
+	font-size: 14px;
+	color: #01bf71;
+}
+.autologin label.checked {
+	background-position: left bottom;
+	background: url(../../img/登录1_03.png) no-repeat left center;
+}
+.loginform .form-group:nth-child(3){
+	margin-bottom: 5px !important;
+}
+.loginform .form-group:nth-child(3) a{
+	display: inline-block;
+	float: right;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #999999;
+}
+/*
+ * loginbtn style
+ */
+.submitbtn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-size: 18px;
+	background-color: #01BF71;
+	outline: none;
+	border: 0px !important;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.loginbottom{
+	display: block;
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	font-size: 18px;
+	color: #b5b5b6;
+}
+.loginbottom a{
+	color: #01BF71;
+}

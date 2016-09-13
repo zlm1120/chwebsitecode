@@ -1,0 +1,142 @@
+.contentwrapper{
+	width: 1100px;
+	height: auto;
+	margin:0 auto;
+	font-family: "微软雅黑";
+}
+.contentwrapper .estimatetitle{
+	color: #333333;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.contentwrapper .estimatetime{
+	padding-bottom: 15px;
+	color: #666666;
+	font-size: 14px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.contentwrapper .estimatetime b{
+	font-weight: normal;
+}
+
+.contentwrapper .estimatecont{
+	border-bottom: 1px solid #E6E6E6;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.contentwrapper .estimatecont span{
+	display: block;
+	padding-top: 5px;
+}
+.contentwrapper .estimatecont span:nth-child(1){
+	color: #666666;
+	font-size: 16px;
+	font-weight: bold;
+}
+.contentwrapper .estimatecont span:nth-child(2){
+	color: #666666;
+	font-size: 14px;
+}
+.contentwrapper .estimatecont span:nth-child(3){
+	color: #999;
+	font-size: 14px;
+}
+.contentwrapper .estimatecont img{
+	/*width: 100px;
+	max-width: 100px;
+	height: 99px;
+	max-height: 99px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding-top: 5px;*/
+}
+
+/*pingfen*/
+.contentwrapper .pingfen{
+	margin-top: 10px;
+}
+.contentwrapper .pingfen div{
+	margin-top: 10px;
+}
+.contentwrapper .pingfen label{
+	display: inline-block;
+	width:84px;
+	text-align: right;
+	font-size: 16px;
+	color:#666666;
+}
+.contentwrapper .pingfen div:nth-child(2){
+	position: relative;
+}
+.contentwrapper .pingfen textarea{
+	width: 520px;
+  	height: 160px;
+  	resize: none;
+  	padding: 10px;
+  	outline: none;
+  	border: 1px solid #dbdbdb;
+}
+.contentwrapper .pingfen .imgheart i{
+	cursor: pointer;
+}
+.contentwrapper .pingfen .contentdiv span{
+	position: absolute;
+	top: 127px;
+	left: 543px;
+}
+i.clickimg{
+	background: url(../img/product/redHeart.png) no-repeat center center;
+}
+
+.upLoadImg {
+  padding: 0px 30px;
+  padding-left: 81px;
+  margin-top: 12px;
+}
+.upLoadImg .uploadBox {
+  display: inline-block;
+  vertical-align: middle;
+}
+.upLoadImg img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.upLoadImg span {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #999;
+}
+#form1{
+	display: inline-block;
+    position: absolute;
+    left: 53px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+}
+#form1 input{
+	display: block;
+	width: 1000px;
+	height: 50px;
+}
+.inputImg{
+	position: relative;
+}
+
+.addbtnre{
+	margin-left: 84px;
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #01BF71;
+	color: #FFFFFF;
+	cursor: pointer;
+}

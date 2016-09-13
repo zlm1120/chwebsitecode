@@ -1,0 +1,312 @@
+a:hover{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+.contentnav{
+	border: 0px !important;
+	height: auto !important;
+	font-family: "微软雅黑";
+	padding-top: 0px !important;
+}
+.conwrapperTitle span{
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	color: #666666;
+	font-weight: bold;
+}
+.conwrapperTitle span a{
+	display: inline-block;
+	float: right;
+	width: 82px;
+	height: 30px;
+	margin-top: 15px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #01BF71;
+	color: #FFFFFF;
+	font-size: 12px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius:5px;
+	font-weight: normal;
+}
+
+.homlist{
+	border: 1px solid #DDDDDD;
+	overflow: hidden;
+	padding-left: 13px;
+	margin-top: -1px;
+}
+.homimg, .homcontent{
+	float: left;
+}
+.homimg{
+	width: 286px;
+	padding: 20px;
+}
+.homimg img{
+	width: 100%;
+	max-width: 286px;
+	border-radius: 10px;
+	max-height: 260px;
+}
+.homcontent{
+	margin-left: 13px;
+}
+.myhome{
+	margin-top: 20px;
+}
+.homaddress{
+	font-size: 16px;
+	color: #333333;
+	font-weight: bold;
+}
+.homperson{
+	font-size: 16px;
+	color: #333333;
+	background: url(../img/person/形状-1.png) no-repeat left center;
+	padding-left: 35px;
+	height: 26px;
+	line-height: 26px;
+}
+.homperson span:nth-child(2){
+	background: url(../img/person/0000.png) no-repeat left center;
+	width: 60px;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.greenBg{
+	background: url(../img/person/0000.png) no-repeat left center;
+	width: 35px;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.homphone{
+	font-size: 16px;
+	color: #333333;
+	background: url(../img/person/电话-拷贝.png) no-repeat left center;
+	padding-left: 35px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.btnclassfity{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.commentbtn{
+	float: left;
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: 1px solid #E6E6E6;
+	font-family: "微软雅黑";
+	margin-bottom: 20px;
+}
+.commentbtn .btnname{
+	font-size: 14px;
+	color: #666666;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.blue{
+	background: url(../img/person/1.png) no-repeat left center;
+}
+.redtext{
+	background: url(../img/person/2.png) no-repeat left center;
+}
+.commentbtn .btnname span{
+	display: inline-block;
+	margin-left: 5px;
+	width: 40px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.commentbtn .btnphone{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666666;
+}
+.commentbtn .btnactive{
+	margin-top: 10px;
+	text-align: center;
+}
+.commentbtn .btnactive em{
+	color: #333;
+	margin: 5px;
+	cursor: pointer;
+}
+.btnactive a{
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 20px;
+	/*padding: 2px 5px;*/
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #01BF71;
+}
+.btnactive em{
+	display:initial;
+}
+
+/*弹出层*/
+.mydelog{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	width: 450px;
+	z-index: 999;
+	font-family: "微软雅黑";
+	padding: 20px 75px;
+	display: none;
+}
+.mydelog span.delogtitle{
+	font-size: 24px;
+	color: #000000;
+	display: block;
+	width: 100%;
+	text-align: center;
+	/*margin-top: 20px;*/
+}
+.mydelog span.border {
+	display: block;
+	text-align: center;
+}
+.mydelog span.border i{
+	width: 40px;
+	border-top: 4px solid #01bf71;
+	height: 4px;
+	display: inline-block;
+}
+.mydelog span.tishi{
+	color: #F1A400;
+	font-size: 14px;
+	display: block;
+	/*margin-top: 40px;*/
+	margin: 10px 0px;
+}
+
+.checkboxgroup span {
+	margin-left: 30px;
+}
+.checkboxgroup span label {
+	color: #333333;
+	font-size: 18px;
+	font-weight: normal;
+	background: url(../img/person/椭圆-1-拷贝-2.png) no-repeat left center;
+	padding-right: 10px;
+  	line-height: 24px;
+  	height: 24px;
+  	display: inline-block;
+}
+.checkboxgroup span label.checked{
+	background-position: left bottom;
+  	background: url(../img/person/组-5.png) no-repeat left center;
+  	line-height: 24px;
+  	height: 24px;
+  	display: inline-block;
+}
+
+.mydelog .inputhouse{
+	overflow: hidden;
+}
+.mydelog .commentclass{
+	float: left;
+	/*margin-bottom: 10px;*/
+	height: 100px;
+}
+.mydelog .commentclass input{
+	padding-left: 20px;
+}
+.mydelog .commentclass:nth-child(even){
+	margin-left: 10px;
+}
+.mydelog .commentclass span{
+	display: block;
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 5px;
+}
+.mydelog .commnityname input{
+	background: url(../img/select.png) right center no-repeat;
+	padding-right: 30px;
+	width: 160px;
+	height: 50px;
+	padding-left: 20px;
+	position: relative;
+}
+.selectGroup{
+	position: absolute;
+	border: 1px solid #E6E6E6;
+	width: 190px;
+	padding-left: 20px;
+	display: none;
+	max-height: 250px;
+	overflow-y: auto;
+	/*background: rgba(0,0,0,.1);*/
+	background-color: #FFFFFF;
+	z-index: 999;
+	color: #000;
+	font-size: 15px;
+	margin-top: -1px;
+}
+.selectGroup option{
+	cursor: pointer;
+	padding-top: 10px;
+}
+.mydelog .houseid input{
+	width: 160px;
+	height: 50px;
+}
+
+
+.btngrouplist{
+	text-align: center;
+}
+.btngrouplist a{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;]
+	font-family: "微软雅黑";
+	font-size: 14px;
+	display: inline-block;
+}
+.btngrouplist a:nth-child(1){
+	background-color: #01BF71;
+	color: #FFFFFF;
+}
+.btngrouplist a:nth-child(2){
+	color: #999999;
+	margin-left: 10px;
+}
+
+em{
+	font-size: 12px;
+	color: red;
+	/*display: none;*/
+	display: block;
+	padding-left: 20px;
+	padding-top: 5px;
+	
+}
+.empty{
+	line-height: 140px;
+}

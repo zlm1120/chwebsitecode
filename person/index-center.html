@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的资料</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/userInfo.css"/>
+		<style type="text/css">
+			header {
+				background: #01bf71;
+			}
+			
+			.container {
+				background: #f7f7f7;
+				height: 100%;
+				clear: both;
+			}
+			
+			.noticewrapper {
+				padding: 0px;
+			}
+			
+			.estate-tips {
+				background: #f7f7f7;
+				height: 60px;
+				line-height: 60px;
+				border-top: 1px solid #dbdbdb;
+				color: #D20C1C;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="commHead"></div>
+		</header>
+
+		<div class="container" ng-view>
+			<div class="comm1100">
+				<div class="location">
+					<span>当前位置</span>
+					<span class="location-current">
+						请选择房产
+					</span>
+					<span class="location-change">
+						<a>[切换地址]</a>
+					</span>
+				</div>
+				<div class="estate-tips">
+					<marquee direction="left">
+						尊敬的住户:&nbsp; &nbsp;你们好!现本小区已进入装修阶段,进出苑区人员日益增多,管理处为加强小区人员进出管理, 确保苑区的安全和谐,&nbsp;需对苑区住户办理业主卡，住户须凭业主
+					</marquee>
+				</div>
+				<div class="profile">
+					<ul class="profile-sidebar">
+						<li>
+							<h2>通知通告</h2>
+						</li>
+						<li>
+							<h2>订单中心</h2>
+							<dl>
+								<dd>我的订单</dd>
+								<dd>我的抢相应</dd>
+							</dl>
+						</li>
+						<li>
+							<h2>投诉报修</h2>
+							<dl>
+								<dd>预约报修</dd>
+								<dd>投诉留言</dd>
+							</dl>
+						</li>
+						<li>
+							<h2>个人中心</h2>
+							<dl>
+								<dd class="active">我的资料</dd>
+								<dd>我的家</dd>
+								<dd>登录密码</dd>
+								<dd>支付密码</dd>
+							</dl>
+						</li>
+						<li>
+							<h2>我的收藏</h2>
+						</li>
+					</ul>
+					<div class="profile-panel">
+						<div class="contentnav">
+							<label class="datatitle"> 个人资料<a href="javascript:void(0);"class="editeBtn" style="margin-right: 20px;">编辑</a></label>
+							<div class="listdata imglistdiv">
+								<span class="imglist">头像</span>
+								<div class="imgBox">
+									<img src="../img/person/组-1.png" class="img" />
+									<a class="imgGrey" href="mydataupdata.html">修改头像</a>
+								</div>
+							</div>
+							<div class="listdata account">
+								<span>账号</span>
+								<label id="account" style="display:inline-block !important;"></label>
+							</div>
+							<div class="listdata usrnamediv">
+								<span>用户名</span>
+								<label></label>
+								<input type="text" placeholder="请输入用户名" />
+								<em>用户名长度为1-12个字符</em>
+							</div>
+							<div class="listdata phonediv">
+								<span>联系号码</span>
+								<label></label>
+								<input type="text" placeholder="手机号码" />
+								<em>请输入正确的手机号码</em>
+							</div>
+							<div class="listdata genderdiv">
+								<span>性别</span>
+								<b></b>
+								<div class="labelGroup">
+									<label for="" class="radio" data-index='0'>男</label>
+									<label for="" class="radio" data-index="1">女</label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footerwrapper">
+
+		</div>
+	</body>
+
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script src="../js/userInfo.js" type="text/javascript" charset="utf-8"></script>
+</html>

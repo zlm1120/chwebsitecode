@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<!--<body onload="javascript: document.forms[0].submit();">-->
+	<body ng-controller="submit">
+	<form id="sumit" action="https://mapi.alipay.com/gateway.do" method="{{urlConfig.requestMethod}}" accept-charset="{{urlConfig.requestCharset}}">
+		<input type="hidden" name="service" value="{{config.service}}" />
+		<input type="hidden" name="partner" value="{{config.partner}}" />
+		<input type="hidden" name="seller_id" value="{{config.seller_id}}" />
+		<input type="hidden" name="_input_charset" value="{{config._input_charset}}" />
+		<input type="hidden" name="payment_type" value="{{config.payment_type}}" />
+		<input type="hidden" name="notify_url" value="{{config.notify_url}}" />
+		<input type="hidden" name="return_url" value="{{config.return_url}}" />
+		<input type="hidden" name="out_trade_no" value="{{config.out_trade_no}}" />
+		<input type="hidden" name="subject" value="{{config.subject}}" />
+		<input type="hidden" name="total_fee" value="{{config.total_fee}}" />
+		<input type="hidden" name="body" value="{{config.body}}" />
+		<input type="hidden" name="sign_type" value="{{config.sign_type}}" />
+		<input type="hidden" name="sign" value="{{config.sign}}" />
+		<!--<input type="hidden" name="${entry.key}" value="${entry.value}" />-->
+		<!--<input type="hidden" name="logistics_fee" value="{{config.logistics_fee}}" />-->
+		<!--<input type="hidden" name="logistics_type" value="{{config.logistics_type}}" />-->
+		<!--<input type="hidden" name="exter_invoke_ip" value="{{config.exter_invoke_ip}}" />-->
+		<!--<input type="hidden" name="extra_common_param" value="{{config.extra_common_param}}" />-->
+		<!--<input type="hidden" name="paymethod" value="{{config.paymethod}}" />-->
+		<!--<input type="hidden" name="logistics_payment" value="{{config.logistics_payment}}" />-->
+		<!--<input type="hidden" name="show_url" value="{{config.show_url}}" />-->
+		<input type="submit" value="submit" />
+	</form>
+	<script src="//cdn.bootcss.com/angular.js/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		function getUrlParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+		    if (r != null) return unescape(r[2]); return null; //返回参数值
+		}
+		var webapp = angular.module('webapp',[]);
+		webapp.controller('submit',function($scope,$http){
+			$http({
+				method:'GET',
+				url:'http://192.168.1.115:8888/lzj-web/shop/repair/payment.jhtml',
+				params:{
+					memberId:getUrlParam('memberId'),
+					repairId:getUrlParam('repairId'),
+					paymentMethod:1
+				}
+			})
+			.success(function(json){
+				$scope.urlConfig = json.api_data;
+				$scope.config = json.api_data.parameterMap;
+				
+			})
+		})
+		
+	</script>
+</body>
+</html>

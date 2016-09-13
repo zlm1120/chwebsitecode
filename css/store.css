@@ -1,0 +1,345 @@
+.no-date{
+	/*text-align: center;*/	
+	padding-left: 30px;
+	font-size: 18px;
+}
+.main-content{
+	padding-bottom: 60px;
+}
+.productIndex {
+  width: 100%;
+  height: 400px;
+  background: url(../img/product/storeTitle.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.productIndex .logo {
+  float: left;
+  margin-top: 15px;
+}
+.productIndex .comm1100 {
+  /*overflow: hidden;*/
+}
+.productIndex .menuProduct {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.68);
+}
+.productIndex .menuProduct span {
+  display: inline-block;
+  height: 58px;
+  line-height: 58px;
+  font-size: 16px;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.productIndex .menuProduct span.active {
+  border-bottom: 2px solid #01BF71;
+}
+.productIndex .menuProduct i {
+  height: 30px;
+  line-height: 60px;
+  border-left: 1px solid #fff;
+}
+.productIndex .menuProduct .collect {
+  position: absolute;
+  top: 21px;
+  right: 0px;
+}
+.productIndex .menuProduct .collect img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.productIndex .menuProduct .collect em {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #fff;
+}
+.productIndex .menuProduct .collect .collectNum {
+  font-size: 12px;
+}
+.productIndex .userImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.productIndex .userName {
+  font-size: 18px;
+  color: #fff;
+  margin: 0px 6px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+div.menu {
+  text-align: center;
+  padding: 30px 0px;
+}
+div.menu ul {
+  overflow: hidden;
+  width: 700px;
+  margin: 0 auto;
+}
+div.menu ul li {
+  float: left;
+  width: 140px;
+}
+div.menu ul li span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+div.menu ul li span.active {
+  background: #fe8202;
+  color: #fff;
+  font-size: 18px;
+}
+div.content div.filter span {
+  display: inline-block;
+  width: 140px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+div.content div.filter span.active {
+  font-size: 24px;
+  color: #01BF71;
+}
+div.content section {
+  padding: 0px 0px 20px;
+}
+div.content section .title {
+  padding: 0px 0px 20px;
+}
+div.content section .title span {
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+div.content section .title em {
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+  vector-effect: middle;
+  margin-left: 5px;
+}
+div.content section div.item {
+  width: 515px;
+  height: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 15px;
+}
+div.content section .itemBox {
+  margin-left: -15px;
+}
+div.content section .itemBox .proImg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+div.content section .itemBox div.textBox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 370px;
+  margin-left: 20px;
+}
+div.content section .itemBox .textTitle {
+  line-height: 30px;
+  height: 30px;
+}
+div.content section .itemBox .textTitle span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 178px;
+  margin-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.content section .itemBox .textTitle .starBox {
+  display: inline-block;
+}
+div.content section .itemBox .textTitle .starBox i {
+  margin: 0px 2px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.content section .itemBox .textTitle em {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.content section .itemBox .operaBox {
+  height: 50px;
+  position: relative;
+}
+div.content section .itemBox .operaBox em {
+  position: absolute;
+  bottom: 8px;
+}
+div.content section .itemBox .operaBox button {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  padding: 5px 10px;
+  color: #fff;
+  border: 5px;
+  border-radius: 5px;
+}
+div.content section .itemBox p {
+  font-size: 12px;
+  color: #999;
+  height: 40px;
+  line-height: 20px;
+}
+.evalFloat {
+  display: none;
+  border: 1px solid #999;
+  width: 458px;
+  height: 500px;
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  padding: 20px;
+  top: 0px;
+  border-radius: 9px;
+}
+.evalFloat .title {
+  font-size: 18px;
+  padding: 0px 0px 20px;
+}
+.evalFloat ul li {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 0px;
+  margin-top: -1px;
+}
+.evalFloat ul li .liLeft {
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+}
+.evalFloat ul li .liRight {
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+.evalFloat ul li .eval-title {
+  padding: 10px 0px;
+}
+.evalFloat ul li .eval-title i {
+  margin: 0px;
+}
+.evalFloat ul li .eval-title span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: #999;
+}
+.evalFloat ul li p {
+  line-height: 30px;
+}
+.evalFloat .pageSite {
+  position: absolute;
+  bottom: 0px;
+}
+.evalFloat .leftSanIcon {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #999;
+}
+.evalFloat .leftSanIcon2 {
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+}
+.evalFloat .rightSanIcon {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #999;
+}
+.evalFloat .rightSanIcon2 {
+  position: absolute;
+  top: 10px;
+  right: -8px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+}
+.storeIntro {
+  clear: both;
+  padding: 70px 0px 0px;
+}
+.storeIntro img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.storeIntro .headImg{
+	width: 122px;
+	height: 122px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	vertical-align: middle;
+}
+.storeIntro .storeText {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.storeIntro .storeText h1 {
+  color: #fff;
+  font-size: 34px;
+  padding: 5px 0px;
+  font-weight: normal;
+}
+.storeIntro .storeText i {
+  display: inline-block;
+  vertical-align: middle;
+}
+.storeIntro .storeText em {
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=store.css.map */

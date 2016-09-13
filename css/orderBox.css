@@ -1,0 +1,172 @@
+.orderBox {
+  width: 1100px;
+  margin: 0 auto;
+  min-width: 1100px;
+  font-family: "微软雅黑";
+}
+.orderBox .navlist ul {
+  list-style: none;
+  overflow: hidden;
+  height: 60px;
+  line-height: 60px;
+}
+.orderBox .navlist ul li {
+  float: left;
+  font-size: 14px;
+  color: #333333;
+}
+.orderBox .navlist ul li a {
+  text-decoration: none;
+  color: #999999;
+}
+.orderBox .orderInforBox {
+  overflow: hidden;
+  font-family: "微软雅黑";
+}
+.orderBox .orderInforBox label {
+  font-size: 18px;
+  color: #333333;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+}
+.orderBox .orderInforBox div.orderAddress {
+  width: 660px;
+  margin-left: 20px;
+  padding-right: 2px;
+  float: left;
+}
+.orderBox .orderInforBox div.orderAddress span.addresssTitle {
+  font-size: 16px;
+  color: #666666;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.orderBox .orderInforBox div.orderAddress div.addressdiv {
+  width: 100%;
+  height: 69px;
+  padding-top: 22px;
+  border: 1px solid #01BF71;
+  background: url("../img/selectIcon.png") no-repeat right bottom;
+}
+.orderBox .orderInforBox div.orderAddress div.addressdiv img {
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 20px;
+  display: block;
+  float: left;
+}
+.orderBox .orderInforBox div.orderAddress div.addressdiv span {
+  font-size: 16px;
+  color: #333333;
+  float: left;
+}
+.orderBox .orderInforBox div.orderAddress div.addressdiv span b {
+  display: block;
+  font-size: 16px;
+  color: #666666;
+}
+.orderBox .orderInforBox div.orderAddress div.textDiv {
+  position: relative;
+}
+.orderBox .orderInforBox div.orderAddress div.textDiv textarea {
+  height: 120px;
+  border: 1px solid #DDDDDD;
+  resize: none;
+  width: 100%;
+}
+.orderBox .orderInforBox div.orderAddress div.textDiv span {
+  position: absolute;
+  left: 625px;
+  top: 95px;
+}
+.orderBox .orderInforBox div.ordershopp {
+  float: left;
+  width: 380px;
+  height: 322px;
+  background-color: #F0F0F0;
+  margin-left: 34px;
+  font-family: "微软雅黑";
+}
+.orderBox .orderInforBox div.ordershopp label {
+  font-size: 16px;
+  color: #666666;
+  display: block;
+  font-weight: bold;
+  padding: 10px 10px 0px 10px;
+}
+.orderBox .orderInforBox div.ordershopp h3 {
+  padding: 10px 10px 0px 10px;
+  font-size: 16px !important;
+  color: #666666;
+  font-weight: normal;
+}
+.orderBox .orderInforBox div.ordershopp span.leftspan {
+  font-size: 16px;
+  color: #999999;
+  display: block;
+  padding: 10px 10px 0px 10px;
+}
+.orderBox .orderInforBox div.ordershopp span.leftspan span {
+  display: inline-block;
+  float: right;
+  color: #666666;
+  font-size: 14px;
+}
+.orderBox .orderInforBox div.ordershopp span.leftspan span a.reducebtn {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  line-height: 16px;
+  color: #FFF;
+  background-color: #a7a7a7;
+  display: inline-block;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.orderBox .orderInforBox div.ordershopp span.leftspan span a.addbtns {
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  line-height: 16px;
+  color: #FFF;
+  background-color: #01bf71;
+  display: inline-block;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.orderBox .orderInforBox div.ordershopp div.borderBox {
+  margin-top: 38px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.orderBox .orderInforBox div.ordershopp span.priceTotal {
+  display: block;
+  float: right;
+  height: 83px;
+  line-height: 83px;
+  font-size: 36px;
+  color: #FE8202;
+}
+.orderBox .orderInforBox a.confirmbtn {
+  display: block;
+  clear: both;
+  margin-left: 20px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #01BF71;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/*# sourceMappingURL=orderBox.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的资料</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" href="../css/mydata.css" />
+		
+		<link rel="stylesheet" href="../cssIntegration/PersonalCenter.css" />
+		<style type="text/css">
+			.contentdata{
+				padding-bottom: 100px;
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp" ng-controller="paymentPwdCtr" ng-cloak>
+		<div class="headerwrapper"></div>
+		<div class="contentdata">
+			<div class="leftnav">
+				<a href="mydata.html">个人资料</a>
+				<a href="mydatahome.html">我的家</a>
+				<a class="clickclass">修改支付密码</a>
+				<a href="pwd.html">修改登录密码</a>
+			</div>
+			<div class="contentnav payPwd">
+				
+				<!--用户没有支付密码的时候-->
+				<div class="setPayPwd changePayPwd" >
+					<h1>设置支付密码</h1>
+					<div class="item inputpwd">
+						<span>支付密码</span>
+						<input type="password" placeholder="请输入新密码（6位数字）"/>
+						<em class="pwdinfor"></em>
+					</div>
+					<div class="item secoundpwd">
+						<span>再次输入支付密码</span>
+						<input type="password" placeholder="请再次输入支付密码"/>
+						<em class="pwdinfor"></em>
+					</div>
+					<div class="opera">
+						<button class="confirm" ng-click="btnclick(0)">确定</button>
+						<button class="cancel">取消</button>
+					</div>
+				</div>
+				<!--有支付密码的时候用户修改支付密码-->
+				<div class="modeChange">
+					<h1>修改支付密码</h1>
+					<div class="title">
+						<span data-index="1">记得原支付密码</span>
+						<span class="active" data-index="2">忘记原支付密码</span>
+					</div>
+					<!--忘记原来的支付密码-->
+					<div class="content changePayPwd">
+						<div class="item">
+							<span>手机号</span>
+							<label>{{uerdatas.username}}</label>
+						</div>
+						<div class="item code">
+							<span>验证码</span>
+							<input type="text" placeholder="请输入验证码" style="width: 130px;" ng-model="valicode"/>
+							<b ng-click="verCodeClick()">验证码</b>
+							<em class="pwdinfor"></em>
+						</div>
+						<div class="item inputpwd">
+							<span>新的支付密码</span>
+							<input type="password" placeholder="请输入支付密码"/>
+							<em class="pwdinfor"></em>
+						</div>
+						<div class="item secoundpwd">
+							<span>再次输入支付密码</span>
+							<input type="password" placeholder="请再次输入支付密码"/>
+							<em class="pwdinfor"></em>
+						</div>
+						<!--按钮-->
+						<div class="opera">
+							<button class="confirm" ng-click="btnclick(1)">确定</button>
+							<button class="cancel">取消</button>
+						</div>
+					</div>
+					<!--记得原支付密码-->
+					<div class="Originalpwd changePayPwd" style="display: none;">
+						<div class="item foreverPwd">
+							<span>支付密码</span>
+							<input type="password" placeholder="请输入新密码（6位数字）"/>
+							<em class="pwdinfor"></em>
+						</div>
+						<div class="item inputpwd">
+							<span>新的支付密码</span>
+							<input type="password" placeholder="请输入一样的密码"/>
+							<em class="pwdinfor"></em>
+						</div>
+						<div class="item secoundpwd">
+							<span>再次输入支付密码</span>
+							<input type="password" placeholder="请输入一样的密码"/>
+							<em class="pwdinfor"></em>
+						</div>
+						<!--按钮-->
+						<div class="opera">
+							<button class="confirm" ng-click="btnclick(2)">确定</button>
+							<button class="cancel">取消</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footer">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/angular.min.js" ></script>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/config.js" ></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../jsIntegration/personCenter.js" ></script>
+</html>

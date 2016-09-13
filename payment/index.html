@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/payment.css"/>
+	</head>
+	<style type="text/css">
+		.productIndex .comm1100{
+			overflow: inherit;
+		}
+	</style>
+	<body ng-app="webapp" ng-controller="wuyeCtr">
+		<header class="productIndex">
+			<div class="commHead">
+			</div>
+			<div class="comm1100">
+				<div class="textTitle">
+					<h1>物业缴费</h1>
+					<p>平台用户可以线下缴费物业相关费用，也可以线上完成同样的动作。</p>
+				</div>
+			</div>
+		</header>
+		<div class="titleBar">
+			<div class="comm1100">
+				<span>首页</span><i>></i><em>物业缴费</em>
+				
+				<input type="text" placeholder="搜索缴费项目" />
+			</div>
+		</div>
+		<div class="greyArea">
+			
+		</div>
+		<div class="listContent">
+			<div class="comm1100">
+				<table>
+					<thead>
+					<tr>
+						<th class="select"><label class="fill">全选</label></th>
+						<th class="accoutTime">账单时间</th>
+						<th class="address">
+							位置<i class="smallBtm"></i>
+							<div class="addressFloat">
+								<ul>
+									<li class="active">
+										5-3-0816  蜀都中心二期
+									</li>
+									<li>
+										5-3-0816  蜀都中心二期
+									</li>
+								</ul>
+							</div>
+						</th>
+						<th class="projects">
+							缴费项目<i class="smallBtm"></i>
+							<div class="addressFloat">
+								<ul>
+									<li class="active">
+										物业费
+									</li>
+									<li>
+										卫生费
+									</li>
+									<li>
+										水费
+									</li>
+									<li>
+										电费
+									</li>
+								</ul>
+							</div>
+						</th>
+						<th class="money">未缴金额</th>
+						<th class="money">滞纳金</th>
+						<th class="money">预缴扣除</th>
+						<th class="money">剩余应收</th>
+						<!--<th class="moneyPre">预缴费金额</th>-->
+						<th class="money">预缴费金额</th>
+						<th class="money">历史缴费</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="items in jsondatas">
+						<td><label class="fill" data-parmentids="{{items.paymentId}}">选择</label></td>
+						<td ng-cloak style="width: 407px;">{{ items.startDate}}-{{ items.endDate }}</td>
+						<td>
+							<div class="" ng-bind="items.number"></div>
+							<div ng-cloak>{{ items.communityName }}</div>
+						</td>
+						<td ng-cloak class="typetd">{{ items.type }}</td>
+						<td ng-cloak class="notchecked">&yen;<i>{{items.amount }}</i></td>
+						<td ng-cloak>&yen;{{ items.lateFee }}</td>
+						<td ng-cloak>&yen;{{ items.depositFee }}</td>
+						<!--<td>￥0.00</td>-->
+						<td ng-if="cc===undefined" style="color: #FE8202;">&yen;<em class="orange" ng-cloak>{{ items.amountPayable}}</em></td>
+						<td ng-if="cc >= items.amountPayable" style="color: #FE8202;">&yen;<em class="orange" ng-cloak>0</em></td>
+						<td ng-if="cc < items.amountPayable" style="color: #FE8202;">&yen;<em class="orange" ng-cloak>{{ items.amountPayable - cc}}</em></td>
+						<td>
+							<input type="tel" value="0" ng-model="cc" maxlength="7"/>
+						</td>
+						<td class="lasttds" style="text-align: center;"><em class="greenText" ng-click="clickgreenText(items.type)">查看</em></td>
+					</tr>
+					</tbody>
+				</table>
+				
+				<div class="action">
+					<div class="textRight">
+						<span>应收总额:</span>
+						<em id="payNow">￥00.00</em>
+					</div>
+					<div class="textRight">
+						<span>预缴费金额:</span>
+						<em id="saveNow">￥00.00</em>
+					</div>
+					<div class="textRight">
+						<span>合计:</span>
+						<em id="sum" class="orange">￥<i>00.00</i></em>
+					</div>
+					
+				</div>
+				<button class="green payNow" ng-click="payclicks()">
+						一键支付
+				</button>
+			
+			</div>
+		</div>
+		<div class="footer">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+		<div class="shade"></div>
+		<div class="paymentHis">
+			<h1>物业费</h1>
+			<img src="../img/payment/greenLine.png"/>
+			<table>
+				<tr>
+					<th>账单时间</th>
+					<th>缴费时间</th>
+					<th>产生费用</th>
+					<th>滞纳金</th>
+					<th>缴费金额</th>
+				</tr>
+				<tr ng-repeat="reocdes in rocodelist">
+					<td ng-cloak>{{reocdes.startDate}}</td>
+					<td ng-cloak>{{reocdes.paymentDate}}</td>
+					<td ng-cloak>￥{{reocdes.amount}}</td>
+					<td ng-cloak>￥{{reocdes.lateFee}}</td>
+					<td ng-cloak><em class="orange">￥{{reocdes.amountPaid}}</em></td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="../js/angular.min.js" ></script>
+		<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/comment.js" ></script>
+		<script type="text/javascript" src="../js/indexwuye.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				/*
+				 * 全选
+				 */
+				$(".listContent th label").click(function(){
+					var $this = $(this);
+					if($this.hasClass('checked')){
+						$(".listContent td label").removeClass('checked');
+						$this.removeClass('checked');
+					}else{
+						$(".listContent td label").addClass('checked');
+						$this.addClass('checked');
+						$(".listContent table tbody td.notchecked i").each(function(){
+							if(parseFloat($(this).text())==0){
+								$(this).parent().parent().find("label").removeClass("checked");
+							}else{
+								$(this).parent().parent().find("label").addClass("checked");
+							}
+						})
+						if(parseFloat($(this).parents())==0){
+						}
+							console.log($(this).parent().parent().parent().next().html());
+					}
+					calcu();
+				});
+				/*
+				 * 单选
+				 */
+				$(".listContent").delegate('td label','click',function(){
+					var $this = $(this);
+					var checkStatus = true;
+					if($(this).hasClass('checked')){
+						$(".listContent th label").removeClass('checked');
+						$(this).removeClass('checked');
+					}else{
+						
+						//$(this).addClass('checked');
+						if(parseFloat($(this).parent().parent().find("td.notchecked i").text())==0){
+							alert("该项不需要物业缴费！");
+						}else{
+							$(this).addClass('checked');
+						}
+						
+						$(".listContent td label").each(function(){
+							if(!$(this).hasClass('checked')){
+								checkStatus = false;
+							}
+						})
+						if(checkStatus){
+							$(".listContent th label").addClass('checked');
+						}
+					}
+					calcu();
+				});
+				//input限制输入数字
+				$('.listContent table input').keypress(function(){
+					var keyCode = event.keyCode;    
+				     if ((keyCode >= 48 && keyCode <= 57))    
+				    {    
+				         event.returnValue = true;  
+				         calcu();
+				     } else {    
+				           event.returnValue = false;    
+				    }
+				    
+				})
+				$('.listContent').delegate("ta input","blur",function(){
+					var lengths;
+					if($(this).val() == '' && $.trim($(this).val()) == ''){
+						$(this).val('0')
+					}else{
+						/*lengths=$(this).val();
+						console.log(lengths+"djfj");*/
+					}
+					calcu();
+				})
+				/*
+				 * 金额计算
+				 */
+				function calcu(){
+					var tr = $(".listContent td label.checked").closest('tr');
+					var payNow = 0,saveNow = 0;
+					if(tr.length == 0){
+						return false
+					}
+					
+					tr.each(function(){
+						payNow +=parseFloat($(this).find("em.orange").text());
+						if($(this).find('input').val() == ''){
+							saveNow += 0;
+						}else{
+							saveNow += parseFloat($(this).find('input').val());
+						}
+					})
+					
+					$("#payNow").html('￥'+payNow)
+					$("#saveNow").html('￥'+saveNow);
+					$("#sum i").html((payNow +saveNow));
+				}
+				//table弹出框
+				var alertStatus = false;
+				$(".listContent table .smallBtm").mouseenter(function(){
+					alertStatus = true;
+				})
+				$(".listContent table .smallBtm").mouseout(function(){
+					alertStatus = false;
+				})
+				$(".listContent table .addressFloat").mouseenter(function(){
+					alertStatus = true;
+				})
+				$(".listContent table .addressFloat").mouseout(function(){
+					alertStatus = false;
+				})
+				$(".listContent table .smallBtm").hover(
+					function(){
+						$(this).next().show();	
+					},
+					function(){
+						setTimeout(function(){
+							if(!alertStatus){
+							$(".listContent table .addressFloat").hide();
+							}
+						},50)	
+					}
+				)
+				$(".listContent table .addressFloat").hover(
+					function(){
+//						$(this).
+					},
+					function(){
+						setTimeout(function(){
+							if(!alertStatus){
+							$(".listContent table .addressFloat").hide();
+							}
+						},50)
+					}
+				)
+				//点击下拉框的时候点击li的样式
+				$(".addressFloat ul li").click(function(){
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+			})
+		</script>
+	</body>
+</html>

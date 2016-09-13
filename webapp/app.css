@@ -1,0 +1,34 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.newswrapper{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+}
+.newsDetail{
+	width: 90%;
+	margin: 0 auto;
+	height: 90%;
+	padding: 5% 0px;
+}
+div.newstitle, div.newstime{
+	font-family: "FZHTJW";
+	font-size: 22px;
+	color: #333333;
+	font-weight: bold;
+}
+div.newstime{
+	font-size: 20px !important;
+	margin-top: 10px;
+}
+.newsDetail img{
+	max-width: 690px;
+}
+p{
+	color: #333333;
+	font-weight: bold;
+	font-family: "FZHTJW";
+	line-height: 35px;
+}

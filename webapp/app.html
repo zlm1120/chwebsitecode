@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="app.css" />
+		
+	</head>
+
+	<body>
+		<div class="newswrapper">
+			<div class="newsDetail">
+				<div class="newstitle"></div>
+				<div class="newstime"></div>
+				<div class="imgwrapper">
+					<img/>
+				</div>
+				<p>
+				</p>
+			</div>
+
+		</div>
+	</body>
+<script type="text/javascript" src="../js/jquery-2.2.3.js" ></script>
+<script type="text/javascript" src="../js/config.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			type:"get",
+			url:ip+'/api/convenience/article/view',
+			async:true,
+			data:{articleId:getUrlParam('id')},
+			dataType:"json",
+			success:function(json){
+				var data=json.api_data;
+				$(".newstitle").html(data.title);
+				$(".newstime").html(data.date);
+				$("p").html(data.content);
+			}
+		});
+	})
+</script>
+</html>

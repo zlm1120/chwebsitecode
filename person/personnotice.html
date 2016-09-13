@@ -1,0 +1,12 @@
+<div class="noticewrapper mainbody" ng-cloak ng-controller="mynoticeCtr">
+	<div class="navcontentBox">
+		<div class="ordertitle">
+			<span>物业公告</span><b>6</b>
+		</div>
+		<!--通知列表-->
+		<div class="orderlist" ng-repeat="lists in noticedata">
+			<span class="activefont" ng-cloak>{{ lists.title }}<b>{{ lists.date }}</b></span>
+			<b>{{ lists.content }}</b>
+		</div>
+	</div>
+</div>

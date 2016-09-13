@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" type="text/css" href="../css/userCenter.css"/>
+
+		<!--<script type="text/javascript" src="../js/jquery-2.2.3.js" ></script>-->
+		<style type="text/css">
+			.tapGroup .item{
+				/*display: none;*/
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp">
+		
+		<!--<div aaa></div>-->
+		<div class="headerwrapper" ng-include="'header.html'"></div>
+		<div class="contentwrapper">
+			<div class="comm1100">
+				<div class="content repairDetail" ng-controller="repairDetail">
+
+					<h3 ng-bind="title"></h3>
+					<div class="tapGroup">
+						<!--REVIEW-->
+						<div class="item" ng-if="reviews.date != undefined">
+							<div class="circle" ng-class="{'cOrange':$index==0,'cGreen':$index != 0}" >
+								<div class="smallCircle"></div>
+							</div>
+							<!--<div class="itemTitle">
+								<div class="tips" ng-class="{'iconOrange':$index==0,'iconGreen':$index != 0}">
+									<div class="rightSanIcon">
+										
+									</div>
+									{{record.recordStatus}}
+								</div>
+							</div>-->
+							<div class="time" ng-bind="reviews.date">
+								
+							</div>
+							<p>评价内容：{{reviews.reviewContent}}</p>
+							<div id="starBox" ng-bind-html="starbox" style="padding-bottom: 10px;">
+								
+							</div>
+							<!--<p>处理人：{{record.recordWorker}}</p>
+							<p>处理人联系电话：{{record.mobile}}</p>-->
+							<div class="imgGroup" ng-if="reviews.images.length != 0">
+								<img ng-repeat="x in reviews.images" ng-src="{{x}}" />
+							</div>
+							
+						</div>
+						<!--RECODE-->
+						<div class="item" ng-repeat="record in records">
+							<div class="circle" ng-class="{'cOrange':$index==0 && reviews.date != undefined,'cGreen':$index != 0 || reviews.date != undefined}" >
+								<div class="smallCircle"></div>
+							</div>
+							<!--<div class="itemTitle" ng-repeat="y in menus" ng-if="status == y.id">
+								<div class="tips" ng-class="{'iconOrange':$index==0,'iconGreen':$index != 0}">
+									{{ y. Text}}
+									<div class="rightSanIcon"></div>
+								</div>
+							</div>-->
+							<p>{{record.recordStatus}}</p>
+							<div class="time" ng-bind="record.date">
+								
+							</div>
+							<p>客服经理：{{record.recordManager}}</p>
+							<p>处理人：{{record.recordWorker}}</p>
+							<p>处理人联系电话：{{record.mobile}}</p>
+							
+							<!--<div class="operaGroup" ng-if="$index==0 && reviews.length == undefined">
+								<div class="button btnOrange">
+									提醒物业
+								</div>
+								<div class="button btnGreen">
+									取消保修
+								</div>
+							</div>-->
+						</div>
+						<!--REPAIR-->
+						<div class="item" ng-repeat="x in menus" ng-if="status == x.id">
+							<div class="circle cGreen">
+								<div class="smallCircle"></div>
+							</div>
+							<!--<div class="itemTitle">
+								<div class="tips iconGreen">
+									{{x.Text}}
+									<div class="rightSanIcon"></div>
+									<span></span>
+								</div>
+							</div>-->
+							<div class="time" ng-bind="repair.date">
+								
+							</div>
+							<p ng-bind="repair.content"></p>
+							<p ng-cloak>期望时间：{{repair.presetDate}}</p>
+							<div class="remarks"></div>
+							<div class="imgGroup" ng-if="repair.images.length != 0">
+								<img ng-repeat="x in repair.images" ng-src="{{x}}"/>
+							</div>
+							<div class="operaGroup" ng-if="status == 0">
+								<div class="button" ng-repeat="btn in x.btns" ng-bind="btn.btnName" ng-class="btn.color" ng-click="Remind(item.repairId,btn.btnName)">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="line"></div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footerwrapper" ng-include="'../commentPage/footer.html'">
+		</div>
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/repairDetail.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,849 @@
+/usr/local/apache-tomcat-7.0.69/bin/catalina.sh run
+[2016-07-06 10:17:01,630] Artifact jeewx-os-framework:war exploded: Server is not connected. Deploy is not available.
+Connected to the target VM, address: '127.0.0.1:59843', transport: 'socket'
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.69
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Apr 11 2016 07:57:09 UTC
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.69.0
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.10.1
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/macbookpro102/Library/Caches/IntelliJIdea2016.1/tomcat/Unnamed_wechetCms
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /usr/local/apache-tomcat-7.0.69
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/macbookpro102/Library/Caches/IntelliJIdea2016.1/tomcat/Unnamed_wechetCms/conf/logging.properties
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:59843,suspend=y,server=n
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote=
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.port=1089
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/usr/local/apache-tomcat-7.0.69/endorsed
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/macbookpro102/Library/Caches/IntelliJIdea2016.1/tomcat/Unnamed_wechetCms
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/usr/local/apache-tomcat-7.0.69
+七月 06, 2016 10:17:03 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/usr/local/apache-tomcat-7.0.69/temp
+七月 06, 2016 10:17:03 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/macbookpro102/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+七月 06, 2016 10:17:04 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+七月 06, 2016 10:17:04 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+七月 06, 2016 10:17:04 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2227 ms
+七月 06, 2016 10:17:04 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+七月 06, 2016 10:17:04 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.69
+七月 06, 2016 10:17:04 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+七月 06, 2016 10:17:04 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+七月 06, 2016 10:17:04 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 128 ms
+Connected to server
+[2016-07-06 10:17:05,014] Artifact jeewx-os-framework:war exploded: Artifact is being deployed, please wait...
+七月 06, 2016 10:17:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /usr/local/apache-tomcat-7.0.69/webapps/manager
+七月 06, 2016 10:17:15 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /usr/local/apache-tomcat-7.0.69/webapps/manager has finished in 785 ms
+七月 06, 2016 10:17:24 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jul 06 10:17:24 CST 2016]; root of context hierarchy
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-minidao.xml]
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc-aop.xml]
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc-cgform.xml]
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc-context.xml]
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc-hibernate.xml]
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc-timeTask.xml]
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc.xml]
+[org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dbconfig.properties]
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.cgreport.dao.core.CgReportDao/] onto Spring Bean 'cgReportDao'
+[com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[org.hibernate.Version]HHH000412: Hibernate Core {4.2.3.Final}
+[org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000422: Disabling contextual LOB creation as connection was null
+[org.hibernate.tuple.PojoInstantiator]HHH000182: No default (no-argument) constructor for class: org.jeecgframework.web.system.pojo.base.HZNews$ImageText (class must be instantiated by Interceptor)
+[org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[org.hibernate.validator.util.Version]Hibernate Validator 4.2.0.Final
+[org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[org.hibernate.tuple.PojoInstantiator]HHH000182: No default (no-argument) constructor for class: org.jeecgframework.web.system.pojo.base.HZNews$ImageText (class must be instantiated by Interceptor)
+[org.hibernate.tuple.PojoInstantiator]HHH000182: No default (no-argument) constructor for class: org.jeecgframework.web.system.pojo.base.HZNews$ImageText (class must be instantiated by Interceptor)
+[org.hibernate.tuple.PojoInstantiator]HHH000182: No default (no-argument) constructor for class: org.jeecgframework.web.system.pojo.base.HZNews$ImageText (class must be instantiated by Interceptor)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.OPTIMISTIC_LOCKING
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, name, age, account, ver]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_button
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, exp, order_num, button_icon, button_style, button_code, opt_type, form_id, button_status, button_name]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_button_sql
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, cgb_sql_name, id, button_code, form_id, cgb_sql]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_enhance_js
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, form_id, cg_js_type, cg_js]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_field
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [field_name, old_field_name, create_by, create_name, main_field, dict_field, point_length, type, update_by, id, dict_table, create_date, is_query, is_show_list, order_num, length, field_default, field_valid_type, table_id, main_table, query_mode, content, is_key, field_length, is_show, dict_text, is_null, update_name, update_date, field_href, show_type]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_iwtkke1oigq9ukafldrovslx6]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_iwtkke1oigq9ukafldrovslx6]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_ftl
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cgform_id, id, ftl_word_url, cgform_name, create_date, create_by, ftl_version, create_name, update_name, update_date, update_by, ftl_status, ftl_content]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_head
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [is_pagination, sub_table_str, jform_type, create_by, create_name, is_checkbox, querymode, relation_type, jform_pk_sequence, update_by, id, content, jform_version, is_dbsynch, create_date, jform_pk_type, table_name, update_name, is_tree, update_date, tab_order]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.cgform_uploadfiles
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, cgform_id, cgform_name, cgform_field]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_qwig8sn3okhvh4wye8nn8gdeg]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_qwig8sn3okhvh4wye8nn8gdeg]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.ck_editor
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, contents]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.ck_finder
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, remark, image, attachment]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.doc
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, docid, docdate, doccontent, doctitle, doctype]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_account_admin
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isenabled, id, username, isdefault, logindate, name, password, loginip]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_activity
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, modifydate, title, model, status, prizecontent, imagehref, createdate, enddate, begindate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_activity_person
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [modifydate, birthday, activityid, userid, createdate, votes, videopath, number, id, content, mobilephone, voicepath, name, gender, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_activity_person_image
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [title, thumbnail, source, orders, hzactivityperson_id, medium, large]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_activity_vote
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, activityid, personid, userid, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_admin
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [isenabled, id, username, logindate, name, password, loginip]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_area
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, name, parentid, code, fullname, treepath]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[java.sql.DatabaseMetaData]HHH000262: Table not found: hz_keyword
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [summary, content, id, modifydate, zans, title, hits, cais, imagepath, createdate, type, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news_broke
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [summary, modifydate, status, userid, createdate, videopath, type, id, content, zans, cais, hits, reviewnote, title, imagepath, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[java.sql.DatabaseMetaData]HHH000262: Table not found: hz_news_broke_tag
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news_browse
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, tableid, userid, createdate, type, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news_image_text
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, source, hznews_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news_tag
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [hz_news_id, hz_news_broke_id, tags_id, hz_news_tiny_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news_tiny
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [summary, modifydate, status, userid, createdate, videopath, type, id, content, zans, cais, hits, reviewnote, title, imagepath, adddepth, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_news_tiny_image
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [title, thumbnail, source, orders, hznewsbroke_id, hznewstiny_id, medium, large]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: []
+[java.sql.DatabaseMetaData]HHH000262: Table not found: hz_news_tiny_tag
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_point_record
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, amount, id, userid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_point_setting
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [amount, id, modifydate, dict, name, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_product
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, point, modifydate, imagepath, name, createdate, accountid, validtime]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_receiver
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, phone, isdefault, areaname, address, consignee, userid, areaid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_review
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, modifydate, reviewnote, tableid, status, userid, createdate, type, accountid, ip]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_tag
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, name, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_task
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [endtime, content, id, point, modifydate, title, starttime, status, imagehref, money, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_task_user
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, taskid, userid, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_test
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_user_action
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, tagid, count, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_user_group
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, dict, name, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_video
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, modifydate, title, hits, isrecommend, imagehref, createdate, columnid, accountid, videohref]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_video_column
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, modifydate, name, createdate, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.hz_video_tag
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [hz_video_id, tags_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_demo
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [birthday, sex, status, dep_id, id, content, user_name, mobile_phone, create_date, email, age, create_time, salary, office_phone]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_demo_course
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, name, teacher_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_g3jn8mfod69i7jfv5gnrcvgbx]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_g3jn8mfod69i7jfv5gnrcvgbx, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_demo_student
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, name, course_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_r86q81koyocgod3cx6529hbpw]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_r86q81koyocgod3cx6529hbpw]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_demo_teacher
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, name, pic]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_matter_bom
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, unit, weight, stock, price, address, name, productiondate, quantity, code, parent_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_fldfyrevj0li4hej5b2gu2q7w]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_fldfyrevj0li4hej5b2gu2q7w, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_minidao
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [birthday, sex, status, dep_id, id, content, user_name, mobile_phone, email, age, create_time, salary, office_phone]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_order_custom
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [create_dt, goc_content, goc_idcard, goc_passport_code, del_dt, crtuser_name, modifier, id, go_order_code, goc_cus_name, modify_dt, goc_sex, goc_buss_content, delflag, modifier_name, crtuser]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_order_main
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [create_dt, goder_type, go_all_price, del_dt, crtuser_name, usertype, go_return_price, modifier, go_telphone, id, go_contact_name, go_order_code, go_order_count, modify_dt, go_content, delflag, modifier_name, crtuser]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jeecg_order_product
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gop_count, create_dt, gop_one_price, del_dt, crtuser_name, gop_product_type, gop_sum_price, gop_product_name, modifier, id, go_order_code, gop_content, modify_dt, delflag, modifier_name, crtuser]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jform_cgreport_head
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, name, code, cgr_sql]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jform_cgreport_item
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [field_name, id, field_type, is_show, s_mode, replace_va, field_txt, order_num, s_flag, dict_code, field_href, cgrhead_id]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.jg_person
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, createdt, name, age, salary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_finance
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [collectorg, expenseaccount, moneysource, zbwno, buymoney, buyprojectorg, moneyarea, paytime, approfiletype, buyuse, buyprojectno, id, category, buyyear, moneyuse, happenyear, moneytotal]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_finance_files
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, financeid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_28m7vvi0cy5r5keke68b6f7rt, fk_ij2p74feypwcda4n0n96pyd10]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_28m7vvi0cy5r5keke68b6f7rt, fk_ij2p74feypwcda4n0n96pyd10]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_attachment
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [attachmentcontent, infotypeid, extend, userid, createdate, busentityname, swfpath, realpath, id, businesskey, subclassname, attachmenttitle, note]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_mnq23hlc835n4ufgjl7nkn3bd]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_base_user
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, activitisync, departid, status, browser, realname, userkey, password, signature]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_15jh1g4iem1857546ggor42et]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_15jh1g4iem1857546ggor42et]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_config
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, name, userid, code, note]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_m3q8r50ror4fl7fjkvd82tqgn]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_m3q8r50ror4fl7fjkvd82tqgn]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_demo
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, democode, demopid, demoorder, demourl, demotitle]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_fni8e3v88wcf2sahhlv57u4nm]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_fni8e3v88wcf2sahhlv57u4nm]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_depart
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, departname, description, parentdepartid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_knnm3wb0bembwvm0il7tf6686]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_knnm3wb0bembwvm0il7tf6686, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_document
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, typeid, documentstate, documenttitle, showhome, pictureindex]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_qr3qlmgkflj35m5ci1xv0vvg3, primary, fk_f2mc12eu0umghp2i70apmtxjl]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_fileno
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, filenotype, filenoyear, filenonum, filenobefore]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_function
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [functionurl, id, iconid, functionname, functionlevel, functioniframe, desk_iconid, parentfunctionid, functionorder]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_gbdacaoju6d5u53rp4jo4rbs9, fk_q5tqo3v4ltsp1pehdxd59rccx, fk_brd7b3keorj8pmxcv8bpahnxp]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_gbdacaoju6d5u53rp4jo4rbs9, primary, fk_q5tqo3v4ltsp1pehdxd59rccx, fk_brd7b3keorj8pmxcv8bpahnxp]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_icon
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, extend, name, path, type, iconclas]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_log
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, operatetype, loglevel, operatetime, userid, broswer, logcontent, note]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_oe64k4852uylhyc5a00rfwtay]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_oe64k4852uylhyc5a00rfwtay, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_operation
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, operationicon, iconid, operationname, status, functionid, operationcode]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_ny5de7922l39ta2pkhyspd5f, fk_pceuy41wr2fjbcilyc7mk3m1f]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_ny5de7922l39ta2pkhyspd5f, fk_pceuy41wr2fjbcilyc7mk3m1f, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_opintemplate
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, descript]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_role
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, rolename, rolecode]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_role_function
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, operation, roleid, functionid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_fvsillj2cxyk5thnuu625urab, fk_9dww3p4w8jwvlrgwhpitsbfif]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_fvsillj2cxyk5thnuu625urab, fk_9dww3p4w8jwvlrgwhpitsbfif, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_role_user
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, roleid, userid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_d4qb5xld2pfb0bkjx9iwtolda, fk_n2ucxeorvpjy7qhnmuem01kbx]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_d4qb5xld2pfb0bkjx9iwtolda, fk_n2ucxeorvpjy7qhnmuem01kbx, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_student
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, sex, name, classname]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_territory
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [y_wgs84, id, x_wgs84, territoryparentid, territoryname, territorylevel, territory_pinyin, territorysort, territorycode]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_timetask
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, create_date, cron_expression, is_start, is_effect, create_by, create_name, update_name, task_id, update_date, task_describe, update_by]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_type
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, typecode, typegroupid, typepid, typename]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_3q40mr4ebtd0cvx79matl39x1, fk_nw2b22gy7plh7pqows186odmq]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_3q40mr4ebtd0cvx79matl39x1, fk_nw2b22gy7plh7pqows186odmq, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_typegroup
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, typegroupname, typegroupcode]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_user
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, mobilephone, nickname, officephone, email, usergroupid, type, releasecount, headpath, accountid, pointcount, signaturefile]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2cuji5h6yorrxgsr8ojndlmal]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_2cuji5h6yorrxgsr8ojndlmal]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.t_s_version
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, loginpage, versionnum, versionname, versioncode]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_accesstoken
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, addtime, access_token, expires_ib]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_account
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [accountname, accountemail, jsapiticket, apiticket, addtoekntime, accountappid, accountdesc, id, accounttoken, username, jsapitickettime, accountnumber, accounttype, accountaccesstoken, accountappsecret, apiticketttime, weixin_accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_autoresponse
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, templatename, addtime, rescontent, msgtype, keyword, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_cms_ad
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, title, image_name, create_date, image_href, create_by, create_name, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_cms_article
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, summary, id, title, create_date, image_name, image_href, create_by, create_name, column_id, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_cms_menu
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, image_name, create_date, image_href, create_by, name, create_name, type, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_cms_site
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, site_template_style, create_date, site_logo, create_name, update_name, update_date, company_tel, site_name, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_cms_style
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [review_img_url, id, template_name, create_date, create_name, update_name, update_date, template_url, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_expandconfig
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, name, keyword, classname, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_hdrecord
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [total, id, addtime, nickname, opendid, hdid, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_huodong
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [endtime, onetotal, starttime, count, priceone, type, pricetwo, pricethree, id, gl, title, description, twototal, accountid, threetotal]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_linksucai
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [is_encrypt, post_code, create_name, transfer_sign, outer_link, inner_link, id, content, create_date, name, update_name, update_date, share_status, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_menuentity
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, msgtype, menukey, name, templateid, orders, fatherid, type, accountid, url]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary, fk_astulwpsla864at9igbas3eic]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_newsitem
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, author, title, new_type, create_date, imagepath, description, templateid, orders, accountid, url]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_m8qs8ufeqkk5cx17budto66r0]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_m8qs8ufeqkk5cx17budto66r0, primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_newstemplate
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, addtime, tempatename, type, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_open_account
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, get_ticket_time, ticket, appid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_photo
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, create_date, create_by, name, update_date, photo_album_id, update_by]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_photo_album
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, create_date, create_by, name, update_date, photo_id, accountid, update_by]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_prizerecord
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, addtime, prize, hdid, openid, accountid, mobile]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_receivetext
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [response, fromusername, createtime, content, id, msgid, nickname, rescontent, msgtype, tousername, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_subscribe
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, templatename, addtime, msgtype, templateid, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: jeewx.weixin_texttemplate
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [content, id, templatename, addtime, accountid]
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[java.sql.DatabaseMetaData]HHH000262: Table not found: hz_keyword
+[java.sql.DatabaseMetaData]HHH000262: Table not found: hz_news_broke_tag
+[java.sql.DatabaseMetaData]HHH000262: Table not found: hz_news_tiny_tag
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity add index FK_tbbnba2pf7e0lrt3cmglia2up (accountid), add constraint FK_tbbnba2pf7e0lrt3cmglia2up foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]Can't create table 'jeewx.#sql-337_632dc' (errno: 150)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_person add index FK_8ytt3iiyamed9cooprw108ogv (accountid), add constraint FK_8ytt3iiyamed9cooprw108ogv foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_person add index FK_1se3hs2kfou3bm190l2punad1 (activityid), add constraint FK_1se3hs2kfou3bm190l2punad1 foreign key (activityid) references hz_activity (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_person add index FK_lwhiyoww6wkmscniumo296qqy (userid), add constraint FK_lwhiyoww6wkmscniumo296qqy foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_person_image add index FK_rxe3of7a9fd7wkcehhv440bat (HZActivityPerson_ID), add constraint FK_rxe3of7a9fd7wkcehhv440bat foreign key (HZActivityPerson_ID) references hz_activity_person (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_vote add index FK_7b6ldtlk4lcrrqh1umg1p2glv (accountid), add constraint FK_7b6ldtlk4lcrrqh1umg1p2glv foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_vote add index FK_7x2dt8d22noqxb7353xom4a42 (personid), add constraint FK_7x2dt8d22noqxb7353xom4a42 foreign key (personid) references hz_activity_person (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_vote add index FK_1e3x22oji57ake5jrftsbxup (activityid), add constraint FK_1e3x22oji57ake5jrftsbxup foreign key (activityid) references hz_activity (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_activity_vote add index FK_p9kjafb5prnir2hwj4xuyo6xx (userid), add constraint FK_p9kjafb5prnir2hwj4xuyo6xx foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_area add index FK_hh0u7au2wb1p2p4y7rvnxqh2f (parentid), add constraint FK_hh0u7au2wb1p2p4y7rvnxqh2f foreign key (parentid) references hz_area (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_keyword add index FK_gnd293si4m70ir1ntfcofp7kt (accountid), add constraint FK_gnd293si4m70ir1ntfcofp7kt foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news add index FK_60ev8kbkp45aq91gvx7ks7mg7 (accountid), add constraint FK_60ev8kbkp45aq91gvx7ks7mg7 foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_broke add index FK_afwtv4oafhnu7xnpobglqkl37 (accountid), add constraint FK_afwtv4oafhnu7xnpobglqkl37 foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_broke add index FK_iy61eajkoofpmj95q6wl7wr1f (userid), add constraint FK_iy61eajkoofpmj95q6wl7wr1f foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_broke_tag add index FK_9dxhrkr25d488uiviqunrd1pv (tags_ID), add constraint FK_9dxhrkr25d488uiviqunrd1pv foreign key (tags_ID) references hz_tag (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_broke_tag add index FK_12kvk4ia82qg8phv9ylp429vj (hz_news_broke_ID), add constraint FK_12kvk4ia82qg8phv9ylp429vj foreign key (hz_news_broke_ID) references hz_news_broke (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_browse add index FK_gaodewjkm032y5yp1oq031kb3 (accountid), add constraint FK_gaodewjkm032y5yp1oq031kb3 foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_browse add index FK_e6qodn1il5yuldyo2p5vnruk1 (userid), add constraint FK_e6qodn1il5yuldyo2p5vnruk1 foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_image_text add index FK_6sym2usur8m4xtvie9k1hr011 (HZNews_ID), add constraint FK_6sym2usur8m4xtvie9k1hr011 foreign key (HZNews_ID) references hz_news (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tag add index FK_422pd6p16nabe9axs21lbc6v8 (tags_ID), add constraint FK_422pd6p16nabe9axs21lbc6v8 foreign key (tags_ID) references hz_tag (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tag add index FK_k6q4dqwyy6few76sfhn88jg2p (hz_news_ID), add constraint FK_k6q4dqwyy6few76sfhn88jg2p foreign key (hz_news_ID) references hz_news (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tiny add index FK_3pffnp80gkpxp12tirk0eg96p (accountid), add constraint FK_3pffnp80gkpxp12tirk0eg96p foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tiny add index FK_3heim5adt17rm459j7uygmvbi (userid), add constraint FK_3heim5adt17rm459j7uygmvbi foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tiny_image add index FK_8e3nbj0qrnrgb5lejdct05p33 (HZNewsTiny_ID), add constraint FK_8e3nbj0qrnrgb5lejdct05p33 foreign key (HZNewsTiny_ID) references hz_news_tiny (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tiny_image add index FK_dcpx9bqg7nne4o28em2pi31b7 (HZNewsBroke_ID), add constraint FK_dcpx9bqg7nne4o28em2pi31b7 foreign key (HZNewsBroke_ID) references hz_news_broke (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tiny_tag add index FK_oa2hwhdiiqlas8gsnx0puhhey (tags_ID), add constraint FK_oa2hwhdiiqlas8gsnx0puhhey foreign key (tags_ID) references hz_tag (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_news_tiny_tag add index FK_bki41vajsps5wqqeosp8iboju (hz_news_tiny_ID), add constraint FK_bki41vajsps5wqqeosp8iboju foreign key (hz_news_tiny_ID) references hz_news_tiny (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_point_record add index FK_lh275dvo54h3rqvjhme3urbpm (accountid), add constraint FK_lh275dvo54h3rqvjhme3urbpm foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_point_record add index FK_srgaria6173j0gblyshm6d1ey (userid), add constraint FK_srgaria6173j0gblyshm6d1ey foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_product add index FK_9e3wqaqgba7gpgq02vbq29aea (accountid), add constraint FK_9e3wqaqgba7gpgq02vbq29aea foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_receiver add index FK_lev02efe2w5c2by96dweo1s16 (areaid), add constraint FK_lev02efe2w5c2by96dweo1s16 foreign key (areaid) references hz_area (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_receiver add index FK_i3efbtb73q57x1vjg1anul6w (userid), add constraint FK_i3efbtb73q57x1vjg1anul6w foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_review add index FK_hy5q6rgma3joxateia8k23c7u (accountid), add constraint FK_hy5q6rgma3joxateia8k23c7u foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_review add index FK_j0iqgvjfv81m2y6qhcdqi0cob (userid), add constraint FK_j0iqgvjfv81m2y6qhcdqi0cob foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_tag add index FK_baxit682hw9i02yo451buojwa (accountid), add constraint FK_baxit682hw9i02yo451buojwa foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_task add index FK_kluqpr0h6c300mwageivrj5ei (accountid), add constraint FK_kluqpr0h6c300mwageivrj5ei foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_task_user add index FK_jaeouofwpywm47yqdj5cworwx (accountid), add constraint FK_jaeouofwpywm47yqdj5cworwx foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_task_user add index FK_nsr4tqhrcod9j0t9xsbvr5erh (taskid), add constraint FK_nsr4tqhrcod9j0t9xsbvr5erh foreign key (taskid) references hz_task (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_task_user add index FK_tp5dm7mwkhvkmlm6wdy0riuri (userid), add constraint FK_tp5dm7mwkhvkmlm6wdy0riuri foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_test add index FK_lt5ufb38khs0m6p208vytbq9g (accountid), add constraint FK_lt5ufb38khs0m6p208vytbq9g foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_user_action add index FK_9fsvsyegsrx06l62r9e97gse3 (accountid), add constraint FK_9fsvsyegsrx06l62r9e97gse3 foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_user_action add index FK_9ntapl4wvwf91oy7n3v4q6x6 (tagid), add constraint FK_9ntapl4wvwf91oy7n3v4q6x6 foreign key (tagid) references hz_tag (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_user_action add index FK_tk4sfprgie1rod2pplaft4whg (userid), add constraint FK_tk4sfprgie1rod2pplaft4whg foreign key (userid) references t_s_user (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_user_group add index FK_nd6a7hq0h9jt9sf6r1y7pmspm (accountid), add constraint FK_nd6a7hq0h9jt9sf6r1y7pmspm foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_video add index FK_8ysj83vijqavk7s46wnxk2fve (accountid), add constraint FK_8ysj83vijqavk7s46wnxk2fve foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_video add index FK_5877rlqd2cmndmhwcvnaoc52x (columnid), add constraint FK_5877rlqd2cmndmhwcvnaoc52x foreign key (columnid) references hz_video_column (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_video_column add index FK_r3kyc3fue9ny06xhq5p6wntx6 (accountid), add constraint FK_r3kyc3fue9ny06xhq5p6wntx6 foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_video_tag add index FK_hxlkgwo87r7how781lxt44rry (tags_ID), add constraint FK_hxlkgwo87r7how781lxt44rry foreign key (tags_ID) references hz_tag (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table hz_video_tag add index FK_ihusjn4njxkj7wnh23ro9um46 (hz_video_ID), add constraint FK_ihusjn4njxkj7wnh23ro9um46 foreign key (hz_video_ID) references hz_video (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_s_territory add index null (territoryparentid), add constraint null foreign key (territoryparentid) references t_s_territory (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_s_user add index FK_30v5nf2r55777eqp50v59n1vj (accountid), add constraint FK_30v5nf2r55777eqp50v59n1vj foreign key (accountid) references weixin_account (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_s_user add index FK_t509stqghmfdt754v7t4f4qlv (userGroupid), add constraint FK_t509stqghmfdt754v7t4f4qlv foreign key (userGroupid) references hz_user_group (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table weixin_photo add index FK_oqe2wy2ehv1gp54j8s8367e1g (photo_album_id), add constraint FK_oqe2wy2ehv1gp54j8s8367e1g foreign key (photo_album_id) references weixin_photo_album (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table weixin_photo add index FK_rtqvxlo0v4hgfuw1ipngep5gs (id), add constraint FK_rtqvxlo0v4hgfuw1ipngep5gs foreign key (id) references t_s_attachment (ID)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table weixin_photo_album add index FK_jv7nb0xjbct8t41pfiy3pyu2f (PHOTO_ID), add constraint FK_jv7nb0xjbct8t41pfiy3pyu2f foreign key (PHOTO_ID) references weixin_photo (id)
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]No operations allowed after statement closed.
+[org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.cgform.dao.config.CgFormFieldDao/] onto Spring Bean 'cgFormFieldDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.cgform.dao.config.CgFormVersionDao/] onto Spring Bean 'cgFormVersionDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao/] onto Spring Bean 'cgFormUploadDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.system.dao.JeecgDictDao/] onto Spring Bean 'jeecgDictDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.system.dao.repair.RepairDao/] onto Spring Bean 'repairDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/org.jeecgframework.web.demo.dao.test.JeecgMinidaoDao/] onto Spring Bean 'jeecgMinidaoDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/weixin.cms.dao.CmsAdDao/] onto Spring Bean 'cmsAdDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/weixin.cms.dao.CmsArticleDao/] onto Spring Bean 'cmsArticleDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/weixin.cms.dao.CmsMenuDao/] onto Spring Bean 'cmsMenuDao'
+[org.jeecgframework.minidao.factory.MiniDaoBeanFactory]MiniDao Interface [/weixin.guanjia.message.dao.TextTemplateDao/] onto Spring Bean 'textTemplateDao'
+[org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Initializing ExecutorService 
+[org.springframework.web.context.support.XmlWebApplicationContext]Bean 'executor' of type [class org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[org.springframework.web.context.support.XmlWebApplicationContext]Bean 'executor' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Initializing ExecutorService  'scheduler'
+[org.springframework.web.context.support.XmlWebApplicationContext]Bean 'scheduler' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f9475ab: defining beans [miniDaoHiberCommonDao,miniDaoHandler,org.jeecgframework.minidao.factory.MiniDaoBeanFactory#0,org.springframework.aop.config.internalAutoProxyCreator,logInterceptor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,freemarker,templetContext,org.springframework.web.servlet.handler.MappedInterceptor#0,ehcacheAspect,hiberAspect,commonDao,jdbcDao,commonService,templetLoader,dictDataTag,cgTableService,configService,dataBaseService,cgformButtonService,cgformButtonSqlService,cgformFtlService,cgFormFieldService,cgformenhanceJsService,cgUploadService,MigrateForm,cgreportConfigHeadService,cgReportService,cgReportExcelService,courseService,jeecgBlobDataService,jeecgDemoCkfinderService,jeecgDemoService,jeecgJdbcService,jeecgMatterBomService,jeecgMinidaoService,jeecgNoteService,jeecgOrderMainService,jpPersonService,optimisticLockingService,taskDemoService,tFinanceService,webOfficeService,declareService,menuInitService,repairService,systemService,timeTaskService,userService,adService,cmsArticleService,cmsMenuService,weixinCmsSiteService,weixinCmsStyleService,weixinAccountService,subscribeService,weixinExpandconfigService,wechatService,weixinMenuService,customerMessageService,autoResponseService,newsItemService,newsTemplateService,receiveTextService,textTemplateService,hdRecordService,huodongService,prizeRecordService,weixinPhotoAlbumService,remoteWeixinMethod,weixinAccountTokenTask,weixinLinksucaiService,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource_jeecg,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,validator,dynamicTask,job,executor,scheduler,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,taskDemoServiceTaskJob,taskDemoServiceTaskCronTrigger,autoResetWeixinTokenJob,autoResetWeixinTokenCronTrigger,schedulerFactory,cgAutoListController,cgFormBuildController,cgformSqlController,cgformButtonController,cgformButtonSqlController,cgformFtlController,cgFormHeadController,cgformEnhanceJsController,excelTempletController,generateController,cgformTransController,cgUploadController,cgreportConfigHeadController,cgReportController,cgExportExcelController,courseController,demoController,fileUploadController,jeecgBlobDataController,jeecgDemoCkfinderController,jeecgDemoController,jeecgDemoTransDataForXml,jeecgEasyUIController,jeecgJdbcController,jeecgMatterBomController,jeecgMinidaoController,jeecgNoteController,jeecgOrderMainController,jeecgOrderMainNoTagController,jpPersonController,optimisticLockingController,reportDemoController,TFinanceController,userNoPageController,webOfficeController,openwxController,userRestController,activityController,commonController,configController,dataSourceController,departController,duplicateCheckAction,functionController,iconController,keywordController,logController,loginController,newsController,pointController,repairController,roleController,systemController,tagController,taskController,territoryController,timeTaskController,userActionController,userController,userGroupController,videoColumnController,videoController,adController,cmsArticleController,cmsController,cmsMenuController,weixinCmsSiteController,weixinCmsStyleController,weixinAccountController,subscribeController,weixinExpandconfigController,wechatController,menuManagerController,autoResponseController,ckeUploadController,newsItemController,newsTemplateController,receiveTextController,textTemplateController,uppicController,weixinArticleController,hdRecordController,huodongController,prizeRecordController,zpController,frontPhotoAlbumController,weixinPhotoAlbumController,wxVideoController,weixinLinksucaiController,openDataController,org.jeecgframework.core.util.ApplicationContextUtil#0,mappingJacksonHttpMessageConverter,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,defaultViewResolver,multipartResolver,beanNameViewResolver,jeecgExcelView,dialect,exceptionHandler,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.handler.MappedInterceptor#2,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+[net.sf.ehcache.distribution.RMICacheManagerPeerListener]Explicitly setting the listener hostname to 'localhost' is not recommended. It will only work if all CacheManager peers are on the same machine.
+[net.sf.ehcache.distribution.RMICacheManagerPeerListener]Exception starting RMI registry. Error was Port already in use: 40001; nested exception is: 
+	java.net.BindException: Address already in use
+java.rmi.server.ExportException: Port already in use: 40001; nested exception is: 
+	java.net.BindException: Address already in use
+	at sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:340)
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:248)
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:411)
+	at sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147)
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:207)
+	at sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:122)
+	at sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:108)
+	at java.rmi.registry.LocateRegistry.createRegistry(LocateRegistry.java:203)
+	at net.sf.ehcache.distribution.RMICacheManagerPeerListener.startRegistry(RMICacheManagerPeerListener.java:326)
+	at net.sf.ehcache.distribution.RMICacheManagerPeerListener.init(RMICacheManagerPeerListener.java:205)
+	at net.sf.ehcache.event.CacheManagerEventListenerRegistry.init(CacheManagerEventListenerRegistry.java:104)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:365)
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:299)
+	at net.sf.ehcache.CacheManager.create(CacheManager.java:697)
+	at net.sf.ehcache.CacheManager.getInstance(CacheManager.java:717)
+	at org.jeecgframework.web.cgform.engine.TempletContext.<clinit>(TempletContext.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:76)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:990)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:385)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:284)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5068)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5584)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1863)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:618)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:565)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1487)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:97)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1328)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1420)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:848)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:322)
+	at sun.rmi.transport.Transport$2.run(Transport.java:202)
+	at sun.rmi.transport.Transport$2.run(Transport.java:199)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:198)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:567)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.access$400(TCPTransport.java:619)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:684)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:681)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:681)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createServerSocket(RMIDirectSocketFactory.java:45)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createServerSocket(RMIMasterSocketFactory.java:344)
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:666)
+	at sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:329)
+	... 82 more
+[org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f9475ab: defining beans [miniDaoHiberCommonDao,miniDaoHandler,org.jeecgframework.minidao.factory.MiniDaoBeanFactory#0,org.springframework.aop.config.internalAutoProxyCreator,logInterceptor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,freemarker,templetContext,org.springframework.web.servlet.handler.MappedInterceptor#0,ehcacheAspect,hiberAspect,commonDao,jdbcDao,commonService,templetLoader,dictDataTag,cgTableService,configService,dataBaseService,cgformButtonService,cgformButtonSqlService,cgformFtlService,cgFormFieldService,cgformenhanceJsService,cgUploadService,MigrateForm,cgreportConfigHeadService,cgReportService,cgReportExcelService,courseService,jeecgBlobDataService,jeecgDemoCkfinderService,jeecgDemoService,jeecgJdbcService,jeecgMatterBomService,jeecgMinidaoService,jeecgNoteService,jeecgOrderMainService,jpPersonService,optimisticLockingService,taskDemoService,tFinanceService,webOfficeService,declareService,menuInitService,repairService,systemService,timeTaskService,userService,adService,cmsArticleService,cmsMenuService,weixinCmsSiteService,weixinCmsStyleService,weixinAccountService,subscribeService,weixinExpandconfigService,wechatService,weixinMenuService,customerMessageService,autoResponseService,newsItemService,newsTemplateService,receiveTextService,textTemplateService,hdRecordService,huodongService,prizeRecordService,weixinPhotoAlbumService,remoteWeixinMethod,weixinAccountTokenTask,weixinLinksucaiService,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource_jeecg,dataSource,sessionFactory,jdbcTemplate,namedParameterJdbcTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,validator,dynamicTask,job,executor,scheduler,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,taskDemoServiceTaskJob,taskDemoServiceTaskCronTrigger,autoResetWeixinTokenJob,autoResetWeixinTokenCronTrigger,schedulerFactory,cgAutoListController,cgFormBuildController,cgformSqlController,cgformButtonController,cgformButtonSqlController,cgformFtlController,cgFormHeadController,cgformEnhanceJsController,excelTempletController,generateController,cgformTransController,cgUploadController,cgreportConfigHeadController,cgReportController,cgExportExcelController,courseController,demoController,fileUploadController,jeecgBlobDataController,jeecgDemoCkfinderController,jeecgDemoController,jeecgDemoTransDataForXml,jeecgEasyUIController,jeecgJdbcController,jeecgMatterBomController,jeecgMinidaoController,jeecgNoteController,jeecgOrderMainController,jeecgOrderMainNoTagController,jpPersonController,optimisticLockingController,reportDemoController,TFinanceController,userNoPageController,webOfficeController,openwxController,userRestController,activityController,commonController,configController,dataSourceController,departController,duplicateCheckAction,functionController,iconController,keywordController,logController,loginController,newsController,pointController,repairController,roleController,systemController,tagController,taskController,territoryController,timeTaskController,userActionController,userController,userGroupController,videoColumnController,videoController,adController,cmsArticleController,cmsController,cmsMenuController,weixinCmsSiteController,weixinCmsStyleController,weixinAccountController,subscribeController,weixinExpandconfigController,wechatController,menuManagerController,autoResponseController,ckeUploadController,newsItemController,newsTemplateController,receiveTextController,textTemplateController,uppicController,weixinArticleController,hdRecordController,huodongController,prizeRecordController,zpController,frontPhotoAlbumController,weixinPhotoAlbumController,wxVideoController,weixinLinksucaiController,openDataController,org.jeecgframework.core.util.ApplicationContextUtil#0,mappingJacksonHttpMessageConverter,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,defaultViewResolver,multipartResolver,beanNameViewResolver,jeecgExcelView,dialect,exceptionHandler,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.handler.MappedInterceptor#2,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler]Shutting down ExecutorService 'scheduler'
+[org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor]Shutting down ExecutorService
+[com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'templetContext' defined in file [/Users/macbookpro102/Desktop/wechetCms/out/artifacts/jeewx_os_framework_war_exploded/WEB-INF/classes/spring-mvc-cgform.xml]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:997)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:943)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:385)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:284)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5068)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5584)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1863)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:618)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:565)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1487)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:97)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1328)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1420)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:848)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:322)
+	at sun.rmi.transport.Transport$2.run(Transport.java:202)
+	at sun.rmi.transport.Transport$2.run(Transport.java:199)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:198)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:567)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.access$400(TCPTransport.java:619)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:684)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$1.run(TCPTransport.java:681)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:681)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:76)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:990)
+	... 60 more
+Caused by: net.sf.ehcache.CacheException: Problem starting listener for RMICachePeer //localhost:40001/dictCache. Initial cause was error marshalling arguments; nested exception is: 
+	java.net.SocketException: Broken pipe
+	at net.sf.ehcache.distribution.RMICacheManagerPeerListener.notifyCacheAdded(RMICacheManagerPeerListener.java:538)
+	at net.sf.ehcache.event.CacheManagerEventListenerRegistry.notifyCacheAdded(CacheManagerEventListenerRegistry.java:159)
+	at net.sf.ehcache.CacheManager.addCacheNoCheck(CacheManager.java:1104)
+	at net.sf.ehcache.CacheManager.addConfiguredCaches(CacheManager.java:656)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:374)
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:299)
+	at net.sf.ehcache.CacheManager.create(CacheManager.java:697)
+	at net.sf.ehcache.CacheManager.getInstance(CacheManager.java:717)
+	at org.jeecgframework.web.cgform.engine.TempletContext.<clinit>(TempletContext.java:49)
+	... 67 more
+Caused by: java.rmi.MarshalException: error marshalling arguments; nested exception is: 
+	java.net.SocketException: Broken pipe
+	at sun.rmi.registry.RegistryImpl_Stub.rebind(Unknown Source)
+	at java.rmi.Naming.rebind(Naming.java:177)
+	at net.sf.ehcache.distribution.RMICacheManagerPeerListener.bind(RMICacheManagerPeerListener.java:234)
+	at net.sf.ehcache.distribution.RMICacheManagerPeerListener.notifyCacheAdded(RMICacheManagerPeerListener.java:536)
+	... 75 more
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1876)
+	at java.io.ObjectOutputStream$BlockDataOutputStream.writeByte(ObjectOutputStream.java:1914)
+	at java.io.ObjectOutputStream.writeFatalException(ObjectOutputStream.java:1575)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:350)
+	... 79 more
+七月 06, 2016 10:18:15 上午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more listeners failed to start. Full details will be found in the appropriate container log file
+七月 06, 2016 10:18:15 上午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [] startup failed due to previous errors
+七月 06, 2016 10:18:15 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.alibaba.druid.proxy.DruidDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+七月 06, 2016 10:18:15 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+[2016-07-06 10:18:15,690] Artifact jeewx-os-framework:war exploded: Error during artifact deployment. See server log for details.

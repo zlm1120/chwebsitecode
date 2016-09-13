@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>支付</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/order(1).css" />
+		<link rel="stylesheet" href="../css/payfor.css" />
+		<style type="text/css">
+			header{
+				background: #01bf71;
+			}
+			.userName{
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapps">
+		<header>
+			<div class="commHead"></div>
+		</header>
+		<!--支付详情-->
+		<div class="paycontentBox" ng-controller="payCtrl" ng-cloak>
+			<div class="centerBox">
+				<div class="payinfor">
+					<span class="totalprice">应付金额：<i ng-cloak>{{totalprice | currency:"&yen;"}} </i></span>
+					<label>选择支付方式:</label>
+					<div class="methodimg">
+						<div>
+							<input type="radio" value="zhifubao" name="methods" />
+							<label name="zhifubao" ng-click="typefun(1,1)" class="checkinput"><img src="../img/person/矢量智能对象.png"/></label>
+						</div>
+						<div>
+							<input type="radio" value="weixing" name="methods" />
+							<label name="weixing" ng-click="typefun(2,2)" class="checkinput"><img src="../img/person/矢量智能对象1.png" /></label>
+						</div>
+						<div>
+							<input type="radio" value="weixing" name="methods" />
+							<label name="weixing" ng-click="typefun(0,0)" class="checkinput">
+								<img src="../img/product/packages.png" />
+								<span>余额：{{ userdata.balacne }}</span>
+							</label>
+						</div>
+					</div>
+					
+					<!--支付密码-->
+					<div class="paypwd">
+						<label>请输入支付密码</label>
+						<input type="password" placeholder="请输入支付密码"/><a href="" class="forgatepwd">忘记密码?</a>
+						<div>
+							<button class="comfirbtn" ng-click="clickbtns()">确定</button>
+							<button class="consolebtn">取消</button>
+						</div>
+					</div>
+					<!--设置支付密码-->
+					<div class="setpwd">
+						<a href="" style="padding-top: 30px;display: block;">未设置支付密码是否前往设置支付密码！</a>
+						<div>
+							<button class="comfirbtn">确定</button>
+							<button class="consolebtn">取消</button>
+						</div>
+					</div>
+				
+				</div>
+				<a href="javascript:void(0);" ng-click="payclick()" class="btnpayfor">立即支付</a>
+			</div>
+		</div>
+		
+		<div class="shade"></div>
+		<div class="footerwrapper"></div>
+		
+	</body>
+
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/payfor.js" ></script>
+	<script type="text/javascript">
+	$(function() {
+		$('.methodimg label').click(function() {
+			var radioId = $(this).attr('name');
+			$('.methodimg label').removeAttr('class') && $(this).attr('class', 'checked');
+			$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+		});
+	})
+	</script>
+</html>

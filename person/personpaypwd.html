@@ -1,0 +1,85 @@
+<div class="contentdata" ng-controller="paymentPwdCtr">
+	<div class="contentnav payPwd">
+
+		<!--用户没有支付密码的时候-->
+		<div class="setPayPwd changePayPwd">
+			<h1>设置支付密码</h1>
+			<hr/>
+			<div class="item inputpwd">
+				<span>支付密码</span>
+				<input type="password" placeholder="请输入新密码（6位数字）" />
+				<em class="pwdinfor"></em>
+			</div>
+			<div class="item secoundpwd">
+				<span>确认密码</span>
+				<input type="password" placeholder="请再次输入支付密码" />
+				<em class="pwdinfor"></em>
+			</div>
+			<div class="opera">
+				<button class="confirm" ng-click="btnclick(0)">确定</button>
+				<!--<button class="cancel">取消</button>-->
+			</div>
+		</div>
+		<!--有支付密码的时候用户修改支付密码-->
+		<div class="modeChange">
+			<h1>修改支付密码</h1>
+			<hr/>
+			<div class="title">
+				<span data-index="1">记得原支付密码</span>
+				<span class="active" data-index="2">忘记原支付密码</span>
+			</div>
+			<!--忘记原来的支付密码-->
+			<div class="content changePayPwd">
+				<div class="item">
+					<span>绑定手机号</span>
+					<label>{{uerdatas.username}}</label>
+				</div>
+				<div class="item code">
+					<span>获取验证码</span>
+					<input type="text" placeholder="请输入验证码" style="width: 165px;" ng-model="valicode" />
+					<button ng-click="verCodeClick()">验证码</button>
+					<em class="pwdinfor"></em>
+				</div>
+				<div class="item inputpwd">
+					<span>设置密码</span>
+					<input type="password" placeholder="请输入支付密码" />
+					<em class="pwdinfor"></em>
+				</div>
+				<div class="item secoundpwd">
+					<span>确认密码</span>
+					<input type="password" placeholder="请再次输入支付密码" />
+					<em class="pwdinfor"></em>
+				</div>
+				<!--按钮-->
+				<div class="opera">
+					<button class="confirm" ng-click="btnclick(1)">确定</button>
+					<!--<button class="cancel">取消</button>-->
+				</div>
+			</div>
+			<!--记得原支付密码-->
+			<div class="Originalpwd changePayPwd" style="display: none;">
+				<div class="item foreverPwd">
+					<span>支付密码</span>
+					<input type="password" placeholder="请输入新密码（6位数字）" />
+					<em class="pwdinfor"></em>
+				</div>
+				<div class="item inputpwd">
+					<span>设置新密码</span>
+					<input type="password" placeholder="请输入一样的密码" />
+					<em class="pwdinfor"></em>
+				</div>
+				<div class="item secoundpwd">
+					<span>确认密码</span>
+					<input type="password" placeholder="请输入一样的密码" />
+					<em class="pwdinfor"></em>
+				</div>
+				<!--按钮-->
+				<div class="opera">
+					<button class="confirm" ng-click="btnclick(2)">确定</button>
+					<!--<button class="cancel">取消</button>-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

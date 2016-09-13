@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的资料</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/commentperson.css" />
+		<link rel="stylesheet" type="text/css" href="../css/PersonalCenter.css" />
+		<style type="text/css">
+			header {
+				background: #01bf71;
+			}
+			
+			.container {
+				background: #f7f7f7;
+				height: 100%;
+				clear: both;
+			}
+			
+			.noticewrapper {
+				padding: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="commHead">
+				<div class="comm1100">
+					<a href="../index.html"><img class="logo" src="../img/index/logo.png" /></a>
+					<div class="menuBar">
+						<ul>
+							<li>
+								<a href="../index.html">首页</a>
+							</li>
+							<li>
+								<a href="../product/index.html">物业周边</a>
+							</li>
+							<li>
+								<a href="../payment/index.html">物业缴费</a>
+							</li>
+							<li>
+								<a class="repair" style="cursor: pointer;">物业报修<i class="bottomIcon" style="margin-left: 5px;"></i></a>
+								<div class="dropList">
+									<div class="topBar"></div>
+									<ul>
+										<li>
+											<a href="../repair/repair.html">物业报修</a>
+										</li>
+										<li>
+											<a href="../repair/advance.html">投诉建议</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="../product/cheap.html">通知公告</a>
+							</li>
+							<li>
+								<a href="../convenience/index.html">便民</a>
+							</li>
+						</ul>
+						<img class="userImg" src="../img/avator.png" />
+						<span class="userName"></span>
+						<i class="bottomIcon"></i>
+						<div class="floatUser">
+							<div class="topSanJiao">
+
+							</div>
+							<dl>
+								<dd class="active">
+									<a href="../person/index.html#/1">个人中心</a>
+								</dd>
+								<dd>
+									<a href="../person/index.html#/collect/13">我的收藏</a>
+								</dd>
+								<dd>
+									<a href="../person/index.html#/center/9">个人资料</a>
+								</dd>
+								<dd>
+									<a href="../person/index.html#/1">通知公告</a>
+								</dd>
+								<dd>
+									<a id="logout">退出登录</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container" ng-controller="headerCtrl">
+			<div class="comm1100">
+				<div class="location" ng-cloak>
+
+					<span class="location-current">
+						当前位置:{{number}}
+					</span>
+					<span class="location-change">
+						<a>[切换地址]</a>
+						<div class="chooseHouse">
+							<div class="triggleTop"></div>
+							<div class="triggleTop2"></div>
+							<dl>
+								<dd ng-repeat="x in address" ng-if="x.status == 1" ng-class="{active:defalut == x.houseId}" ng-bind="x.number" ng-click="changeHouse(x.houseId)"></dd>
+							</dl>
+						</div>
+					</span>
+					<span class="location-change" ng-repeat="page in menu" ng-if="page.id == index" style="margin-left: -5px;">
+						<em>></em>{{page.name}}
+					</span>
+					<span class="location-change" ng-repeat="page in menu" style="margin-left: -8px;">
+						<i ng-repeat="c in page.params" ng-if="c.id == index">
+							<em>></em>{{c.name}}
+						</i>
+					</span>
+					<div class="estate-tips">
+						<marquee direction="left">
+							尊敬的住户:&nbsp; &nbsp;你们好!现本小区已进入装修阶段,进出苑区人员日益增多,管理处为加强小区人员进出管理, 确保苑区的安全和谐,&nbsp;需对苑区住户办理业主卡，住户须凭业主
+						</marquee>
+					</div>
+				</div>
+
+				<div class="profile">
+					<ul class="profile-sidebar" ng-cloak>
+						<li ng-repeat="x in menu">
+							<h2><a ng-href="{{x.url}}" ng-class="{active:x.id==index}">{{x.name}}</a></h2>
+							<dl>
+								<dd ng-repeat="n in x.params">
+									<a ng-href="{{n.url}}" ng-class='{active:n.id==index}'>{{n.name}}</a>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<!--<ul class="profile-sidebar">
+						<li>
+							<a class="active" href="#/"><h2>通知通告</h2></a>
+						</li>
+						<li>
+							<h2>订单中心</h2>
+							<dl>
+								<dd><a href="#/order">我的订单</a></dd>
+								<dd><a href="#/about">我的抢相应</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h2>投诉报修</h2>
+							<dl>
+								<dd><a href="#/repair">预约报修</a></dd>
+								<dd><a href="#/advance">投诉留言</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h2>个人中心</h2>
+							<dl>
+								<dd><a href="#/center">我的资料</a></dd>
+								<dd><a href="#/home">我的家</a></dd>
+								<dd><a href="#/pwd">登录密码</a></dd>
+								<dd><a href="#/paypwd">支付密码</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h2><a href="#/collect">我的收藏</a></h2>
+						</li>
+					</ul>
+					-->
+					<div class="profile-panel" ng-view>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footerwrapper">
+
+		</div>
+		<div class="shade"></div>
+	</body>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script src="../js/jquery.form.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/comment.js" type="text/javascript" charset="utf-8"></script>-->
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/notice.js"></script>
+	<script type="text/javascript">
+		$('.profile-sidebar li a').click(function() {
+			$('.profile-sidebar li a').removeClass('active');
+			$(this).addClass('active');
+		})
+	</script>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>确认订单</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/order(1).css" />
+		<link rel="stylesheet" href="../css/orderBox.css" />
+	</head>
+
+	<body ng-app="webapp">
+		<div class="title">
+			<div class="comm1100">
+				<a href="../index.html" class="logoa"><img class="logo" src="../img/person/组-2.png" /></a>
+				<div class="menuBar">
+					<img class="userImg" src="../img/person/组-3.png" />
+					<span class="userName">SB张勇</span>
+					<i class="bottomIcon"></i>
+					<div class="floatUser">
+						<div class="topSanJiao">
+
+						</div>
+						<dl>
+							<dd class="active">
+								<a href="../person/mydatahome.html">个人中心</a>
+							</dd>
+							<dd>
+								<a href="../person/page02.html">我的收藏</a>
+							</dd>
+							<dd>
+								<a href="../person/mydata.html">个人资料</a>
+							</dd>
+							<dd>
+								<a href="../person/notice.html">通知公告</a>
+							</dd>
+							<dd>
+								<a id="logout">退出登录</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--订单·详情-->
+		<div class="orderBox" ng-controller="detailCtr">
+			<!---->
+			<div class="navlist">
+				<ul>
+					<li>当前位置：</li>
+					<li>
+						<a href="javascript:void(0);">首页》</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">物业周边》</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">选择商品》</a>
+					</li>
+					<li>确认订单</li>
+				</ul>
+			</div>
+			<!---->
+			<div class="comment01 changeradio">
+				<span class="checkboxcomm first">
+            		<input type="checkbox" value="autologin" name="checkbox" />
+					<label name="checkbox" class="checked">选择商品</label>
+				</span>
+				<span class="checkboxcomm activeing secound">
+		            <input type="checkbox" value="autologin" name="checkbox" />
+					<label name="checkbox">确认订单信息</label>
+				</span>
+				<span class="checkboxcomm thired">
+		            <input type="checkbox" value="autologin" name="checkbox" />
+					<label name="checkbox">成功提交订单</label>
+				</span>
+			</div>
+			<!---->
+			<div class="orderInforBox">
+				<label>确认订单信息</label>
+				<div class="orderAddress">
+					<span class="addresssTitle">收货地址</span>
+					<div class="addressdiv">
+						<img src="../img/product/Shape-5.png" />
+						<span class="addressbox">
+							{{userdata.name}}<i>{{userdata.mobile}}</i>
+							<b>{{userdata.number}}</b>
+						</span>
+					</div>
+					<span class="addresssTitle" style="margin-top: 32px;">备注</span>
+					<div class="textDiv">
+						<textarea placeholder="请输入备注内容(可不填)"></textarea>
+						<span><i>0</i>/<b>50</b></span>
+					</div>
+				</div>
+				<div class="ordershopp">
+					<label>订单详情</label>
+					<h3>{{ detaildata.fullName }}</h3>
+					<span class="leftspan">数量
+						<span>
+							<a href="javascript:void(0);" class="reducebtn">-</a>
+							<a href="javascript:void(0);">1</a>
+							<a href="javascript:void(0);" class="addbtns">+</a>
+						</span>
+					</span>
+					<span class="leftspan">价格：<span>&yen;{{detaildata.cheapPrice}}</span></span>
+					<!--<span class="leftspan">运费：<span>&yen;8.90</span></span>-->
+					<div class="borderBox"></div>
+					<span class="priceTotal">&yen;{{detaildata.cheapPrice}}</span>
+				</div>
+				
+				<!--按钮-->
+				<a href="javascript:void(0);"  class="confirmbtn" ng-click="orderbtn(detaildata.cheapId)">确认下单</a>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footerwrapper"></div>
+	</body>
+
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../js/cheapdetail.js" ></script>
+	<script type="text/javascript" src="../js/config.js" ></script>
+</html>

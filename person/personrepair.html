@@ -1,0 +1,163 @@
+<link rel="stylesheet" type="text/css" href="../css/userCenter.css"/>
+<style type="text/css">
+	.seeInfo{
+		color: #666;
+		font-size: 14px;
+		cursor: pointer;
+		margin-left: 10px;
+		color: #0089DC;
+	}
+	.repair tr td:nth-child(1){
+		width: 130px;
+	}
+	.repair tr td:nth-child(2){
+		width: 130px;
+		color: #999;
+	}
+	.repair tr td:nth-child(3){
+		width: 100px;
+	}
+	.repair tr td:nth-child(4){
+		width: 340px;
+		line-height: 20px;
+	}
+	.repair tr td:nth-child(5){
+		width: 100px;
+		text-align: center;
+	}
+	.repair tr th{
+		text-align: left;
+		background: #ccc;
+		padding: 10px 12px;
+	}
+	.repair tr td{
+		padding: 10px 12px;
+	}
+	.contentwrapper{
+		padding: 0px;
+	}
+</style>
+<div class="contentwrapper" ng-controller="userJF">
+	<div class="comm1100">
+		<div class="content">
+			<div class="tapGroup" ng-if="liIndex == 0">
+				<!--<div class="item" ng-repeat="item in items">
+					<div class="itemTitle">
+						<b ng-bind="item.repairTypeName"></b>
+						<div class="tips" ng-repeat='c in menus' ng-if="item.repairStatus == c.id" ng-class="c.color">
+							<div class="leftSanIcon">
+
+							</div>
+							<span>
+										{{ c.Text }} 
+									</span>
+
+						</div>
+						<i class="seeInfo" ng-click='itemDetail(item.repairId)'>查看详情</i>
+
+					</div>
+					<div class="time" ng-bind="item.date">
+
+					</div>
+					<p ng-bind="item.content"></p>
+					<div class="imgGroup" ng-if="item.images.length > 0">
+						<img ng-repeat="img in item.images" ng-src="{{img}}" ng-click="setbigimg(img)" />
+					</div>
+					<div class="operaGroup" ng-repeat="x in menus" ng-if="item.repairStatus == x.id">
+						<div class="button" ng-repeat="btn in x.btns" ng-bind="btn.btnName" ng-class="btn.color" ng-click="Remind(item.repairId,btn.btnName,item.amountPayable)">
+						</div>
+					</div>
+				</div>-->
+				
+				<table class="repair" style="border-collapse: collapse;">
+					<thead>
+					<tr>
+						<td>报修分类</td>
+						<td>报修时间</td>
+						<td>报修状态</td>
+						<td>报修内容</td>
+						<td style="text-align: center;">操作</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr ng-repeat="item in items">
+						<td>
+							<i class="seeInfo" ng-click='itemDetail(item.repairId)'>{{item.repairTypeName}}</i>
+						</td>
+						<td>{{item.date}}</td>
+						<td>
+							<div class="tips" ng-repeat='c in menus' ng-if="item.repairStatus == c.id" ng-class="c.color">
+								<span>
+									{{ c.Text }} 
+								</span>
+							</div>
+						</td>
+						<td>
+							{{item.content}}
+							<div class="marks" style="color: #999;margin-top: 5px;" ng-if="item.memo == ''">
+								备注：{{item.memo}}
+							</div>
+							<div class="imgGroup" ng-if="item.images.length > 0" style="margin-top: 10px">
+								<img ng-repeat="img in item.images" ng-src="{{img}}" ng-click="setbigimg(img)" />
+							</div>
+						</td>
+						<td>
+							<div class="operaGroup" ng-repeat="x in menus" ng-if="item.repairStatus == x.id">
+								<div>
+									<div class="button" ng-repeat="btn in x.btns" ng-bind="btn.btnName" ng-class="btn.color" ng-click="Remind(item.repairId,btn.btnName,item.amountPayable)">
+									</div>
+								</div>
+								
+							</div>
+							
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="closediv commentinfor">
+		取消成功
+	</div>
+	<div class="urge commentinfor">
+		亲~我们已收到你的催促，马上为你处理
+	</div>
+	<div class="remind commentinfor">
+		亲~我们已收到你的提醒，马上为你处理
+	</div>
+	<div class="paydiv commentinfor">
+		<div class="paytitle">付款金额 {{moneys}}</div>
+		<div class="package">
+			可使用钱包支付<span>余额：{{ balance}}</span> 
+			<b></b>
+		</div>
+		<div class="paytotal">
+			<div class="totaltitle">
+				还需支付
+				<span></span>
+			</div>
+			<div class="methodimg">
+				<div>
+					<input type="radio" value="zhifubao" name="methods" />
+					<label name="zhifubao" data-meys='1'  ng-click="typefun(0,0)">余额支付：{{amountMoney}}</label>
+				</div>
+				<div>
+					<input type="radio" value="zhifubao" name="methods" />
+					<label name="zhifubao" data-meys='1'  ng-click="typefun(1,1)"><img src="../img/person/矢量智能对象.png"/>支付宝支付</label>
+				</div>
+				<div>
+					<input type="radio" value="weixing" name="methods" />
+					<label name="weixing" data-meys='2'  ng-click="typefun(2,1)"><img src="../img/person/矢量智能对象1.png"/>微信支付</label>
+				</div>
+				<div>
+					<input type="radio" value="weixing" name="methods" />
+					<label name="weixing" data-meys='2' ng-click="typefun(3,1)"><img src="../img/person/矢量智能对象1.png"/>线下支付</label>
+				</div>
+			</div>
+			<div class="btnpay">确认支付</div>
+		</div>
+	</div>

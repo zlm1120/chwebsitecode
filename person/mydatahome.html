@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的资料修改</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" href="../css/myhome.css" />
+		<style type="text/css">
+			.footer{
+				position: initial;
+			}
+		</style>
+	</head>
+
+	<body >
+		<div class="headerwrapper"></div>
+		<div class="contentdata">
+			<div class="leftnav">
+				<a href="mydata.html">个人资料</a>
+				<a class="clickclass">我的家</a>
+				<a href="payPwd.html">修改支付密码</a>
+				<a href="pwd.html">修改登录密码</a>
+			</div>
+			<div class="conwrapper contentnav" ng-controller="homeCtrl">
+				<div class="conwrapperTitle">
+					<span>我的家<a href="javascript:void(0)">添加房产</a></span>
+				</div>
+				<div class="homlist" ng-repeat="data in housesdata" gethouseuser dataid="{{data.memberHouseId}}">
+					<div class="homimg"><img src="{{data.image}}" /></div>
+					<div class="homcontent">
+						<div class="homaddress myhome" ng-bind="data.number"></div>
+						<div ng-if="data.status==0" class="empty"><i ng-if="data.relation==0">物业</i><i ng-if="data.relation != 0">业主</i>还没有授权，请耐心等待</div>
+						<div ng-if="data.status==1">
+							<div ng-if='data.relation==0'>
+							<div class="homperson myhome">
+								<span>{{data.name}}<i ng-if="memberInfo.memberId == data.memberId" style="color: red;">（我）</i></span>
+								<span>业主</span>
+							</div>
+							<div class="homphone myhome" ng-bind="data.username"></div>
+							<div class="btnclassfity">
+								<div ng-if="data.relation == 0 && rel.relation != 0" class="btn1 commentbtn" ng-repeat='rel in relmembers' >
+									<div class="btnname">{{rel.name}}<i ng-if="memberInfo.memberId == rel.memberId" style="color: red;">（我）</i><span ng-repeat="y in relation" ng-if="y.id==rel.relation" ng-class="y.class">{{y.name}}</span></div>
+									<div class="btnphone" ng-bind="rel.mobile"></div>
+									
+									<div ng-if="rel.status == 0" class="btnactive">
+										<a href="javascript:void(0);" ng-click="setAllowed(rel.memberHouseId,1)">授权</a>
+										<em ng-click="setAllowed(rel.memberHouseId,2)">拒绝授权</em>
+									</div>
+									<div ng-if="rel.status == 1" class="btnactive">
+										<a ng-click="cancelAllowed(rel.memberHouseId)" style="cursor: pointer;">解绑</a>
+									</div>
+									<div ng-if="rel.status == 2" class="btnactive">
+	
+									</div>
+									<div  ng-if="rel.status == 3" class="btnactive">
+										<a href="javascript:void(0);" ng-click="setAllowed(rel.memberHouseId,1)">重新授权</a>
+										<em ng-click="deleteRelation(rel.memberHouseId)">删除</em>
+									</div>
+									<div  ng-if="rel.status == 4" class="btnactive">
+										<a ng-click="deleteRelation(rel.memberHouseId)" href="javascript:void(0);">删除</a>
+										<!--<em>删除</em>、-->
+									</div>
+								</div>
+							</div>
+							</div>
+							<div ng-if="data.relation != 0">
+								<div ng-if="data.memberHouseStatus == 0">
+									正在等待授权！
+								</div>
+								<div ng-if="data.memberHouseStatus == 1">
+									<div class="homperson myhome">
+										<span ng-bind="data.name"></span>
+										<span>业主</span>
+									</div>
+									<div class="homphone myhome" ng-bind="data.username"></div>
+									<div class="btnclassfity">
+										<div ng-if="data.relation != 0 && rel.relation != 0" class="btn1 commentbtn" ng-repeat='rel in relmembers' >
+											<div class="btnname">{{rel.name}}<i ng-if="memberInfo.memberId == rel.memberId" style="color: red;">（我）</i><span ng-repeat="y in relation" ng-if="y.id==rel.relation" ng-class="y.class">{{y.name}}</span></div>
+											<div class="btnphone" ng-bind="rel.mobile"></div>
+										</div>
+									</div>
+									
+								</div>
+								<div ng-if="data.memberHouseStatus == 2">
+									<p>授权失败</p>
+									<span ng-click="reAllowed(data.memberHouseId,1)">重新申请</span>
+									<em ng-click="deleteRelation(data.memberHouseId)">删除</em>
+								</div>
+								<div ng-if="data.memberHouseStatus == 3">
+									<p>已解绑</p>
+									<em ng-click="quitRelation(data.memberHouseId)">删除</em>
+
+								</div>
+								
+							</div>
+							
+						</div>
+						<div ng-if="data.status==2" class="empty">
+							<p>授权失败</p>
+							<div class="btnactive">
+								<a ng-click="deleteRelation(data.memberHouseId)">删除</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footerwrapper"></div>
+		<!--弹出层-->
+		<div class="mydelog">
+			<form name="form">
+				<span class="delogtitle">添加房产</span>
+				<span class="border"><i></i></span>
+				<span class="tishi">*提示：请确保您填写的住房或租房信息正确，已方便您快速通过审核</span>
+				<div class="form-group checkboxgroup" style="height: 50px;">
+					<label for="select">类型选择</label>
+					<span class="checkboxcomm">
+            			<input type="checkbox" value="autologin" name="checkboxcomm"  />
+						<label name="checkboxcomm" class="checked" ng-click="gettype(0)">业主及家属</label>
+					</span>
+					<span class="checkboxcomm">
+            			<input type="checkbox" value="autologin" name="checkboxcomm" />
+						<label name="checkboxcomm"  ng-click="gettype(1)">租户</label>
+					</span>
+					<em class="specialinfor">
+						{{typeinfor}}
+					</em>
+				</div>
+				<div class="inputhouse">
+					<div class="commnityname commentclass province">
+						<span>省份名称</span>
+						<input type="text" value="{{InputProVal}}" placeholder="请输入你的省份名称" data-id="{{InputProid}}" required="required" readonly="readonly" class="privoce"/>
+						<div class="selectGroup">
+							<option ng-repeat="proname in pros" data-index="{{ proname .areaId}}" ng-click="selectOption(proname.area,proname.areaId,1)">
+								{{ proname .area}}
+							</option>
+						</div>
+						<em class="specialinfor" id="provincename">
+							{{ proMessage }}
+						</em>
+					</div>
+					<div class="commnityname commentclass city">
+						<span>城市名称</span>
+						<input type="text" value="{{InputCityVal}}" placeholder="请输入你的城市名称" data-id="{{InputCityId}}" ng-click="clickinput(InputProid,1)" readonly="readonly" class="citys"/>
+						<div class="selectGroup">
+							<option ng-repeat="cityname in citys" data-index="{{cityname .areaId}}" ng-click="selectOption(cityname.area,cityname.areaId,2)">
+								{{ cityname .area}}
+							</option>
+						</div>
+						<em class="specialinfor" id="cityname">
+							{{cityMessage}}
+						</em>
+					</div>
+					<div class="commnityname commentclass community">
+						<span>小区名称</span>
+						<input type="text" value="{{InputcommnityVal}}" placeholder="请输入你的小区名称" data-id="{{InputcommnityId}}" name="comm" ng-click="clickinput(InputCityId,2)" readonly="readonly"/>
+						<div class="selectGroup">
+							<option ng-repeat="commnity in commnitynames" data-index="{{commnity .areaId}}" ng-click="selectOption(commnity.communityName,commnity.communityId,3)">
+								{{ commnity .communityName}}
+							</option>
+						</div>
+						<em class="specialinfor" id="commnityname">
+							{{ commnityinfor }}
+						</em>
+					</div>
+					<div class=" houseid commentclass name" style="margin-left: 10px;">
+						<span>姓名</span>
+						<input type="text" value="" placeholder="请输入姓名" cancelvali  ng-model="personame"/>
+						<em class="specialinfor" id="username">
+							{{nameinfor}}
+						</em>
+					</div>
+					<div class=" houseid commentclass roomnumber">
+						<span>房号</span>
+						<input type="text" value="" placeholder="例如0816" ng-model="number" class="housnuber"/>
+						<em class="specialinfor" id="roomnuber">
+							{{numberinfor}}
+						</em>
+					</div>
+				</div>
+				<div class="btngrouplist">
+					<a href="javascript:void(0);" class="addbtn" ng-click="addhouse()">添加</a>
+					<a href="javascript:void(0);" class="closebtn">取消</a>
+				</div>
+			</form>
+		</div>
+		<div class="shade"></div>
+		<!--<div class="alertBox">
+			<h1>提示信息</h1>
+			<p>您确定删除该条消息么</p>
+			<div class="opera">
+				<span class="onlyConfirm">确定</span>
+			</div>
+		</div>-->
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+	<!--<script type="text/javascript" src="../js/addhouse.js" ></script>-->
+	<script type="text/javascript" src="../js/myhome.js"></script>
+
+</html>

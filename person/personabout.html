@@ -1,0 +1,52 @@
+<style type="text/css">
+			table.ordercontent tbody tr td:nth-child(2) {
+				width: 379px;
+			}
+			table.ordercontent tbody tr td:nth-child(3) {
+				width: 80px;
+			}
+			table.ordercontent tbody tr td:nth-child(4){
+				width: 120px;
+			}
+			table.ordercontent tbody tr td:nth-child(5){
+				width: 100px;
+			}
+			.greenText {
+				color: #01BF71;
+			}
+			table.ordercontent tbody tr{
+				height: 65px !important;
+			}
+</style>
+<div class="contentwrapper">
+	<table border="0" class="ordercontent" id="ordercontent">
+		<thead>
+			<tr>
+				<th>购买时间</th>
+				<th>商品名称</th>
+				<th style="text-align: center;">数量</th>
+				<th>支付金额</th>
+				<th>状态</th>
+				<th>兑换码</th>
+			</tr>
+		</thead>
+		<tbody ng-controller="listCtr">
+			<tr ng-repeat="items in data">
+				<td ng-cloak>{{ items.date }}</td>
+				<td>
+					<div class="media">
+						<div class="media-body">
+							<h4 class="media-heading" ng-cloak>{{ items.fullName }}</h4>
+						</div>
+					</div>
+				</td>
+				<td ng-cloak style="text-align: center;">{{ items.quantity }}</td>
+				<td ng-cloak>&yen;{{ items.amount }}</td>
+				<td ng-cloak ng-if="items.isReceipt==true">已取货</td>
+				<td ng-cloak ng-if="items.isReceipt==false">待取货</td>
+				<td ng-cloak>{{ items.receiptCode }}</td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>

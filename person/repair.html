@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" type="text/css" href="../css/userCenter.css"/>
+
+		<!--<script type="text/javascript" src="../js/jquery-2.2.3.js" ></script>-->
+		<style type="text/css">
+			.tapGroup .item{
+				/*display: none;*/
+			}
+			.seeInfo{
+				color: #666;
+				font-size: 12px;
+				cursor: pointer;
+				margin-left: 10px;
+				color: #0089DC;
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp" ng-controller="userJF">
+		
+		<!--<div aaa></div>-->
+		<div class="headerwrapper"></div>
+		<div class="contentwrapper">
+			<div class="comm1100">
+				<div class="leftBar">
+					<ul>
+						<li class="active"><a href="repair.html">预约保修</a></li>
+						<li><a href="advance.html">投诉留言</a></li>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="tapGroup" ng-if="liIndex == 0">
+						
+						<div class="item" ng-repeat="item in items">
+							<div class="itemTitle">
+								<b ng-bind="item.repairTypeName"></b>
+								<div class="tips" ng-repeat='c in menus' ng-if="item.repairStatus == c.id" ng-class="c.color">
+									<div class="leftSanIcon" >
+										
+									</div>
+									<span>
+										{{ c.Text }} 
+									</span>
+
+								</div>
+									<i class="seeInfo" ng-click='itemDetail(item.repairId)'>查看详情</i>
+								
+							</div>
+							<div class="time" ng-bind="item.date">
+								
+							</div>
+							<p ng-bind="item.content"></p>
+							<!--<div class="remarks">
+								备注:希望明天上班时候已经修好了，辛苦
+							</div>-->
+							<div class="imgGroup" ng-if="item.images.length > 0">
+								<img ng-repeat="img in item.images" ng-src="{{img}}" ng-click="setbigimg(img)"/>
+							</div>
+							<div class="operaGroup" ng-repeat="x in menus" ng-if="item.repairStatus == x.id">
+								<div class="button" ng-repeat="btn in x.btns" ng-bind="btn.btnName" ng-class="btn.color" ng-click="Remind(item.repairId,btn.btnName,item.amountPayable)">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="footerwrapper">
+		</div>
+		
+		<div class="shade"></div>
+		<!--弹出框-->
+		<div class="imgbig commentinfor" style="width: 200px; height: 200px;">
+			<img style="width: 100%;height: 100%;" />
+		</div>
+		
+		<div class="closediv commentinfor">
+			取消成功
+		</div>
+		<div class="urge commentinfor">
+			亲~我们已收到你的催促，马上为你处理
+		</div>
+		<div class="remind commentinfor">
+			亲~我们已收到你的提醒，马上为你处理
+		</div>
+		<div class="paydiv commentinfor">
+			<div class="paytitle">付款金额 {{moneys}}</div>
+			<div class="package">
+				可使用钱包支付<span>余额：{{ balance}}</span> 
+				<b></b>
+			</div>
+			<div class="paytotal">
+				<div class="totaltitle">
+					还需支付
+					<span></span>
+				</div>
+				<div class="methodimg">
+					<div>
+						<input type="radio" value="zhifubao" name="methods" />
+						<label name="zhifubao" data-meys='1'  ng-click="typefun(0,0)">余额支付：{{amountMoney}}</label>
+					</div>
+					<div>
+						<input type="radio" value="zhifubao" name="methods" />
+						<label name="zhifubao" data-meys='1'  ng-click="typefun(1,1)"><img src="../img/person/矢量智能对象.png"/>支付宝支付</label>
+					</div>
+					<div>
+						<input type="radio" value="weixing" name="methods" />
+						<label name="weixing" data-meys='2'  ng-click="typefun(2,1)"><img src="../img/person/矢量智能对象1.png"/>微信支付</label>
+					</div>
+					<div>
+						<input type="radio" value="weixing" name="methods" />
+						<label name="weixing" data-meys='2' ng-click="typefun(3,1)"><img src="../img/person/矢量智能对象1.png"/>线下支付</label>
+					</div>
+				</div>
+				<div class="btnpay">确认支付</div>
+			</div>
+		</div>
+	
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/comment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/usercenter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$(function(){
+//				$('.methodimg label').click(function() {
+//					var radioId = $(this).attr('name');
+//					$('.methodimg label').removeAttr('class') && $(this).attr('class', 'checked');
+//					$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+//				});
+//			})
+		</script>
+	</body>
+</html>

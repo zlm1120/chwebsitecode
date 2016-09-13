@@ -1,0 +1,508 @@
+.contentwrapper {
+	padding: 20px 0px;
+}
+
+.leftBar {
+	width: 250px;
+	height: 500px;
+	background: #eee;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.leftBar ul {
+	padding-top: 30px;
+}
+
+.leftBar ul li {
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	padding: 5px 0px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.leftBar ul li.active {
+	border-left: 4px solid #01BF71;
+	color: #01BF71;
+}
+
+.content {
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.content ul {
+	overflow: hidden;
+	padding-top: 1px;
+	padding-left: 1px;
+}
+
+.content ul li {
+	float: left;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #dbdbdb;
+	margin-left: -1px;
+	margin-top: -1px;
+	cursor: pointer;
+	outline: none;
+}
+
+.content ul li.active {
+	color: #fff;
+	background: #01BF71;
+}
+
+.content .tapGroup {
+	width: 100%;
+}
+
+.content .tapGroup .item {
+	margin-bottom: 30px;
+}
+
+.content .tapGroup .itemTitle b {
+	font-size: 16px;
+	color: #666;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content .tapGroup .itemTitle .iconOrange {
+	background: #F1A400;
+}
+
+.content .tapGroup .itemTitle .iconOrange .leftSanIcon {
+	border-right: 5px solid #F1A400;
+}
+
+.content .tapGroup .itemTitle .iconBlack {
+	background: #333;
+}
+
+.content .tapGroup .itemTitle .iconBlack .leftSanIcon {
+	border-right: 5px solid #333;
+}
+
+.content .tapGroup .itemTitle .iconGreen {
+	background: #01BF71;
+}
+
+.content .tapGroup .itemTitle .iconGreen .leftSanIcon {
+	border-right: 5px solid #01BF71;
+}
+
+.content .tapGroup .itemTitle div.tips {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	height: 20px;
+	padding: 0px 5px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+
+.content .tapGroup .itemTitle .leftSanIcon {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: -5px;
+	top: 5px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #fff;
+}
+
+.content .tapGroup div.time {
+	color: #999;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.content .tapGroup p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+	margin: 0px 0px 5px;
+}
+
+.content .tapGroup div.remarks {
+	font-size: 14px;
+	color: #999;
+	padding: 0px 0px 15px;
+}
+
+.content .tapGroup div.operaGroup {
+	padding: 15px 0px;
+}
+
+.content .tapGroup div.operaGroup .button {
+	padding: 8px 15px;
+	border: 1px solid #dbdbdb;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.content .tapGroup div.operaGroup .btnGreen {
+	color: #01BF71;
+}
+
+.content .tapGroup div.operaGroup .btnOrange {
+	color: #F1A400;
+}
+
+div.imgGroup img {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.repairDetail {
+	width: 100% !important;
+}
+
+.repairDetail .tapGroup {
+	font-size: 18px;
+	color: #333;
+}
+
+.repairDetail .tapGroup .item {
+	padding-left: 160px;
+}
+
+.repairDetail .tapGroup .item .starBox {
+	margin: 0px 0px 5px;
+}
+
+.repairDetail .tapGroup .item .starBox i {
+	margin-right: 1px;
+}
+
+.repairDetail .tapGroup .item .itemTitle div.tips {
+	float: left;
+	margin-left: -120px;
+	margin-top: 20px;
+	width: 50px;
+}
+
+.repairDetail .tapGroup .item .itemTitle div.tips .rightSanIcon {
+	width: 0px;
+	height: 0px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #fff;
+	position: absolute;
+	right: -5px;
+	top: 5px;
+}
+
+.repairDetail .tapGroup .item .iconOrange {
+	background: #F1A400 !important;
+}
+
+.repairDetail .tapGroup .item .iconOrange .rightSanIcon {
+	border-left: 5px solid #F1A400 !important;
+}
+
+.repairDetail .tapGroup .item .iconBlack {
+	background: #333 !important;
+}
+
+.repairDetail .tapGroup .item .iconBlack .rightSanIcon {
+	border-left: 5px solid #333 !important;
+}
+
+.repairDetail .tapGroup .item .iconGreen {
+	background: #01BF71 !important;
+}
+
+.repairDetail .tapGroup .item .iconGreen .rightSanIcon {
+	border-left: 5px solid #01BF71 !important;
+}
+
+.repairDetail .tapGroup .item .circle {
+	border: 1px solid #fff;
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: -50px;
+	margin-top: 15px;
+	float: left;
+	position: relative;
+	z-index: 100;
+}
+
+.repairDetail .tapGroup .item .circle .smallCircle {
+	margin: 0 auto;
+	margin-top: 5px;
+	width: 20px;
+	height: 20px;
+	background: #FE8202;
+	border-radius: 10px;
+}
+
+.repairDetail .tapGroup .item .cOrange {
+	border: 1px solid #FE8202;
+}
+
+.repairDetail .tapGroup .item .cOrange .smallCircle {
+	background: #FE8202;
+}
+
+.repairDetail .tapGroup .item .cGreen {
+	border: 1px solid #01BF71;
+}
+
+.repairDetail .tapGroup .item .cGreen .smallCircle {
+	background: #01BF71;
+}
+
+.repairDetail .tapGroup .item .status {
+	font-size: 24px;
+	color: #FE8202;
+	padding: 0px 0px 10px;
+}
+
+.line {
+	width: 1px;
+	height: 0px;
+	border-left: 1px solid #999;
+	position: absolute;
+	left: 144px;
+}
+
+.eval {
+	width: 100%;
+}
+
+.eval h1 {
+	font-size: 18px;
+	color: #333;
+}
+
+.eval div.eval-time {
+	font-size: 14px;
+	color: #666;
+	margin: 0px 0px 10px;
+}
+
+.eval div.evalText {
+	border: 1px solid #dbdbdb;
+	padding: 20px;
+}
+
+.eval div.evalText h2 {
+	font-size: 16px;
+	color: #666;
+	margin: 0px;
+}
+
+.eval div.evalText p {
+	padding: 0px;
+	margin: 0px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+
+.eval div.evalText div.remarks {
+	color: #999;
+	margin: 0px 0px 10px;
+}
+
+.eval .evalContent .item {
+	padding: 10px 0px;
+	padding-left: 95px;
+}
+
+.eval .evalContent .item .starBox i {
+	margin-right: 1px;
+	cursor: pointer;
+}
+
+.eval .evalContent .item .starBox span {
+	display: inline-block;
+	vertical-align: middle;
+	color: #999;
+}
+
+.eval .evalContent .item div.title {
+	margin-left: -95px;
+	text-align: right;
+	width: 90px;
+	float: left;
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+}
+
+.eval .evalContent .item textarea {
+	resize: none;
+	width: 700px;
+	height: 120px;
+	padding: 10px;
+	border: 1px solid #dbdbdb;
+}
+
+.eval .evalContent .item .areaBox {
+	position: relative;
+	width: 710px;
+}
+
+.eval .evalContent .item .areaBox .fontNum {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	color: #999;
+}
+
+.eval .evalContent .item .upDefalut {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.eval .evalContent .item .tips {
+	display: inline-block;
+	vertical-align: -27px;
+	color: #999;
+	margin-left: 5px;
+}
+
+.eval .evalContent .item .submit {
+	padding: 5px 10px;
+	color: #fff;
+	background: #01BF71;
+	font-size: 14px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.leftBar ul li a {
+	color: #333;
+	text-decoration: none;
+}
+
+.leftBar ul li.active a {
+	color: #01BF71;
+}
+
+.itemTitle {
+	position: relative;
+}
+
+.itemTitle .tips .Atitle {
+	color: #01BF71 !important;
+}
+
+.adStatus img {
+	width: 30px;
+	height: 30px;
+}
+
+
+/*# sourceMappingURL=userCenter.css.map */
+
+
+/*支付弹出框*/
+
+div.methodimg {
+	overflow: hidden;
+}
+
+div.methodimg div {
+	float: left;
+	margin-right: 52px;
+	margin-bottom: 32px;
+}
+
+.paydiv{
+	padding: 20px;
+	height: 494px !important;
+	width: 500px !important;
+}
+.methodimg img {
+	margin-left: 47px;
+}
+
+.methodimg input[type="radio"] {
+	margin: 3px 3px 0px 5px;
+	display: none;
+}
+
+.methodimg label {
+	padding-left: 20px;
+	cursor: pointer;
+	background: url(../img/person/椭圆-1-拷贝-2.png) no-repeat left center;
+	padding-right: 10px;
+}
+
+.methodimg label.checked {
+	background-position: left bottom;
+	background: url(../img/person/组-5.png) no-repeat left center;
+}
+
+.commentinfor {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 310px;
+	height: 110px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	color: #000000;
+	font-family: "微软雅黑";
+	line-height: 110px;
+	text-align: center;
+	display: none;
+	z-index: 9999;
+	transform: translate(-50%, -50%);
+}
+
+.paydiv div:not(.methodimg) {
+	height: 50px;
+	line-height: 50px;
+}
+
+.paydiv div.package,
+.paydiv div.paytotal {
+	text-align: left;
+}
+
+.paydiv div.package b,
+.paydiv div.paytotal span {
+	display: inline-block;
+	float: right;
+	padding-right: 10px;
+}
+
+.paydiv .btnpay {
+	width: 150px;
+	height: 50px;
+	border: 1px solid;
+	margin: 0 auto;
+	line-height: 50px;
+	text-align: center;
+	background-color: #01BF71;
+	color: #FFFFFF;
+	cursor: pointer;
+}

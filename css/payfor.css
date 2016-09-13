@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+}
+html .paycontentBox {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  font-family: "微软雅黑";
+  border: 1px solid #F2F2F2;
+}
+html .paycontentBox .centerBox {
+  width: 1100px;
+  margin: 0 auto;
+  height: 560px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+html .paycontentBox .centerBox .payinfor {
+  margin-top: 34px;
+}
+html .paycontentBox .centerBox .payinfor span.totalprice {
+  padding-top: 20px;
+  font-size: 16px;
+  color: #999999;
+  display: block;
+  padding-left: 33px;
+}
+html .paycontentBox .centerBox .payinfor span.totalprice i {
+  color: #FE8202;
+  font-size: 18px;
+}
+html .paycontentBox .centerBox .payinfor label {
+  display: block;
+  padding-left: 33px;
+  margin-top: 34px;
+  font-size: 16px;
+  color: #666666;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg {
+  overflow: hidden;
+  padding-left: 33px;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg div {
+  float: left;
+  margin-right: 52px;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg div input[type="radio"] {
+  margin: 3px 3px 0 5px;
+  display: none;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg div label {
+  padding-left: 20px;
+  cursor: pointer;
+  background: url("../img/person/椭圆-1-拷贝-2.png") no-repeat left center;
+  padding-right: 10px;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg div label img {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg div label span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 5px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #F1A400;
+  border: 1px solid #F1A400;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-left: 10px;
+}
+html .paycontentBox .centerBox .payinfor div.methodimg div label.checked {
+  background-position: left bottom;
+  background: url("../img/person/组-5.png") no-repeat left center;
+}
+html .paycontentBox .centerBox .payinfor div.paypwd ,
+html .paycontentBox .centerBox .payinfor div.setpwd{
+  padding-left: 33px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 370px;
+  height: 199px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  z-index: 9999;
+}
+html .paycontentBox .centerBox .payinfor div.paypwd label {
+  color: #666666;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  display: block;
+  padding-left: 0px !important;
+  font-weight: bold;
+}
+html .paycontentBox .centerBox .payinfor div.paypwd input {
+  width: 201px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #01BF71 !important;
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+html .paycontentBox .centerBox .payinfor div.paypwd a.forgatepwd {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #01BF71;
+}
+html .paycontentBox .centerBox .payinfor div.paypwd button.comfirbtn,
+html .paycontentBox .centerBox .payinfor div.setpwd button.comfirbtn{
+	outline: none;
+	width: 101px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #01BF71;
+	display: inline-block;
+	margin-top: 15px;
+	border: 0px !important;
+	cursor: pointer;
+}
+html .paycontentBox .centerBox .payinfor div.paypwd button.consolebtn,
+html .paycontentBox .centerBox .payinfor div.setpwd button.consolebtn{
+	color: #999999;
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 10px;
+	border: 0px !important;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	outline: none;
+}
+html .paycontentBox .centerBox a.btnpayfor {
+  display: block;
+  margin-left: 33px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #01BF71;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-top: 34px;
+}
+html .alertBox {
+  padding-top: 30px !important;
+  height: 140px !important;
+}
+/*# sourceMappingURL=payfor.css.map */

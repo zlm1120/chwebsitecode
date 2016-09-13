@@ -1,0 +1,81 @@
+<link rel="stylesheet" type="text/css" href="../css/userCenter.css"/>
+<style type="text/css">
+	.repair tr td:nth-child(1){
+		width: 130px;
+	}
+	.repair tr td:nth-child(2){
+		width: 130px;
+		color: #999;
+	}
+	.repair tr td:nth-child(3){
+		width: 100px;
+	}
+	.repair tr td:nth-child(4){
+		width: 340px;
+		line-height: 20px;
+	}
+	.repair tr td:nth-child(5){
+		width: 100px;
+		text-align: center;
+	}
+	.repair tr th{
+		text-align: left;
+		background: #ccc;
+		padding: 10px 12px;
+	}
+	.repair tr td{
+		padding: 10px 12px;
+	}
+</style>
+<div class="contentwrapper" style="padding: 0px;">
+	<div class="comm1100">
+		<div class="content" ng-controller="personAdCtrl">
+			<div class="tapGroup">
+				
+				<table class="repair">
+					<thead>
+						<tr>
+							<td>投诉分类</td>
+							<td>投诉时间</td>
+							<td>投诉状态</td>
+							<td>投诉内容</td>
+							<td style="text-align: center;">投诉表情</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in itemAds">
+							<td>
+								<b ng-bind="item.complaintTypeName"></b>
+							</td>
+							<td>
+								<div class="time" ng-bind="item.date">
+								</div>
+							</td>
+							<td>
+								<div class="tips" style="color: #000;">
+									<span class="Atitle" ng-if="item.complaintStatus == 1" style="color: #01BF71">已处理</span>
+									<span class="Atitle" ng-if="item.complaintStatus == 0" style="color: #F1A400;">未处理</span>
+								</div>
+							</td>
+							<td>
+								<!--<p ng-bind="item.content"></p>-->
+								<div>{{item.content}}</div>
+								<div class="imgGroup" ng-if="item.images.length > 0" style="margin-top: 5px;">
+									<img ng-repeat="img in item.images" ng-src="{{img}}" ng-click="setbigimg(img)" />
+								</div>
+							</td>
+							<td>
+								<div class="adStatus">
+									<img src="../img/img{{item.complaintEmoji}}.png" />
+									<span ng-repeat="x in evalStatus" ng-if="x.id == item.complaintEmoji">
+										{{x.name}}
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>取消订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/comment.js"></script>
+		<script type="text/javascript" src="../js/order.js"></script>
+		<link rel="stylesheet" href="../css/ordercontent.css" />
+	</head>
+
+	<body>
+		<div class="headerwrapper"></div>
+		<div class="contentwrapper"></div>
+		<div class="footerwrapper">
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$.ajax({
+				type: "get",
+				url: 'http://' + window.location.host + "/chwebsite/person/body01-4.html",
+				async: true,
+				success: function(json) {
+					$('.contentwrapper').html(json);
+					$('span.bustime').text("订单已取消");
+					$(".checkboxcomm").removeClass("activeing").css("width","540px");
+					$(".checkboxcomm label").addClass("checked");
+					$('.thired').css("display","none");
+					$('.businessmen button').css("visibility","hidden");
+				}
+			});
+		});
+	</script>
+
+</html>

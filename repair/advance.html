@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/repair.css" />
+		<style type="text/css">
+			.content{
+				height: 815px;
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp">
+		<header>
+			<div class="title">
+				<div class="commHead">
+
+				</div>
+			</div>
+		</header>
+		<div class="bg">
+
+		</div>
+		<div class="wrap">
+			<div class="content" ng-controller="advanceCtrl">
+				<div class="headImg" style="padding-top: 10px;">
+					<img src="../img/repairTitle.png" />
+				</div>
+				<div class="textContent">
+					<h1>投诉留言</h1>
+					<div class="cateTitle">
+						选择分类
+					</div>
+					<label class="radio" ng-repeat="type in types" ng-bind="type.complaintTypeName" ng-class="{checked:$index == typeIndex}" ng-click="typeClick($index)"></label>
+					
+					<div class="textArea">
+						<div class="areaGroup">
+							<div class="cateTitle">
+								投诉内容
+							</div>
+							<textarea placeholder="请输入内容" ng-model="advanceText"></textarea>
+							<span><i>0</i>/<b>500</b></span>
+						</div>
+						<div class="imgGroup">
+							<div class="cateTitle">
+								添加表情
+							</div>
+							<div class="imgWrap">
+								<div class="item" ng-click="expression(5)" ng-class="{active:exp==5}">
+									<img src="img01.png" />
+									<img class="selectIcon" src="../img/selectIcon.png" />
+								</div>
+								<div class="item" ng-click="expression(4)" ng-class="{active:exp==4}">
+									<img src="img02.png" />
+									<img class="selectIcon" src="../img/selectIcon.png" />
+								</div>
+								<div class="item" ng-click="expression(0)" ng-class="{active:exp==0}">
+									<img src="img03.png" />
+									<img class="selectIcon" src="../img/selectIcon.png" />
+								</div>
+								<div class="item" ng-click="expression(2)" ng-class="{active:exp==2}">
+									<img src="img04.png" />
+									<img class="selectIcon" src="../img/selectIcon.png" />
+								</div>
+								<div class="item" ng-click="expression(1)" ng-class="{active:exp==1}">
+									<img src="img05.png" />
+									<img class="selectIcon" src="../img/selectIcon.png" />
+								</div>
+								<div class="item" ng-click="expression(3	)" ng-class="{active:exp==3}">
+									<img src="img06.png" />
+									<img class="selectIcon" src="../img/selectIcon.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="upLoadImg">
+					<!--<div class="uploadBox">
+
+					</div>-->
+
+
+					<form id="form1">
+						<div class="item">
+							<img class="inputImg" src="../img/product/addImg.png" />
+							<input type="file" name="file" class="inputFile" style="width: 105px; height: 30px;" onchange="addPreview(this)" accept="image/jpeg,image/png,image/gif">
+						</div>
+					</form>
+					<span>添加图片，最多三张</span>
+				</div>
+				<button class="green subBtn" ng-click="advance()">
+				提交
+			</button>
+			</div>
+		</div>
+		<div class="footer">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script src="../js/jquery.form.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/repaircontroller.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/controller.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".content .textContent .textArea div.areaGroup textarea").keyup(function() {
+				var contentsize=$(this).val().length;
+				console.log(contentsize);
+				if(contentsize>499){
+					$(this).val($(this).val().substring(0,500));
+					$(this).parent().find("span").find("b").text(0);
+					$(this).parent().find("span").find("i").text(500);
+				}else{
+					$(this).parent().find("span").find("b").text(500-contentsize);
+					$(this).parent().find("span").find("i").text(contentsize);
+				}
+			});
+		});
+		
+		function editPreview(source){
+			var file = source.files[0];
+			console.log(source);
+			if (window.FileReader) {
+				var fr = new FileReader();
+				fr.onloadend = function(e) {
+					$(source).prev().attr('src',e.target.result);
+					$(".inputImg").unbind('click');
+					$(".inputImg").click(function() {
+						$(this).next().trigger('click');
+					})
+				};
+				fr.readAsDataURL(file);
+				
+			}
+		}
+		
+		
+		function addPreview(source) {
+			if ($("#form1 .item").length < 4) {
+				var file = source.files[0];
+				console.log(source);
+				if (window.FileReader) {
+					var fr = new FileReader();
+					fr.onloadend = function(e) {
+						$(source).prev().attr('src',e.target.result);
+							
+						var b = '<img class="delete" src="../img/delete.png"/>'
+						$(source).parent().append(b);
+						$(".delete").unbind('click');
+						$(".delete").click(function(e){
+							$(this).parent().remove();
+							e.preventDefault();
+						})
+						$(source).attr('onchange','editPreview(this)')
+						var a = '<div class="item">'+
+								'<img class="inputImg" src="../img/product/addImg.png" />'+
+								'<input type="file" name="file" class="inputFile" style="width: 105px; height: 30px;" onchange="addPreview(this)" accept="image/jpeg,image/png,image/gif">'+
+								'</div>';
+
+						$("#form1").append(a);
+						$(".inputImg").unbind('click');
+						$(".inputImg").click(function() {
+							$(this).next().trigger('click');
+						})
+					};
+					fr.readAsDataURL(file);
+				}
+				
+			}
+
+		}
+		
+
+		
+		$(".inputImg").click(function() {
+			$('input[type="file"]').trigger('click');
+		})
+	</script>
+
+</html>

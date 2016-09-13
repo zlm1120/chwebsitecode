@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" type="text/css" href="../css/userCenter.css"/>
+
+		<!--<script type="text/javascript" src="../js/jquery-2.2.3.js" ></script>-->
+		<style type="text/css">
+			.tapGroup .item{
+				/*display: none;*/
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp">
+		
+		<!--<div aaa></div>-->
+		<div class="headerwrapper" ng-include="'header.html'"></div>
+		<div class="contentwrapper">
+			<div class="comm1100">
+				<div class="content eval">
+					<h1>维修/投诉评价</h1>
+					<div class="eval-time">
+						维修/投诉评价：2016-06-04 10:45
+					</div>
+					<div class="evalText">
+						<h2>电路维修</h2>
+						<p>的斯洛伐克老实交代浪费就累死了</p>
+						<div class="remarks">备注：爱的是激发了速度快就放假了</div>
+						<div class="imgGroup">
+							<img src="../../../resources/web/img/product/imgEx.png"/>
+							<img src="../../../resources/web/img/product/imgExPro2.png"/>
+						</div>
+					</div>
+					<div class="evalContent">
+						<div class="item">
+							<div class="title">
+								评分：
+							</div>
+							<div class="starBox">
+								<i class="greyHeart"></i>
+								<i class="greyHeart"></i>
+								<i class="greyHeart"></i>
+								<i class="greyHeart"></i>
+								<i class="greyHeart"></i>
+								<span>点击心形打分</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">
+								评价内容：	
+							</div>	
+							<div class="areaBox">
+								<textarea placeholder="请在此输入你对我们服务的评价"></textarea>
+								<div class="fontNum">0/50个字</div>
+							</div>
+						</div>
+						<div class="item">
+							<img class="upDefalut" src="../img/person/imgUPload.png"/>
+							<span class="tips">点击上传图片</span>
+						</div>
+						<div class="item">
+							<div class="submit">提交评价</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footerwrapper" ng-include="'../commentPage/footer.html'">
+		</div>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/usercenter.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
