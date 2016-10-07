@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>余额充值</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+		<script type="text/javascript" src="../js/comment.js"></script>
+		<link rel="stylesheet" href="../css/order.css" />
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+
+		<link rel="stylesheet" href="../css/mypaymothod.css" />
+		
+	</head>
+
+	<body>
+		<div class="header paymothodcon"></div>
+		<!--<form action="" method="post">-->
+			<div class="mypaymothod">
+				<div class="mypaytitle paymothodcon">
+					<img src="../img/person/组-2.png" />
+					<div>
+						<b>余额充值</b>
+						<img class="userImg" src="../img/person/组-3.png">
+						<span class="userName">SB张勇</span>
+						<i class="bottomIcon"></i>
+					</div>
+				</div>
+				<div class="paycontent">
+					<div class="paycontentinner paymothodcon">
+						<span class="firstspan">我的钱包<b></b></span>
+						<label>充值金额（元）</label>
+						<input type="text" placeholder="请输入金额" class="inputmoney" required="required"/>
+						<em class="infor"></em>
+						<label>充值金额（元）</label>
+						<div class="methodimg">
+							<div>
+								<input type="radio" value="zhifubao" name="methods" />
+								<label name="zhifubao" class="checked" data-meys='1'><img src="../img/person/矢量智能对象.png" /></label>
+							</div>
+							<div>
+								<input type="radio" value="weixing" name="methods" />
+								<label name="weixing" data-meys='2'><img src="../img/person/矢量智能对象1.png" /></label>
+							</div>
+						</div>
+						<input type="submit" value="立即充值" class="moneybtn"/>
+					</div>
+				</div>
+				<input type="hidden" value="" class="ordernumber"/>
+				<input type="hidden" value="" class="paymethod"/>
+				<input type="hidden" value="" class="paymoney"/>
+				<input type="hidden" value="" class="callback"/>
+			</div>
+		<!--</form>-->
+		<div class="footerwrapper"></div>
+	</body>
+	<script type="text/javascript" src="../js/config.js" ></script>
+	<script type="text/javascript">
+		$(function() {
+			var mymoey = localStorage.getItem("mymoney");
+			$(".paycontentinner span.firstspan b").text(mymoey);
+			/*
+			 * 单选框
+			 */
+			$('.methodimg label').click(function() {
+					var radioId = $(this).attr('name');
+					$('.methodimg label').removeAttr('class') && $(this).attr('class', 'checked');
+					$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+			});
+			$(".moneybtn").click(function(){
+				var inputmoney=$(".inputmoney").val();
+				var mothod=$(".methodimg label.checked").data("meys");
+				var memberIds=JSON.parse(localStorage.getItem('userInfo'));
+				if(!/^[0-9]*$/.test(inputmoney)){
+					$("em.infor").html("请输入正确的充值金额");
+					return false;
+				}
+				if(inputmoney==""){
+					$("em.infor").html("充值金额不能为空");
+					return false;
+				}
+				if(/^[0-9]*$/.test(inputmoney) || inputmoney !=""){
+					$("em.infor").hide();
+				}
+				$.ajax({
+					type:"post",
+					url:ip+'/api/member/deposit/recharge',
+					async:false,
+					data:{memberId:memberIds.memberId, money:inputmoney, paymentMethod:mothod},
+					dataType:"json",
+					success:function(json){
+						console.log(json);
+						$(".ordernumber").val(json.api_data.sn);
+						$(".paymethod").val(json.api_data.paymentMethod);
+						$(".paymoney").val(json.api_data.amountPayable);
+						$(".callback").val(json.api_data.callBackUrl);
+					}
+				});
+			});
+		});
+	</script>
+
+</html>

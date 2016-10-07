@@ -1,0 +1,141 @@
+.evaluate{
+	width: 1100px;
+	min-width: 1100px;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-family: "微软雅黑";
+}
+.evaluate label.evaluatetitle{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+.evaluate span.evaluatetime{
+	color: #666666;
+	display: block;
+	font-size: 14px;
+}
+.evaluate span.bustime b{
+	margin-left: 15px;
+}
+
+.orderinfor .media{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+.comment01{
+	margin-top: 20px;
+	border: 1px solid #E6E6E6;
+}
+.orderinfor .media .media-body .media-heading{
+	font-size: 16px;
+	color: #333333;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.orderinfor .media .media-body b{
+	font-size: 14px;
+	color: #666666;
+}
+.orderinfor .media .media-body b.other{
+	margin-left: 15px;
+	display: inline-block;
+}
+.orderinfor .media .media-body span{
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+	font-size: 16px;
+	color: #666666;
+}
+.orderinfor .media .media-body span img{
+	padding-right: 10px;
+}
+
+.evaluatecon .comment01701{
+	overflow: hidden;
+	margin-top: 25px;
+}
+.evaluatecon .comment01701 label{
+	display:block;
+	float: left;
+	width: 95px;
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+}
+.evaluatecon .comment01701 div.floatrigtht{
+	float: left;
+}
+.evaluatecon .comment01701 div{
+	width: 670px;
+}
+.evaluatecon .comment01701 div span.commentfont{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.evaluatecon .comment01701 div span.commentfont b{
+	color: #999999;
+	display: inline-block;
+}
+.evaluatecon .comment01701 div textarea{
+	width: 100%;
+	padding: 10px 15px;
+	color: #999999;
+	font-size: 14px;
+	font-weight: normal;
+	resize: none;
+	outline: none;
+	border: 0px !important;
+}
+.evaluate .comment01702{
+	border: 1px solid #cccccc;
+}
+.evaluatecon .comment01701 div span.fontsizes{
+	display: inline-block;
+	float: right;
+	padding-right: 15px;
+	font-size: 14px;
+	color: #999999;
+}
+.evaluate div.bigdiv textarea{
+	height: 170px !important;
+}
+.evaluate div.bigdiv{
+	height: 200px !important;
+}
+.evaluate div.comment01702{
+	height: 120px;
+}
+.evaluate div.comment01702  textarea.foodsevalutate{
+	height: 90px;
+}
+::-webkit-input-placeholder {
+  	color: #999999 !important;
+	font-size: 14px !important;
+}
+:-moz-placeholder {
+ 	color: #999999 !important;
+	font-size: 14px !important;
+}
+:-ms-input-placeholder {
+  	color: #999999 !important;
+	font-size: 14px !important;
+}
+
+.evaluate button{
+	width: 103px;
+	height: 35px;
+	background-color: #01BF71;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 35px;
+	outline: none;
+	border: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 100px;
+}

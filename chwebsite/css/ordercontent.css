@@ -1,0 +1,205 @@
+.businessmen{
+	width: 960px !important;
+	min-width: 960px !important;
+}
+.businessmen button{
+	width: 103px;
+	height: 35px;
+	background-color: #01BF71;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 35px;
+	outline: none;
+	border: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.busaddre{
+	width: 418px;
+	margin-left: 25px;
+	padding-left: 29px;
+	height: 280px;
+	font-family: "微软雅黑";
+}
+.busaddre label.busaddretitle, .busaddre span{
+	display: block;
+	font-size: 14px;
+	color: #666666;
+}
+.busaddre label.busaddretitle{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.busaddre span{
+	color: #666666;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.busaddre span label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	font-weight: normal;
+}
+.busaddre span:last-child{
+	margin-top: 40px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+.buscontent{
+	overflow: hidden;
+}
+.buscontent .buslist,.busaddre{
+	float: left;
+}
+.buscontent .buslist{
+	width: 444px;
+	padding: 0px 20px;
+}
+.buscontent .buslist table{
+	width: 100%;
+	padding-bottom: 15px;
+}
+.buscontent .buslist table thead th{
+	height: 60px;
+	color: #666666;
+	font-size: 14px;
+}
+.buscontent .buslist table thead th:nth-child(1){
+	width: 390px;
+}
+.buscontent .buslist table thead th:nth-child(2){
+	width: 180px;
+}
+.buscontent .buslist table tbody tr td{
+	color: #666666;
+	font-size: 14px;
+}
+.buscontent .buslist span.peisong{
+	border-top: 1px solid  #E6E6E6;
+	margin-top: 20px;
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	color: #666666;
+	padding-top: 20px;
+}
+.buscontent .buslist span.peisong i{
+	float:right;
+	display: inline-block;
+	padding-right: 20px;
+}
+.buscontent .buslist span.pay{
+	float: right;
+	padding-top: 43px;
+	padding-bottom: 34px;
+}
+.buscontent .buslist span.pay i
+{
+	font-size: 24px;
+	color: #FE8202;
+}
+.comm001{
+	width: 1100px;
+	min-width: 1100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.comment01{
+	margin-top: 20px;
+	border: 1px solid #E6E6E6;
+}
+
+.businessmen{
+	font-family: "微软雅黑";	
+}
+.businessmen label.bustitle{
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+.businessmen span.bustime{
+	color: #01BF71;
+	display: block;
+	font-size: 16px;
+}
+.businessmen span.bustime b{
+	font-size: 14px;
+	color: #666666;
+	margin-left: 15px;
+}
+.changeradio span.checkboxcomm{
+		display: inline-block;
+		width: 316px;
+		text-align: center;
+}
+.changeradio span.checkboxcomm input[type="checkbox"] {
+		margin: 3px 3px 0px 5px;
+		display: none;
+}
+.changeradio span.checkboxcomm  label {
+		padding-left: 30px;
+		cursor: pointer;
+		padding-right: 10px;
+		font-size: 14px;
+		color: #999999;
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;
+		font-weight: normal;
+		background: url(../img/椭圆-1-拷贝.png) no-repeat left center;
+}
+.changeradio span.activeing {
+	background-color: #01bf71;
+}
+.changeradio span.activeing label{
+	color: #ffffff;
+	background: url(../img/组-6.png) no-repeat left center;
+}
+.changeradio span.checkboxcomm label.checked {
+		background-position: left bottom;
+		background: url(../img/组-5.png) no-repeat left center !important;
+		color: #333333;
+}
+.orderinfor .media{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.orderinfor .media a.pull-left{
+	float: left;
+	margin-right: 15px;
+
+}
+.orderinfor .media .media-body{
+	margin-top: 11px;
+	
+}
+.orderinfor .media .media-body .media-heading{
+	font-size: 16px;
+	color: #333333;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin: 5px 0;
+}
+.orderinfor .media .media-body b{
+	font-size: 14px;
+	color: #666666;
+}
+.orderinfor .media .media-body b.other{
+	margin-left: 15px;
+	display: inline-block;
+}
+.orderinfor .media .media-body span{
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+	font-size: 16px;
+	color: #666666;
+}
+.orderinfor .media .media-body span img{
+	padding-right: 10px;
+}

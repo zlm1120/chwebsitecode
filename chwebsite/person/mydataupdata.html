@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>我的资料修改</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" href="../css/myupdata.css" />
+		<style type="text/css">
+			#imgSubmitBtn a{
+				display: block;
+				background-color:#01BF71;
+			    font-size: 14px;
+			    color: #fff;
+			    width: 120px;
+			    height: 35px;
+			    line-height: 35px;
+			    text-align: center;
+			    font-weight: normal;
+			    border-radius: 5px;
+			    -webkit-border-radius: 5px;
+			    text-decoration: none;
+			}
+			.updataimg{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 310px;
+				height: 110px;
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				background-color: #FFFFFF;
+				font-size: 14px;
+				color: #000000;
+				font-family: "微软雅黑";
+				line-height: 55px;
+				text-align: center;
+				display: none;
+				z-index: 9999;
+				transform: translate(-50%, -50%);
+			}
+			.updataimg a{
+				display: block;
+				width: 50px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				background-color: #01BF71;
+				color: #FFFFFF;
+				font-size: 14px;
+				text-decoration: none;
+				margin-top: 10px;
+				margin: 0 auto;
+			}
+			#fileBtn{
+				height: 30px;
+				cursor: pointer;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="headerwrapper"></div>
+		<div class="contentdata">
+			<div class="leftnav">
+				<a class="clickclass" href="mydata.html">个人资料</a>
+				<a href="javascript:void(0);">我的家</a>
+			</div>
+			<form id="form1">
+				<div class="contentnav">
+					<label class="datatitle"> 修改头像</label>
+					<div class="uploadimg">
+						<a id="upLoadBtn" class="file" style="cursor: pointer;">上传头像
+							<input type="file" id="fileBtn" name="file"  onchange="addPreview(this,'imgs')" accept="image/jpeg,image/png,image/gif">
+						</a> 仅支持JPG,GIF,PNG,BMP格式，文件小于4M
+					</div>
+					<div class="imgdiv">
+						<div class="bigimg">
+							<img class="imgs" src="../img/person/组-1.png"/>
+						</div>
+						<div class="smallimg">
+							<div class="seeimg">效果预览</div>
+							<div class="xiaoguo">你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰</div>
+							<img class="imgs" src="../img/person/组1-11.png">
+							<div class="imgsize">100x100像素</div>
+						</div>
+					</div>
+					<div style="clear: both;" id="imgSubmitBtn">
+						<a href="javascript:void(0);" class="baocunbtn">修改</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="footerwrapper"></div>
+		
+		<div class="shade"></div>
+		<!--弹框提示-->
+		<div class="updataimg">
+			<span>修改头像成功</span>
+			<a href="mydata.html">确定</a>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script src="../js/ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../js/jquery.form.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/config.js" ></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".leftnav a").click(function() {
+				$(this).addClass("clickclass").siblings().removeClass("clickclass");
+			});
+		});
+		var imgs = JSON.parse(localStorage.getItem('userInfo'));
+		function addPreview(source, className) {
+			console.log(source);
+			var file = source.files[0];
+			if (window.FileReader) {
+				var fr = new FileReader();
+				fr.onloadend = function(e) {
+					$("." + className).attr("src", e.target.result);
+				};
+				fr.readAsDataURL(file);
+			}
+		}
+		$(".baocunbtn").click(function(){
+			if($('#fileBtn').val().length == 0){
+				alert('请上传照片')
+			}else{
+			$("#form1").ajaxSubmit({
+			     type:'post',
+			     url:'http://101.201.222.160:8083/lzj-image/upload/submit',
+			     dataType:"json",
+			     success:function(json){
+			     	if(json.api_code == 0){
+			     		updatimg(json.api_data.url[0]);
+			     		$(".updataimg").show();
+			     		$(".shade").show();
+			     		$(".shade").click(function(){
+			     			$(this).hide();
+			     			$(".updataimg").hide();
+			     		})
+			     	}
+			     	
+				},
+				error:function(){
+				}
+		  	});
+		  }
+		});
+		
+		function updatimg(img){
+			
+			$.ajax({
+						type:"get",
+						url:ip+'/api/member/profile/edit',
+						async:true,
+						dataType:"json",
+						data:{
+							memberId:imgs.memberId,
+							avatar:img
+						},
+						success:function(json){
+							console.log(json);
+						},
+						error:function(){}
+					});
+			
+		}
+	</script>
+
+</html>

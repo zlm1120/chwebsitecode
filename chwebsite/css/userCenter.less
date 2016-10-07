@@ -1,0 +1,370 @@
+.contentwrapper{
+    padding: 20px 0px;
+}
+.leftBar{
+    width: 250px;
+    height: 500px;
+    background: #eee;
+    display: inline-block;
+    vertical-align: top;
+    ul{
+        padding-top: 30px;
+        li{
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            padding: 5px 0px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        li.active{
+            border-left: 4px solid #01BF71;
+            color: #01BF71;
+        }
+    }
+}
+
+.content{
+    margin-left: 20px;
+    width: 820px;
+    display: inline-block;
+    vertical-align: top;
+    ul{
+        overflow: hidden;
+        padding-top: 1px;
+        padding-left: 1px;
+        li{
+            float: left;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+            margin-left: -1px;
+            margin-top: -1px;
+            cursor: pointer;
+            outline: none;
+        }
+        li.active{
+            color: #fff;
+            background: #01BF71;
+        }
+    }
+    .tapGroup{
+        width: 100%;
+        .item{
+            margin-bottom: 30px;
+        }
+        .itemTitle{
+            b{
+                font-size: 16px;
+                color: #666;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .iconOrange{
+                background: #F1A400;
+                .leftSanIcon{
+                    border-right: 5px solid #F1A400;
+                }
+            }
+            .iconBlack{
+                background: #333;
+                .leftSanIcon{
+                    border-right: 5px solid #333;
+                }
+            }
+            .iconGreen{
+                background: #01BF71;
+                .leftSanIcon{
+                    border-right: 5px solid #01BF71;
+                }
+            }
+            div.tips{
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                height: 20px;
+                padding: 0px 5px;
+                line-height: 20px;
+                text-align: center;
+                font-size: 12px;
+                color: #fff;
+                border-radius: 3px;
+                margin-left: 10px;
+            }
+            .leftSanIcon{
+                width: 0px;
+                height:0px;
+                position: absolute;
+                left: -5px;
+                top: 5px;
+                border-top:5px solid transparent;
+                border-bottom:5px solid transparent;
+                border-right: 5px solid #fff;
+            }
+            
+        }
+        div.time{
+            color: #999;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #666;
+            margin: 0px 0px 5px;
+        }
+        div.remarks{
+            font-size: 14px;
+            color: #999;
+            padding: 0px 0px 15px;
+        }
+        
+        div.operaGroup{
+            padding: 15px 0px;
+            .button{
+                padding: 5px 15px;
+                border: 1px solid #dbdbdb;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                margin-right: 5px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .btnGreen{
+                color: #01BF71;
+            }
+            .btnOrange{
+                color: #F1A400;
+            }
+        }
+    }
+}
+
+//图片样式
+div.imgGroup{
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+}
+
+.repairDetail{
+    width: 100% !important;
+    .tapGroup{
+        font-size: 18px;
+        color: #333;
+        .item{ 
+            padding-left: 160px;
+            .starBox{
+                margin: 0px 0px 5px;
+                i{
+                    margin-right: 1px;
+                }
+            }
+            .itemTitle div.tips{
+                float: left;
+                margin-left: -120px;
+                margin-top: 20px;
+                .rightSanIcon{
+                    width: 0px;
+                    height: 0px;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-left: 5px solid #fff;
+                    position: absolute;
+                    right: -5px;
+                    top: 5px;
+                    
+                }
+                
+            }
+            .iconOrange{
+                background: #F1A400 !important;
+                .rightSanIcon{
+                    border-left: 5px solid #F1A400 !important;
+                }
+            }
+            .iconBlack{
+                background: #333 !important;
+                .rightSanIcon{
+                    border-left: 5px solid #333 !important;
+                }
+            }
+            .iconGreen{
+                background: #01BF71 !important;
+                .rightSanIcon{
+                    border-left: 5px solid #01BF71 !important;
+                }
+            }
+            .circle{
+                border: 1px solid #fff;
+                background: #fff;
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                text-align: center;
+                line-height: 30px;
+                margin-left: -50px;
+                margin-top: 15px;
+                float: left;
+                position: relative;
+                z-index: 100;
+                .smallCircle{
+                    margin: 0 auto;
+                    margin-top: 4px;
+                    width: 20px;
+                    height: 20px;
+                    background: #FE8202;
+                    border-radius: 10px;
+                }
+            }
+            .cOrange{
+                border: 1px solid #FE8202;
+                .smallCircle{
+                    background: #FE8202;
+                }
+            }
+            .cGreen{
+                border: 1px solid #01BF71;
+                .smallCircle{
+                    background: #01BF71;
+                }
+            }
+            .status{
+                font-size: 24px;
+                color: #FE8202;
+                padding: 0px 0px 10px;
+            }
+        }
+    }
+}
+.line{
+    width: 1px;
+    height: 0px;
+    border-left: 1px solid #999;
+    position: absolute;
+    left: 144px;
+}
+//评价
+.eval{
+    width: 100%;
+    h1{
+        font-size: 18px;
+        color: #333;
+    }
+    div.eval-time{
+        font-size: 14px;
+        color: #666;
+        margin: 0px 0px 10px;
+    }
+    div.evalText{
+        border: 1px solid #dbdbdb;
+        padding: 20px;
+        h2{
+            font-size: 16px;
+            color: #666;
+            margin: 0px;
+        }
+        p{
+            padding: 0px;
+            margin: 0px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        div.remarks{
+            color: #999;
+            margin: 0px 0px 10px;
+        }
+    }
+    .evalContent .item{
+        padding: 10px 0px;
+        padding-left: 95px;
+       .starBox{
+           i{
+               margin-right: 1px;
+               cursor: pointer;
+           }
+           span{
+               display: inline-block;
+               vertical-align: middle;
+               color: #999;
+           }
+       }
+        div.title{
+            margin-left: -95px;
+            text-align: right;
+            width: 90px;
+            float: left;
+            font-size: 16px;
+            color: #666;
+            font-weight: bold;
+        }
+        textarea{
+            resize: none;
+            width: 700px;
+            height: 120px;
+            padding: 10px;
+            border: 1px solid #dbdbdb;
+        }
+        .areaBox{
+            position: relative;
+            width: 710px;
+            .fontNum{
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+                color: #999;
+            }
+        }
+        .upDefalut{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tips{
+            display: inline-block;
+            vertical-align: -27px;
+            color: #999;
+            margin-left: 5px;
+        }
+        .submit{
+            padding: 5px 10px;
+            color: #fff;
+            background: #01BF71;
+            font-size: 14px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
+.leftBar ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.leftBar ul li.active a{
+    color: #01BF71;
+}
+.itemTitle{
+    position: relative;
+}
+.itemTitle .tips .Atitle{
+    color: #01BF71 !important;
+}
+
+.adStatus {
+    position: absolute;
+    right: 0px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.profile{
+    padding-bottom: 50px;
+}

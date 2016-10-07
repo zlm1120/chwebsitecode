@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<!--<base href="/chwebsite/" />-->
+		<link rel="stylesheet" type="text/css" href="css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			header .comm1100{
+				display: none;
+			}
+			header img.logo{
+				margin: 10px 0px;
+			}
+			.alertBox p{
+				margin: 28px 0px;
+				font-size: 16px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="loginBox" class="comm1100">
+				<a href="index.html"><img src="img/index/logo.png" class="logo"/></a>
+				<div class="userOpera">
+				<div class="item">
+					<a href="01Login/Login.html">
+						<img src="img/index/User.png"/>
+						<span>登录</span>
+					</a>
+				</div>
+				<div class="item">
+					<a href="01Login/Rigister.html">
+						<img src="img/Create-New.png"/>
+						<span>注册</span>
+					</a>
+				</div>
+			</div>
+		
+			</div>
+			<div id="hasLogin" class="comm1100">
+				<a href=""><img class="logo" src="img/index/logo.png"/></a>
+				<div class="menuBar">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="product/index.html">物业周边</a></li>
+						<li><a href="product/cheap.html">抢相应</a></li>
+						<li><a href="payment/index.html">物业缴费</a></li>
+						<li><a class="repair" style="cursor: pointer;">物业报修<i class="bottomIcon" style="margin-left: 5px;"></i></a>
+							<div class="dropList">
+								<div class="topBar"></div>
+								<ul>
+									<li><a href="repair/repair.html">物业报修</a></li>
+									<li><a href="repair/advance.html">投诉建议</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="convenience/index.html">便民</a></li>
+					</ul>
+					<img class="userImg" src="img/avator.png"/>
+					<span class="userName" style="color: #fff;cursor: pointer;">SB张勇</span>
+					<i class="bottomIcon"></i>
+					<div class="floatUser">
+						<div class="topSanJiao">
+							
+						</div>
+						<dl>
+							<dd><a href="person/index.html#/center/9">个人资料</a></dd>
+							<dd><a href="person/index.html#/collect/13">我的收藏</a></dd>
+							<dd><a href="person/index.html#/index.html#/1">通知公告</a></dd>
+							<dd>	<a id="logout">退出登录</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		
+		</header>
+		<section class="section1">
+			<div class="text">
+				<h1>乐智家智慧社区业务范畴</h1>
+				<div class="introText">乐智家物业智慧社区平台是为了解决传统物业公司服务、盈利单一的问题，以智慧城市为战略大背景，打造“物业+互联网”的新物业模式。为业主提供物业、商业、生活服务。让业主在享受到更快捷、贴心的物业服务同时，能通过平台与邻居交流互动、发现周边优惠、找到认证商家、在线购买特价商品、在线缴纳各种费用等。 </div>
+				<img class="bottom" src="img/index/bottom.png" alt="向下" />
+			</div>
+		</section>
+		<section class="section2">
+			<div class="IconTips">
+				<a href="product/index.html">
+				<dl>
+					<dt><img src="img/index/zoom1.png"/></dt>
+					<dd class="title">物业周边</dd>
+					<dd>方便快捷地在系统上实现购买小区周边商品与服务</dd>
+				</dl>
+				</a>
+				<a href="payment/index.html">
+				<dl>
+					<dt><img src="img/index/zoom2.png"/></dt>
+					<dd class="title">物业缴费</dd>
+					<dd>平台用户可以线下缴费物业相关费用，也可以先上完成同样的操作。</dd>
+				</dl>
+				</a>
+				<a href="repair/repair.html">
+				<dl>
+					<dt><img src="img/index/zoom3.png"/></dt>
+					<dd class="title">预约报修</dd>
+					<dd>用户可以对自己的报修分类标签，例如电路维修、水管维修等。</dd>
+				</dl>
+				</a>
+				<a href="product/cheap.html">
+				<dl>
+					<dt><img src="img/index/zoom4.png"/></dt>
+					<dd class="title">通知公告</dd>
+					<dd>物业公告包括停电、停水、放假等公告</dd>
+				</dl>
+				</a>
+				<a href="convenience/index.html">
+				<dl>
+					
+					<dt><img src="img/index/zoom5.png"/></dt>
+					<dd class="title">便民</dd>
+					<dd>周边政务、快递公司、交通查询、应急开锁</dd>
+					
+				</dl>
+				</a>
+			</div>
+		
+			<div class="selectOption">
+				<input type="text" class="selectArea" value="家政服务" id="optionParent"/>
+				<!--<div class="optionDiv">
+					<option>周边服务</option>
+					<option>周边服务</option>
+				</div>-->
+				<input type="text" class="inputArea" placeholder="请输入周边商家名称" id="optionContent"/>
+				<button class="searchBtn green">搜索</button>
+				
+			</div>
+		</section>
+		<section class="section3">
+			<div class="comm1100">
+				<h1>合作商家</h1>
+				<p>一句简要描述合作伙伴的话，一句简要描述合作伙伴的话，一句简要描述合作伙伴的话，</p>
+				<div class="ppList">
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					<div class="item">
+						<img src="img/index/pp.png"/>
+						<span></span>
+					</div>
+					
+				</div>
+			</div>
+			
+		</section>
+		
+		<section class="section4">
+			<div class="comm1100">
+				<h1>
+					有什么要告诉我们？
+				</h1>
+				<div class="itemText">
+					我们秉持尊重客户和理解客户的服务原则，向客户提供超越期望的产品和服务，与客户建立长期的情感连接纽带，致力于帮助客户实现更美好的生活体验和最大的综合价值。
+				</div>
+				<div class="opera">
+					<img src="img/index/repair.png"/>
+					<img src="img/index/advance.png"/>
+				</div>
+				
+				<div class="xcode">
+					<div class="codeImg">
+					<img src="img/index/xcode.png"/>
+					</div>
+					<p>扫面下载APP</p>
+					<p>获取更多体验</p>
+				</div>
+			</div>
+		</section>
+		
+		<div class="footer">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/controller.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//隐藏光标
+			$("#optionParent").focus(function(){
+				$(this).attr("readonly",true);
+			});
+			
+			var user = JSON.parse(localStorage.getItem('userInfo'));
+			if(user == null) {
+				$("#loginBox").show();
+			} else {
+				if(user.avatar != '') {
+					$(".userImg").attr('src', user.avatar);
+				} else {
+					$(".userImg").attr('src', 'img/avator.png');
+				}
+				$(".userName").html(user.name)
+				$("#hasLogin").show();
+			}
+			//下拉框
+			$(function(){
+				$("#optionParent").click(function(){
+					$("div.optionDiv").css('display')=='block' ? $("div.optionDiv").hide(): $("div.optionDiv").show();
+				});
+				$("div.optionDiv option").click(function(){
+					var content=$(this).text();
+					$(this).parent().parent().find("#optionParent").val(content);
+					if($("#optionParent").val() != ""){
+						$(this).parent().hide();
+					}
+				});
+			});
+			
+			var userIsLogin = JSON.parse(localStorage.getItem('userInfo'));
+			$(".IconTips a").click(function(e){
+				clickIsLogin(e)
+			})
+			function clickIsLogin(e){
+				if(userIsLogin == null && $(this).index() != 0){
+					alertBox('您还未登录!',1)
+					e.preventDefault();
+					$(".onlyConfirm").click(function(){
+						window.location.href = '01Login/Login.html';
+					})
+				}	
+			}
+			
+			$(".opera").click(function(e){
+				var index = $(this).index();
+				if(userIsLogin == null){
+					alertBox('您还未登录!',1)
+					e.preventDefault();
+					$(".onlyConfirm").click(function(){
+						window.location.href = '01Login/Login.html';
+					})
+				}else{
+					if(index == 0){
+						window.location.href = 'repair/repair.html'
+					}else{
+						window.location.href = 'repair/advance.html'
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/product.css"/>
+	</head>
+	<body ng-app="webApp">
+		<header class="productIndex">
+			<div class="commHead">
+				
+			</div>
+			<div class="selectOption">
+				<input type="text" class="selectArea" value="家政服务"/>
+				<input type="text" class="inputArea" placeholder="请输入周边商家名称" />
+				<button class="searchBtn green">搜索</button>
+			</div>
+		</header>
+		<section class="section1" ng-controller="merchantCategory" ng-cloak>
+			<div class="title">
+				<div class="text1">周边商业</div>
+				<div class="text2">English Name</div>
+			</div>
+			<div class="menu">
+				<ul>
+					<li ng-click="categoryPro('',0)"><span ng-class="{active:0 == cateIndex}">全部</span></li>
+					<li ng-repeat="cate in categorys"ng-click="categoryPro(cate.categoryName,$index+1)">
+						<span ng-class="{active:$index+1 == cateIndex}">{{cate.categoryName}}</span>
+					</li>
+					 <!--ng-if="$index<7"-->
+					<!--<li ng-repeat="cate in categorys" ng-click="categoryPro(cate.categoryName,$index)" ng-if="$index>=7" ng-hide="showList">
+						<span ng-class="{active:$index == cateIndex}">{{cate.categoryName}}</span>
+					</li>-->
+				</ul>
+				<!--<em ng-click="more()" ng-if="categorys.length > 7 ">more</em>-->
+			</div>
+			
+			<div class="content">
+				<div class="comm1100">
+					<div class="item" ng-repeat="mer in merchants" ng-if="$index < 9 " ng-class="{right:stoneOdd == ($index-($index%3))/3 % 2}">
+						
+						<div class="itemStone" ng-if="stoneEven == ($index-($index%3))/3 % 2">
+							<img class="bessImg" ng-src="{{mer.avatar}}" />
+							<a href="storeIndex.html?merId={{mer.merchantId}}">
+								<div class="intro">
+									<h1 class="mui-ellipsis">{{mer.name}}</h1>
+									<div class="heartBox" starnum score="{{mer.merchantScore}}" ></div>
+									<div class="groupOffet">
+										<div class="leftIcon">
+											
+										</div>
+										<div class="groupText">										
+											<div class="address">
+												<p><img src="../img/dingwei.png"/>{{mer.address}}</p>
+												<!--<em>1.3km</em>-->
+											</div>
+										</div>
+										<div class="groupText">
+											<img src="../img/dianhua.png"/>
+											<div class="cellPhone">
+												{{mer.mobile}}
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						
+						<div class="itemStone" ng-if="stoneOdd == ($index-($index%3))/3 % 2">
+							<a href="storeIndex.html?merId={{mer.merchantId}}">
+								<div class="intro">
+									<h1 class="mui-ellipsis">{{mer.name}}</h1>
+									<div class="heartBox" starnum score="{{mer.merchantScore}}" ></div>
+									<div class="groupOffet">
+										<div class="rightIcon">
+											
+										</div>
+										<div class="groupText">
+											<img src="../img/dingwei.png"/>
+											<div class="address">
+												<p><img src="../img/dingwei.png"/>{{mer.address}}</p>
+												<!--<em>1.3km</em>-->
+											</div>
+										</div>
+										<div class="groupText">
+											<img src="../img/dianhua.png"/>
+											<div class="cellPhone">
+												{{mer.mobile}}
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<img class="bessImg" src="../img/product/imgEx.png" />
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		<div class="seemore">
+			<a href="javascript:void(0);">查看更多</a>
+		</div>
+		<section class="section2" ng-controller="grouponController" ng-cloak>
+			<div class="title">
+				<div class="text1">周边团购</div>
+				<div class="text2">English Name</div>
+			</div>
+			<div class="content">
+				<div class="comm1100">
+					<div class="itemPro" ng-repeat="gro in groupon" >
+						<img class="ImgPro" ng-src="{{gro.image}}"/>
+						<div class="textBox">
+							<p>{{gro.productName}}</p>
+							<div class="priceGroup">
+								<div class="price">
+									<em class="orange">{{pro.productPrice | currency }}</em>
+									<del>{{pro.productOriginalPrice | currency }}</del>
+								</div>
+								<div class="lessDay">
+									还有<em class="orange">03</em>天结束
+								</div>
+							</div>
+							<div class="operaGroup">
+								<button>立即抢购</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="pageSite">
+				<img class="" src="../img/2.png"/>
+				<i class="active">1</i>
+				<i>2</i>
+				<span>……</span>
+				<i>9</i>
+				<i>10</i>
+				<img class="" src="../img/1.png"/>
+			</div>
+				
+		</section>
+		
+		
+		<div class="footer" style="position:relative;">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+		
+		
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular.min.js"  type="text/javascript"  ></script>
+		<script src="../js/config.js"       type="text/javascript" charset="utf-8"></script>
+		<script src="../js/productIndexController.js" type="text/javascript"></script>
+		<style type="text/css">
+			.buttonOpera button.gary{
+				background-color: #DDDDDD !important;
+			}
+		</style>
+	</body>
+</html>

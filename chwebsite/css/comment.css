@@ -1,0 +1,798 @@
+/*
+ * 公共的样式表
+ */
+html,
+body {
+  /*height: 100%;*/
+}
+body {
+  min-width: 1100px;
+  height: 100%;
+  font-size: 14px;
+  color: #333;
+  font-family: "微软雅黑";
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+a{
+	color: #333;
+}
+em,
+b,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+.comm1100 {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+/*
+ * 色值
+ */
+.green{
+	background: #01BF71;
+}
+em.orange{
+	color: #FE8202;
+	display: inline-block;
+	vertical-align: middle;
+}
+em.red{
+	color: #fe0202;
+}
+em.greenText{
+	color: #01BF71;
+}
+del{
+	font-size: 14px;
+	font-weight: normal;
+	color: #666;
+}
+
+[ng-cloak] {display: none;}
+/*
+ * 提示信息 style
+ */
+.valid-error-message {
+  color: red !important;
+}
+/*
+ * 登录注册的主要主体部分的公共背景样色和主体内容的大小和水平居中
+ */
+.rigisterwrapper {
+ /* width: 100%;
+  height: 100%;*/
+  background-color: #f0f1f4;
+}
+.rigistermain {
+  width: 1100px;
+  background-color: #FFFFFF !important;
+  margin: 0 auto;
+}
+/*
+ * 修改登录注册的输入框的文字2样色
+ */
+::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 12px !important;
+  font-family: "微软雅黑";
+}
+:-moz-placeholder {
+  color: #cccccc;
+  font-size: 12px !important;
+  font-family: "微软雅黑";
+}
+:-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 12px !important;
+  font-family: "微软雅黑";
+}
+/*
+ * 登录注册的提交按钮的样式
+ */
+.submitbtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #01BF71;
+  outline: none;
+  border: 0px !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/*
+ * 单选框的模拟样式
+ */
+.autologin {
+  display: inline-block;
+  text-align: left;
+}
+.autologin input[type="radio"] {
+  margin: 3px 3px 0px 5px;
+  display: none;
+}
+.autologin label {
+  padding-left: 20px;
+  cursor: pointer;
+  background: url(../img/椭圆-1.png) no-repeat left center;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #01bf71;
+}
+.autologin label.checked {
+  background-position: left bottom;
+  background: url(../img/登录1_03.png) no-repeat left center;
+}
+
+
+/*
+ * 复选框的模拟样式
+ */
+.checkboxcomm {
+  display: inline-block;
+}
+.checkboxcomm input[type="checkbox"] {
+  margin: 3px 3px 0px 5px;
+  display: none;
+}
+.checkboxcomm label {
+  padding-left: 20px;
+  cursor: pointer;
+  background: url(../img/椭圆-2.png) no-repeat left center;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #01bf71;
+}
+.checkboxcomm label.checked {
+  background-position: left bottom;
+  background: url(../img/注册_03.png) no-repeat left center;
+}
+
+label.fill{
+	display: inline-block;
+	padding-left: 30px;
+	cursor: pointer;
+	background:  url(../img/noTick.png) no-repeat left center / 26px 26px;
+}
+label.fill.checked{
+	display: inline-block;
+	padding-left: 30px;
+	cursor: pointer;
+	background:  url(../img/Tick.png) no-repeat left center / 26px 26px;
+}
+
+label.radio{
+	padding-left: 20px;
+  cursor: pointer;
+  background: url(../img/椭圆-1.png) no-repeat left center;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #01bf71;
+}
+label.radio.checked{
+	 background-position: left bottom;
+  background: url(../img/登录1_03.png) no-repeat left center;
+}
+
+
+/*
+ * 点击输入框的时候边框样式和字体样式
+ */
+.form-group .activeinput {
+  color: #333333 !important;
+  font-size: 18px !important;
+  border: 1px solid #01BF71;
+ }
+ /*
+  * input
+  */ 
+input{
+	border: 1px solid #ccc;
+	outline: none;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+	color: #999; 
+	font-size: 12px;
+	font-weight: normal;
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: #999;
+	font-size: 12px;
+	font-weight: normal; 
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+	color: #999; 
+	font-size: 12px;
+	font-weight: normal;
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	color: #999; 
+	font-size: 12px;
+	font-weight: normal;
+} 
+
+/*
+ * 页底
+ */
+.footer{
+	width: 100%;
+	height: 60px;
+	background: #333;
+	position: fixed;
+	bottom: 0px;
+}
+.footer p{
+	line-height: 60px;
+	font-size: 12px;
+	color: #858585;
+	height: 60px;
+	text-align: center;
+}
+
+
+/*
+ * 页头
+ */
+header img.logo {
+  width: auto;
+  height: auto;
+  margin: 10px 0px;
+}
+
+/*三角角标
+ * 
+ */
+.bottomIcon{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/bottomWhite.png);
+	width: 9px;
+	height: 6px;
+}
+.smallBtm{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/smallBottom.png) no-repeat;
+	width: 9px;
+	height: 6px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+/*
+ * 心形图标
+ */
+i.redHeart{
+	background: url(../img/product/redHeart.png) no-repeat center center;
+	display:inline-block;
+	vertical-align: middle;
+	height: 14px;
+	width: 14px;
+	margin-right: 5px;
+}
+i.greyHeart{
+	background: url(../img/product/greyHeart.png) no-repeat center center;
+	display: inline-block;
+	vertical-align: middle;
+	height: 14px;
+	width: 14px;
+	margin-right: 5px;
+}
+/*
+ * 分页
+ */
+.pageSite{
+	padding: 20px 0px;
+	text-align: center;
+}
+.pageSite img{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+.pageSite i{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 10px;
+	font-size: 18px;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+}
+.pageSite i.active{
+	
+	background: #01BF71;
+	color: #fff;
+}
+.pageSite span{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 10px;
+}
+
+/*
+ * 公共菜单
+ */
+.menuBar{
+    float: right;
+    padding: 10px 0px;
+    position: relative;
+}
+.menuBar ul{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.menuBar ul li{
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 24px;
+    float: left;
+    position: relative;
+}
+.menuBar ul li.active{
+    border-bottom: 2px solid #fff;
+}
+.menuBar ul li a{
+    font-size: 18px;
+    color: #fff;
+}
+
+/*
+ * 遮罩
+ */
+div.shade{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 998;
+	display: none;
+	background: rgba(0,0,0,.5);
+}
+
+
+/*
+ * 公共菜单部分
+ */
+div.menu {
+  text-align: center;
+  padding: 30px 0px;
+}
+div.menu ul {
+  overflow: hidden;
+  width: 700px;
+  margin: 0 auto;
+}
+div.menu ul li {
+  float: left;
+  width: 140px;
+}
+div.menu ul li span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+div.menu ul li span.active {
+  background: #fe8202;
+  color: #fff;
+  font-size: 18px;
+}
+.mainbody{
+	width: 1100px;
+	min-width: 1100px;
+	margin: 0 auto;
+}
+
+
+/*
+ * 个人资料修改
+ */
+.contentdata{
+	overflow: hidden;
+	width: 1100px;
+	min-width: 1100px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.contentnav{
+	padding-bottom: 30px;
+}
+.leftnav{
+	float:left
+	width: 248px;
+	height: 100%;
+	background-color:#eeeeee;
+}
+.leftnav  a{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #333333;
+	display: block;
+	text-align: left;
+	padding-left: 65px;
+	margin-top: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+a:hover{
+	text-decoration: none;
+}
+a.clickclass{
+	border-left: 3px solid #01BF71;
+	color: #01BF71 !important;
+	text-decoration: none !important;
+}
+
+.contentnav{
+	width: 828px;
+	/*border: 1px solid #E6E6E6;*/
+	margin-left: 18px;
+	padding-left: 22px;
+	font-family: "微软雅黑";
+	padding-top: 22px;
+}
+
+header a{
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+}
+header .menuBar{
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	line-height: 40px;
+}
+header .menuBar .userImg{
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+header .menuBar{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.floatUser{
+	width: 90px;
+	position: absolute;
+	right: -10px;
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+	z-index: 999;
+}
+.topSanJiao{
+	width: 0px;
+	height:0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	position: absolute;
+	top: -5px;
+	right: 10px;
+}
+
+.floatUser dl dd{
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #dbdbdb;
+	cursor: pointer;
+	font-size: 14px;
+}
+.floatUser dl dd a{
+	color: #333 !important;
+}
+.floatUser dl dd:hover a{
+	color: #FE8202 !important;
+}
+
+
+/*//弹窗*/
+.alertMsg{
+	width: 300px;
+
+	line-height: 30px;
+	direction: down;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-left: -150px;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #DBDBDB;
+	z-index: 999;
+}
+.alertMsg p{
+	/*line-height: 20px;*/
+}
+/*.footerwrapper{
+	width: 100%;
+	height: 60px;
+}*/
+.contentwrapper {
+	padding-bottom: 60px;
+}
+.alertBox{
+	/*display: none;*/
+	position: fixed;
+	width: 400px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	z-index: 9999;
+	background: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 3px rgba(0,0,0,.1);
+}
+.alertBox h1{
+	text-align: center;
+	font-weight: normal;
+	line-height: 60px;
+	font-size: 22px;
+}
+.alertBox p{
+	padding: 0px 40px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+}
+.alertBox .opera{
+	width: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 20px 0px;
+	text-align: center;
+}
+.alertBox .opera span{
+	cursor: pointer;
+}
+.alertBox .onlyConfirm{
+	background: #01BF71;
+	padding: 5px 12px;
+	border-radius: 5px;
+	color: #fff;
+}
+.alertBox .confirm{
+	padding: 5px 12px;
+	float: left;
+	/*border: 1px solid #dbdbdb;*/
+	background: #01BF71;
+	border-radius: 5px;
+	color: #fff;
+}
+.alertBox .cancel{
+	float: right;
+	padding: 5px 0px;
+}
+.dropList{
+	display: none;
+	position: absolute;
+	background: #fff;
+	border: 1px soild #dbdbdb;
+	border-radius: 5px;
+	right: -10px;
+	z-index: 999;
+}
+.menuBar .dropList ul{
+	margin: 0px;
+}
+.menuBar .topBar{
+	width: 0px;
+	height: 0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	position: absolute;
+	top: -4px;
+	right: 10px;
+	z-index: 999;
+}
+.menuBar .dropList ul li{
+	border-top: 1px solid #dbdbdb;
+	float: none;
+	margin:0px 10px;
+}
+.menuBar .dropList ul li a{
+	color: #333;
+	font-size: 12px;
+}
+.floatUser dl{
+	margin-bottom: 0px !important;
+}
+.houseChoose{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+}
+.houseChoose span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-left: 15px;
+	color: #fff;
+}
+.houseChoose i{
+	display: inline-block;
+	vertical-align: middle;
+}
+.floatHouse{
+	position: absolute;
+	right: -10px;
+	background: #fff;
+	border-radius: 5px;
+	z-index: 999;
+	padding: 0px 10px;
+}
+.floatHouse dl{
+	margin: 0px;
+}
+.floatHouse dl dd{
+	border-top: 1px solid #dbdbdb;
+	/*margin-top: -1px;*/
+	height: 40px;
+	line-height: 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.floatHouse dl dd:first-child{
+	border-top: 0px;
+	
+}
+.floatHouse .topSan{
+	width: 0px;
+	height: 0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	top: -5px;
+	right: 10px;
+	position: absolute;
+}
+.userBox{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.menuBar ul li a{
+	font-size: 14px !important;
+}
+.userName{
+	cursor: pointer;
+	color: #fff;
+}
+.estate-tips{
+	background: #f7f7f7;
+	/*border-top: 1px solid #dbdbdb;*/
+	color: #D20C1C;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	width: 700px;
+	left: 400px;
+	bottom: 12px;
+}
+.chooseHouse{
+	position: absolute;
+	right: 0px;
+	border: 1px solid #dbdbdb;
+	padding: 0px 15px;
+	background: #fff;
+	top: 20px;
+	/*width: 200px;*/
+	z-index: 999;
+	border-radius: 5px;
+	display: none;
+}
+.selectHouse .change{
+	display: inline-block;
+	position: relative;
+}
+.chooseHouse .triggleTop{
+	width: 0px;
+	height: 0px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #dbdbdb;
+	position: absolute;
+	top: -8px;
+	right: 10px;
+}
+.chooseHouse .triggleTop2{
+	width: 0px;
+	height: 0px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	position: absolute;
+	top: -6px;
+	right: 10px;
+}
+.chooseHouse dd{
+	border-bottom: 1px solid #dbdbdb;
+	padding: 10px 0px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+}
+.chooseHouse dd:last-child{
+	border-bottom: 0px;
+}
+.chooseHouse dd.active{
+	color: #01BF71;
+}
+.location span{
+	position: relative;
+}
+.location{
+	position: relative;
+	padding: 15px 0px !important;
+}
+.location span{
+	font-size: 14px !important;
+	/*color: #999;*/
+}
+.location-change em{
+	margin-right: 5px;
+	color: #999;
+	display: inline-block !important;
+	padding: 0px;
+}
+.repairOrange{
+	color: #F1A400;
+}
+.repairBlack{
+	color: #999;
+}
+.repairGreen{
+	color: #01BF71;
+}
+
+.mui-ellipsis{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

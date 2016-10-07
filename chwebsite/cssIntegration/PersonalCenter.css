@@ -1,0 +1,90 @@
+.contentdata .payPwd {
+  margin: 0 auto;
+}
+.contentdata .payPwd em.pwdinfor {
+  display: block;
+  font-size: 12px;
+  color: red;
+  font-family: "微软雅黑";
+  padding-top: 5px;
+  text-align: left;
+  padding-left: 375px;
+}
+.contentdata .payPwd h1 {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contentdata .payPwd .item {
+  padding: 10px 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 70px;
+}
+.contentdata .payPwd .item span {
+  width: 130px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 20px;
+}
+.contentdata .payPwd .item input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  width: 255px;
+}
+.contentdata .payPwd .opera {
+  text-align: center;
+}
+.contentdata .payPwd .opera button {
+  padding: 10px 25px;
+  margin: 20px;
+}
+.contentdata .payPwd .opera button.confirm {
+  background: #01BF71;
+  color: #fff;
+  border: 0;
+}
+.contentdata .payPwd .opera button.cancel {
+  border: 0;
+  background: #fff;
+}
+.contentdata .payPwd b {
+  background-color: #01BF71;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: "微软雅黑";
+  width: 65px;
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  height: 37px;
+  line-height: 37px;
+  font-weight: normal;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.contentdata .payPwd .modeChange .title {
+  text-align: center;
+  font-size: #000;
+  font-family: "微软雅黑";
+  margin-bottom: 25px;
+}
+.contentdata .payPwd .modeChange .title span {
+  display: inline-block;
+  padding: 0px 15px;
+  padding-bottom: 10px !important;
+  cursor: pointer;
+}
+.contentdata .payPwd .modeChange .title span.active {
+  border-bottom: 3px solid #01BF71;
+}
+.contentdata .payPwd .modeChange .item label {
+  width: 200px;
+  text-align: left;
+}
+/*# sourceMappingURL=PersonalCenter.css.map */

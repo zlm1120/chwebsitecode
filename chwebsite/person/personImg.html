@@ -1,0 +1,78 @@
+<style type="text/css">
+	#imgSubmitBtn a{
+		display: block;
+		background-color:#01BF71;
+	    font-size: 14px;
+	    color: #fff;
+	    width: 120px;
+	    height: 35px;
+	    line-height: 35px;
+	    text-align: center;
+	    font-weight: normal;
+	    border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    text-decoration: none;
+	}
+	.updataimg{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 310px;
+		height: 110px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		background-color: #FFFFFF;
+		font-size: 14px;
+		color: #000000;
+		font-family: "微软雅黑";
+		line-height: 55px;
+		text-align: center;
+		display: none;
+		z-index: 9999;
+		transform: translate(-50%, -50%);
+	}
+	.updataimg a{
+		display: block;
+		width: 50px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #01BF71;
+		color: #FFFFFF;
+		font-size: 14px;
+		text-decoration: none;
+		margin-top: 10px;
+		margin: 0 auto;
+	}
+	#fileBtn{
+		height: 30px;
+		cursor: pointer;
+		font-size: 12px;
+	}
+</style>
+<form id="form1" ng-controller="updatauserimg">
+	<div class="contentnav">
+		<label class="datatitle"> 修改头像</label>
+		<div class="uploadimg">
+			<a id="upLoadBtn" class="file" style="cursor: pointer;">上传头像
+						
+			</a> 仅支持JPG,GIF,PNG,BMP格式，文件小于4M
+			<input type="file" id="fileBtn" name="file" onchange="addPreview(this,'imgs')"  accept="image/jpeg,image/png,image/gif" style="display: none">
+		</div>
+		<div class="imgdiv">
+			<div class="bigimg">
+				<img class="imgs" src="../img/person/组-1.png"/>
+			</div>
+			<div class="smallimg">
+				<div class="seeimg">效果预览</div>
+				<div class="xiaoguo">你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰</div>
+				<img class="imgs" src="../img/person/组1-11.png">
+				<div class="imgsize">100x100像素</div>
+			</div>
+		</div>
+		<div style="clear: both;" id="imgSubmitBtn">
+			<a href="javascript:void(0);" class="baocunbtn">修改</a>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,28 @@
+.personcollect {
+  overflow: hidden;
+  padding-top: 30px;
+}
+.personcollect .collectlist {
+  overflow: hidden;
+  margin-bottom: 10px !important;
+  margin: 0 auto;
+  width: 500px;
+}
+.personcollect .collectlist img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.personcollect .collectlist div {
+  float: left;
+  padding: 15px;
+}
+.personcollect .collectlist div span {
+  display: block;
+}
+/*# sourceMappingURL=personcollect.css.map */

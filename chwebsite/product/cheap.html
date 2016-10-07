@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/product.css"/>
+		<style type="text/css">
+			.selectHouse{
+				color: #999;
+				font-size: 14px;
+				padding: 15px 0px;
+				border-bottom: 1px solid #dbdbdb;
+				position: relative;
+			}
+			.selectHouse span{
+				color: #333;
+			}
+			.selectHouse a{
+				color: #0089dc;
+				cursor: pointer;		
+				position: relative;		
+			}
+			.chooseHouse{
+				position: absolute;
+				right: 0px;
+				border: 1px solid #dbdbdb;
+				padding: 0px 5px;
+				background: #fff;
+				top: 20px;
+				width: 200px;
+				z-index: 999;
+			}
+			.selectHouse .change{
+				display: inline-block;
+				position: relative;
+			}
+			.chooseHouse .triggleTop{
+				width: 0px;
+				height: 0px;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: 8px solid #dbdbdb;
+				position: absolute;
+				top: -8px;
+				right: 10px;
+			}
+			.chooseHouse .triggleTop2{
+				width: 0px;
+				height: 0px;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: 8px solid #fff;
+				position: absolute;
+				top: -6px;
+				right: 10px;
+			}
+			.chooseHouse dd{
+				border-bottom: 1px solid #dbdbdb;
+				padding: 10px 0px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.chooseHouse dd.active{
+				color: #01BF71;
+			}
+			.productIndex{
+				height:70px;
+			}
+			.chooseHouse{
+				display: none;
+			}
+		</style>
+	</head>
+	<body ng-app="webApp"  ng-controller="cheapCtr" ng-cloak>
+		<header class="productIndex">
+			<div class="commHead"></div>
+		</header>
+		
+		<div class="comm1100">
+			<div class="selectHouse">
+				当前位置：<span></span>
+				<div class="change">
+				<a>
+					[切换地址]
+					
+				</a>
+				<div class="chooseHouse">
+					<div class="triggleTop"></div>
+					<div class="triggleTop2"></div>
+					<dl>
+						<dd ng-repeat="x in address" ng-if="x.status == 1" ng-class="{active:defalut == x.houseId}" ng-bind="x.number" ng-click="changeHouse(x.houseId)"></dd>
+					</dl>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--抢相应-->
+		<section class="section3" style="padding-top: 20px;">
+			<div class="content">
+				<div class="comm1100">
+					<div class="itemThird" ng-repeat="item in cheapdata" ng-click="itemclick(item.cheapId)">
+						<img class="imgPro" ng-src="{{item.image}}"/>
+						<!--<img class="imgPro" src="../img/product/productImg.png"/>-->
+						<p ng-bind="item.fullName"></p>
+						<div class="priceBox">
+							<em class="red">￥{{item.cheapPrice}}</em>
+							<del>￥{{item.cheapCost}}</del>
+						</div>
+						<div class="less">
+							{{ item.stock }}件（已抢<em class="orange">{{item.allocatedStock}}</em>件）
+						</div>
+						<div class="buttonOpera">
+							<button ng-if="item.stock==item.allocatedStock" class="gary">已抢光</button>
+							<button ng-if="item.stock>item.allocatedStock">立即抢购</button>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer" style="position:relative;">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+		
+		
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular.min.js"  type="text/javascript"  ></script>
+		<script src="../js/config.js"       type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cheapController.js" type="text/javascript"></script>
+		<style type="text/css">
+			.buttonOpera button.gary{
+				background-color: #DDDDDD !important;
+			}
+		</style>
+		<script type="text/javascript">
+			var userInfo = JSON.parse(localStorage.getItem('userInfo'));
+			$(".selectHouse span").html(userInfo.number)
+			var flag = false;
+			$(".selectHouse .change").hover(
+				function(){
+					$(".chooseHouse").show();
+				},
+				function(){
+					if(flag == true){
+						$(".chooseHouse").hide();
+					}
+				}
+			)
+			$(".selectHouse .change").mouseleave(function(){
+				setTimeout(function(){
+					flag = true;												
+				},500)	
+			})
+		</script>
+	</body>
+</html>

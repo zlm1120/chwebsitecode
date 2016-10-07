@@ -1,0 +1,227 @@
+.productIndex {
+  width: 100%;
+  height: 400px;
+  background: url(../img/payment/paymentTitle.jpg) no-repeat center center;
+  background-size: cover;
+}
+.productIndex .logo {
+  float: left;
+}
+.productIndex .comm1100 {
+  overflow: hidden;
+}
+.productIndex .userImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.productIndex .userName {
+  font-size: 18px;
+  color: #fff;
+  margin: 0px 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.textTitle {
+  padding-top: 180px;
+}
+.textTitle h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: normal;
+}
+.textTitle p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}
+.titleBar {
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.titleBar span {
+  font-size: 14px;
+  color: #999;
+}
+.titleBar em {
+  font-size: 16px;
+  color: #333;
+}
+.titleBar i {
+  margin: 0px 3px;
+  color: #666;
+}
+.titleBar span,
+.titleBar i,
+.titleBar em {
+  display: inline-block;
+  vertical-align: middle;
+}
+.titleBar input {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 170px;
+  padding: 10px 30px 10px 10px;
+  background: url(../img/Search.png) no-repeat right 10px center;
+  ime-mode: Disabled;
+}
+.listContent table tr th {
+  text-align: left;
+  color: #999;
+  line-height: 60px;
+  height: 60px;
+  position: relative;
+}
+.listContent table tr th .addressFloat {
+  display: none;
+  position: absolute;
+  width: 220px;
+/*  height: 120px;*/
+  background: #fff;
+  z-index: 999;
+  top: 45px;
+  left: 33px;
+  border-radius: 5px;
+  box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.2);
+  padding: 0px 10px;
+}
+.listContent table tr th .addressFloat ul li:first-child {
+  border-top: 0px;
+}
+.listContent table tr th .addressFloat ul li {
+  border-top: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+.listContent table tr th .addressFloat ul li.active {
+  color: #FE8202;
+}
+.listContent table tr td {
+  text-align: left;
+  color: #333;
+  font-size: 16px;
+  height: 60px;
+  line-height: 60px;
+}
+.listContent table tr td input {
+  width: 60px;
+  padding: 4px 5px;
+  text-align: center;
+}
+.listContent table tr td:first-child {
+  color: #666;
+}
+.listContent table tr td:nth-child(3) {
+  line-height: 30px;
+}
+.listContent .select {
+  width: 90px;
+}
+.listContent .accoutTime {
+  width: 165px;
+}
+.listContent .address {
+  width: 140px;
+}
+.listContent .projects {
+  width: 120px;
+}
+.listContent .money {
+  width: 90px;
+}
+.listContent .moneyPre {
+  width: 110px;
+}
+.listContent div.action {
+  padding: 45px 0px;
+  text-align: right;
+}
+.listContent div.action .textRight {
+  text-align: right;
+  line-height: 20px;
+  color: #666;
+}
+.listContent div.action .textRight span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+.listContent div.action .textRight em {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  text-align: right;
+}
+.listContent div.action .textRight:last-child {
+  padding: 20px 0px 70px;
+}
+.listContent div.action .textRight:last-child em {
+  font-size: 24px;
+}
+.listContent .payNow {
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  text-align: center;
+  padding: 15px 70px;
+  font-size: 18px;
+  margin: 20px 0px 0px;
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+}
+.greenText {
+  cursor: pointer;
+}
+div.paymentHis {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  border-radius: 5px;
+  background: #fff;
+  width: 700px;
+  height: 350px;
+  top: 50%;
+  margin-top: -175px;
+  left: 50%;
+  margin-left: -350px;
+}
+div.paymentHis h1 {
+  padding: 30px 0px 0px;
+  text-align: center;
+}
+div.paymentHis img {
+  display: block;
+  margin: 10px auto 0px;
+}
+div.paymentHis table {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+}
+div.paymentHis table tr th {
+  width: 120px;
+  text-align: center;
+  color: #999;
+  line-height: 60px;
+  height: 60px;
+  font-weight: normal;
+}
+div.paymentHis table tr td {
+  font-size: 16px;
+  text-align: center;
+  height: 35px;
+  line-break: 35px;
+}
+.greyArea {
+  height: 15px;
+  width: 100%;
+  background: #f0f0f0;
+}
+.titleBar {
+  box-shadow: 4px 2px 10px 3px rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=payment.css.map */

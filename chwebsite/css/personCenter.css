@@ -1,0 +1,52 @@
+.location {
+  height: 60px;
+  line-height: 60px;
+}
+.location span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  margin-right: 10px;
+  float: left;
+}
+.location span a {
+  color: #0089dc;
+  cursor: pointer;
+}
+.profile {
+  overflow: hidden;
+}
+ul.profile-sidebar {
+  width: 170px;
+  float: left;
+  margin-top: 10px;
+}
+ul.profile-sidebar h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+ul.profile-sidebar li {
+  margin-bottom: 20px;
+}
+ul.profile-sidebar li dl dd {
+  line-height: 20px;
+  height: 20px;
+  padding: 4px 0px;
+  color: #666;
+}
+ul.profile-sidebar li.active h2 {
+  color: #01bf71;
+}
+.profile-panel {
+  margin-left: 170px;
+  background: #fff;
+  min-height: 500px;
+  margin-bottom: 50px;
+}
+.profile-panel marquee {
+  color: #d20c1c;
+  height: 60px;
+  line-height: 60px;
+}
+/*# sourceMappingURL=personCenter.css.map */

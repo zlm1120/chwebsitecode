@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新闻详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/convennience.css"/>
+	</head>
+	<body ng-app="webapp">
+		<div class="newsDetail">
+			<header>
+				<div class="comm1100">
+					<img src="../img/index/logo.png"/ class="userLogo">
+					<div class="menuBar">
+					<ul>
+						<li><a href="http://101.201.222.160:8083/lzj_web/">首页</a></li>
+						<li class="active"><a href="">物业周边</a></li>
+						<li><a href="../payment/index.html">物业缴费</a></li>
+						<li><a href="../repair/repair.html">物业报修</a></li>
+						<li><a href="">通知通告</a></li>
+						<li><a href="../convenience/index.html">便民</a></li>
+					</ul>
+					<img class="userImg" src="../img/avator.png"/>
+					<span class="userName">SB张勇</span>
+					<i class="bottomIcon"></i>
+				</div>
+			</header>
+			<div class="contentText" ng-controller="newsDetail">
+				<div class="comm1100">
+					<h1>{{title}}</h1>
+					<div class="date">
+						<span>{{dateTime}}</span>
+						<em>{{author}}</em>
+					</div>
+					<div class="newsContent">
+						{{aaa}}
+	 	 			</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="../js/gov.js" type="text/javascript" charset="utf-8"></script>
+</html>

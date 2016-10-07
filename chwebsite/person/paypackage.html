@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的钱包</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+		<script type="text/javascript" src="../js/comment.js"></script>
+		<link rel="stylesheet" href="../css/paypackage.css" />
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="headerwrapper"></div>
+		<div  class="packagecon mainbody">
+			<div class="mypackage">
+				<span>我的钱包</span>
+				<span class="mymoney"></span>
+				<span class="lastspan"><a href="paymothod.html">余额充值</a></span>
+			</div>
+			<div class="packagelist">
+				<span class="title">交易明细</span>
+			</div>
+		</div>
+		<div class="footerwrapper"></div>
+	</body>
+	<script type="text/javascript" src="../js/config.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.packagelist span.listpay i').each(function(){
+				var _$this=$(this).text();
+				var _$paaint=parseInt(_$this);
+				if(_$paaint<0){
+					$(this).addClass('greed')
+				}else{
+					$(this).addClass("red");
+				}
+			});
+			var memberIds=JSON.parse(localStorage.getItem('userInfo'));
+			//请求我的钱包余额和消费详情接口
+			$.ajax({
+				type:"get",
+				url:ip+'/api/member/profile/balance',
+				async:true,
+				dataType:"json",
+				data:{memberId:memberIds.memberId},
+				success:function(json){
+					var balance=json.api_data.balacne;
+					$(".mymoney").html("&yen"+balance+"");
+					/*mymoney*/
+					var mymoney=$(".mypackage span.mymoney").text();
+					localStorage.setItem("mymoney",mymoney);
+				}
+			});
+			//消费明细
+			$.ajax({
+				type:"get",
+				url:ip+'/api/member/deposit/list',
+				async:true,
+				dataType:"json",
+				data:{memberId:1},
+				success:function(json){
+					if(json.api_code == 0){
+						var data = json.api_data;
+						var costList = '';
+						for(var i = 1;i < data.length;i++){
+							costList += '<span class="listpay">'+data[i].date+'<b>'+ data[i].memo +'</b><i>'+ data[i].amount +'</i></span>';
+						}
+						$(".packagelist").append(costList);
+					}
+				}
+			});
+		});
+	</script>
+</html>
+
+

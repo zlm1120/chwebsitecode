@@ -1,0 +1,22 @@
+.firstHeade{
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 97px;
+	line-height: 97px;
+}
+.firstHeade img,a{
+	display: inline-block;
+}
+.firstHeade img{
+	float: left;
+	padding-top: 20px;
+}
+.firstHeade a{
+	float: right;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #666666;
+	background: url(../img/Left-Arrow-拷贝.png) no-repeat right center;
+	padding-right: 25px;
+}

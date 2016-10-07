@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>团购商品详情</title>
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/detail.css" />
+		<style type="text/css">
+			header{
+				background: #01bf71;
+			}
+			.userName{
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp">
+		<!--捡乡音的头部-->
+		<header>
+			<div class="commHead"></div>
+		</header>
+
+		<!--详情的主要内容-->
+		<div class="detailcon" ng-cloak ng-controller="detailCtr">
+			<!--焦点轮播-->
+			<div id="sliderparent" class="sliderparent">
+				<ul id="imglist" class="imglists">
+					<li>
+						<a href="javascript:void(0);"><img src="../img/product/图层-15.png"></img>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><img src="../img/product/图层-15.png"></img>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><img src="../img/product/图层-15.png"></img>
+						</a>
+					</li>
+				</ul>
+				<ol id="cicreList" class="cicreList">
+				</ol>
+			</div>
+			<!--详情-->
+			<div class="condetail">
+				<span class="detailtitle" ng-cloak>{{ detaildata.fullName }}</span>
+				<span class="detailcount">还有{{ detaildata.allocatedStock }}结束<i>已有{{ detaildata.stock }}</i>人抢购</span>
+				<span class="detailprice">&yen;{{detaildata.cheapPrice}}<del>&yen;{{detaildata.cheapCost}}</del></span>
+				<span class="detailnumber">数量：
+					<a href="javascript:void(0);" style="margin-right: -5px;" class="jian">-</a>
+					<a href="javascript:void(0);" class="numbertotal">1</a>
+					<a href="javascript:void(0);" style="margin-left: -5px;" class="add">+</a>
+				</span>
+				<a href="javascript:void(0);" class="carbtn" ng-if="detaildata.stock>detaildata.allocatedStock" ng-click="statusfun(detaildata.cheapId,detaildata.cheapPrice)">去结算</a>
+				<a href="javascript:void(0);" class="carbtn gary" ng-if="detaildata.stock==detaildata.allocatedStock">已抢光</a>
+			</div>
+
+			<!--商品介绍-->
+			<div class="spantext" style="clear: both;">
+				<div class="textTitles"><span>商品介绍</span></div>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ detaildata.content}}</p>
+			</div>
+			<!--温馨提示-->
+			<div class="spantext" style="clear: both;">
+				<div class="textTitles"><span>温馨提示</span></div>
+				<p>{{ detaildata.cheapTips }}</p>
+			</div>
+		</div>
+		<div class="footerwrapper">
+		</div>
+		
+		<!--弹框遮罩-->
+		<div class="shade"></div>
+	</body>
+
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/slider.js"></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../js/cheapdetail.js"></script>
+	<style type="text/css">
+		.condetail a.gary{
+			background-color: #DDDDDD !important;
+		}
+		.alertBox{
+			padding-top: 30px !important;
+			height: 140px !important;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function() {
+			//加的效果
+			$(".add").click(function() {
+				var n = $(this).prev().text();
+				var num = parseInt(n) + 1;
+				if(num == 0) {
+					return false;
+				}
+				$(this).prev().text(num);
+			});
+			//减的效果
+			$(".jian").click(function() {
+				var n = $(this).next().text();
+				var num = parseInt(n) - 1;
+				if(num == 0) {
+					return false;
+				}
+				$(this).next().text(num);
+			});
+			
+			
+		})
+	</script>
+
+</html>

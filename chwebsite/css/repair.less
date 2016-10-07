@@ -1,0 +1,180 @@
+html,body{
+    position: relative;
+    height: auto;
+    .bg{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: url(../img/repaireBg.png) no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+   
+}
+.title{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    .userImg{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .userName{
+        color: #fff;
+    }
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+} 
+.wrap{
+    padding: 150px 0px;
+}
+.content{
+    width: 1000px;
+    height: 715px;
+    background: #fff;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px auto;
+    overflow: hidden;
+    .headImg{
+        padding-top: 50px;
+    }
+//  padding: 100px 0px;
+
+    .textContent h1{
+        font-weight: normal;
+        font-size: 28px;
+        color: #666;
+        padding: 0px 0px 20px;
+    }
+    .textContent{
+        padding: 30px 30px 10px 30px;
+        .cateTitle{
+            color: #999;
+        }
+        label{
+            display: inline-block;
+            vertical-align: middle;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            color: #999;
+        }
+        .textArea{
+            div.areaGroup{
+                display: inline-block;
+                vertical-align: middle;
+                width: 580px;
+                textarea{
+                    width: 520px;
+                    height: 160px;
+                    resize: none;
+                    padding: 10px;
+                    outline: none;
+                    border: 1px solid #dbdbdb;
+                }
+            }
+            .cateTitle{
+                padding: 10px 0px;
+            }
+            div.imgGroup{
+                display: inline-block;
+                vertical-align: top;
+                width: 330px;
+                padding-left: 20px;
+                .item{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0px 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .upLoadImg{
+        padding: 0px 30px ;
+        .uploadBox{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        span{
+            display: inline-block;
+            vertical-align: bottom;
+            color: #999;
+        }
+    }
+}
+.subBtn{
+    margin: 10px 30px;
+    border: 0px;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.tips{
+    width: 300px;
+    resize: none;
+    height: 160px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+}
+.selectGroup{
+    margin-left: -1%;
+    .subSelect{
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        margin: 1%;
+        .inputSelect{
+            position: relative;
+            border: 1px solid #dbdbdb;
+            padding: 20px 25px;
+            margin-top: 10px;
+            i{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                width: 21px;
+                height: 11px;
+                background: url(../img/index/bottomIcon.png) no-repeat;
+            }
+        }
+    }
+}
+.title .logo{
+    margin: 10px 0px;
+}
+div.imgWrap{
+    .item{
+        position: relative;
+        .selectIcon{
+            display: none;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+    .active{
+        .selectIcon{
+            display: block;
+        }
+    }
+}
+
+.inputFile{
+    display: none;
+}
+

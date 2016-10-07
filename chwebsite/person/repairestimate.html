@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>报修评价</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" type="text/css" href="../css/userCenter.css" />
+		<link rel="stylesheet" href="../css/repairestimate.css" />
+		<style type="text/css">
+			.imgClass{
+				width: 100px;
+				max-width: 100px;
+				height: 99px;
+				max-height: 99px;
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				padding-top: 5px;
+			}
+		</style>
+	</head>
+
+	<body ng-app="webapp">
+
+		<!--<div aaa></div>-->
+		<div class="headerwrapper" ng-include="'header.html'"></div>
+		<div class="contentwrapper" ng-controller="estimateCtr">
+			<div class="repaireddiv">
+				<div class="estimatetitle">维修评价</div>
+				<div class="estimatetime">维修时间：<b ng-bind="repairdata.date"></b></div>
+				<div class="estimatecont">
+					<span ng-bind="repairdata.number"></span>
+					<span ng-bind="repairdata.content"></span>
+					<span ng-bind="repairdata.mome"></span>
+					<div class="imgBox" ng-if="repairdata.images.length != 0">
+						<img class="imgClass" ng-repeat="x in repairdata.images" ng-src="{{x}}"/>
+					</div>
+					<!--<img ng-if="repairdata.images.length != 0" ng-src="{repairdata.images}"/>-->
+				</div>
+				<div class="pingfen">
+					<div class="clickimg">
+						<label>评价：</label>
+						<span class="imgheart"></span>
+						<span>点击心形打分</span>
+						<em ng-bind="score"></em>
+					</div>
+					<div class="contentdiv">
+						<label style="display: block; float: left;">评价内容：</label>
+						<textarea name="" rows="" cols="" placeholder="请在此输入你对我们的评价" ng-model="content"></textarea>
+						<span><i>0</i>/<b>500</b></span>
+					</div>
+				</div>
+				<div class="upLoadImg">
+					<div class="uploadBox">
+					</div>
+					<img class="inputImg" src="../img/product/addImg.png" />
+					<form id="form1">
+						<input type="file" id="fileBtn" name="file" class="inputFile" onchange="addPreview(this)" accept="image/jpeg,image/png,image/gif">
+					</form>
+					<span>添加图片，最多三张</span>
+				</div>
+				<div class="addbtnre" ng-click="addreview()">提交评价</div>
+			</div>
+		</div>
+		<div class="footerwrapper" ng-include="'../commentPage/footer.html'"></div>
+
+		<script src="../js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.form.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/usercenter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".contentdiv textarea").keyup(function() {
+					var contentsize = $(this).val().length;
+					if (contentsize > 499) {
+						$(this).val($(this).val().substring(0, 500));
+					}
+					$(this).parent().find("span").find("b").text(500 - contentsize);
+					$(this).parent().find("span").find("i").text(contentsize);
+				});
+				var imgdiv = "";
+				for (var i = 0; i < 5; i++) {
+					imgdiv += "<i class='greyHeart'></i>"
+				}
+				$(".clickimg .imgheart").append(imgdiv);
+				$(".clickimg .imgheart i").click(function() {
+//					$(this).addClass("clickimg");
+					var $this = $(this);
+					var index = $this.index();
+					if($this.hasClass('clickimg')){
+						for(var i = index+1;i<5;i++){
+							$(".imgheart i").eq(i).removeClass('clickimg');
+						}
+					}else{
+						for(var i = 0;i<index+1;i++){
+							$(".imgheart i").eq(i).addClass('clickimg');
+						}
+					}
+				})
+			});
+
+			function addPreview(source) {
+				if ($(".uploadBox img").length < 3) {
+					var url = '';
+					$("#form1").ajaxSubmit({
+						type: 'post',
+						url: ImgIp+'upload/submit',
+						dataType: "json",
+						async: false,
+						success: function(json) {
+							console.log(json);
+							if (json.api_code == 0) {
+
+								url = json.api_data.url[0];
+
+							}
+						},
+						error: function() {}
+					});
+					var file = source.files[0];
+					if (window.FileReader) {
+						var fr = new FileReader();
+						fr.onloadend = function(e) {
+							var a = '<img src="' + e.target.result + '" url="' + url + '"/>';
+							$(".uploadBox").append(a);
+						};
+						fr.readAsDataURL(file);
+					}
+
+				}
+
+			}
+			var mywebapp = angular.module('webapp', []);
+			mywebapp.controller("estimateCtr", function($scope, $http) {
+				$scope.repairId = getUrlParam('id');
+				$scope.memberid = getUrlParam('memberid');
+				//提交评价
+				$scope.content = "";
+				$scope.addreview = function() {
+						$scope.scoresize = $(".clickimg .imgheart i.clickimg").size();
+						if ($scope.scoresize == 0) {
+							$scope.score = "请打分";
+							return false;
+						} else {
+							$scope.score = "";
+						}
+						
+						var $img = $('.uploadBox img');
+						if($img.length>0){
+							var imgArray = ''; 	
+							if($img.length > 1){
+								$img.each(function(){
+									imgArray += $(this).attr('url') + ','
+								})
+								imgArray = imgArray.substr(0,imgArray.length-1);	
+							}else{
+								imgArray = $img.attr('url');
+							}
+							
+							console.log(imgArray);
+						};
+						
+						$http({
+								method: 'GET',
+								url: ip + 'api/member/repair/addReview',
+								params: {
+									memberId: $scope.memberid,
+									repairId: $scope.repairId,
+									score: $scope.scoresize,
+									content: $scope.content,
+									images:imgArray
+								}
+							})
+							.success(function(json) {
+								console.log(json);
+								window.location.href = 'repair.html';
+							})
+					}
+					//报修详情
+				function pagestart() {
+					$http({
+							method: 'GET',
+							url: ip + 'api/member/repair/view',
+							params: {
+								repairId: $scope.repairId
+							}
+						})
+						.success(function(json) {
+
+							$scope.repairdata=json.api_data.repair;
+							console.log($scope.repairdata);
+							
+						})
+				}
+				pagestart();
+			})
+		</script>
+	</body>
+
+</html>

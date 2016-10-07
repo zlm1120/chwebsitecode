@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的收藏</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+		<script type="text/javascript" src="../js/comment.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<!--	<link rel="stylesheet" href="../css/collection.css" />-->
+		<link rel="stylesheet" href="../css/order.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/personcollect.css" />
+	</head>
+	<body>
+		<div class="headerwrapper"></div>
+		<div class="contentwrapper"></div>
+		<div class="footerwrapper"></div>
+	</body>
+	<script type="text/javascript">
+		$.ajax({
+			type:"get",
+			url:'http://' + window.location.host + "/chwebsite/person/body02.html",
+			async:true,
+			success:function(json){
+				$(".contentwrapper").html(json);
+			}
+		});
+	</script>
+</html>

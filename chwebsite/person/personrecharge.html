@@ -1,0 +1,42 @@
+<link rel="stylesheet" type="text/css" href="../css/mypaymothod.css"/>
+<style type="text/css">
+	.paycontent{
+		padding: 0px;
+	}
+	.paycontent .paycontentinner{
+		margin-top: 0px;
+	}
+	.paycontent{
+		height: auto;
+	}
+	.paycontent .paycontentinner span:nth-child(1){
+		height: 65px;
+		padding-top: 30px;
+	}
+</style>
+<div class="mypaymothod" ng-controller="recharge">
+	<div class="paycontent">
+		<div class="paycontentinner paymothodcon">
+			<span class="firstspan">我的钱包<b style="margin-top: 5px;"></b></span>
+			<label>充值金额（元）</label>
+			<input type="text" placeholder="请输入金额" class="inputmoney" required="required"/>
+			<em class="infor"></em>
+			<label>充值金额（元）</label>
+			<div class="methodimg">
+				<div>
+					<input type="radio" value="zhifubao" name="methods" />
+					<label name="zhifubao" class="checked" data-meys='1'><img src="../img/person/矢量智能对象.png" /></label>
+				</div>
+				<div>
+					<input type="radio" value="weixing" name="methods" />
+					<label name="weixing" data-meys='2'><img src="../img/person/矢量智能对象1.png" /></label>
+				</div>
+			</div>
+			<input type="submit" value="立即充值" class="moneybtn"/>
+		</div>
+	</div>
+	<input type="hidden" value="" class="ordernumber"/>
+	<input type="hidden" value="" class="paymethod"/>
+	<input type="hidden" value="" class="paymoney"/>
+	<input type="hidden" value="" class="callback"/>
+</div>

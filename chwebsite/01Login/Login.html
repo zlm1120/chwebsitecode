@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/01Logincss/login.css" />
+	</head>
+
+	<body>
+		<!--描述：最外层的div，是包裹登录页面主体部分的外部div-->
+		<div class="loginWrapper">
+			<!--描述：登录页面的主体部分 -->
+			<div class="login">
+				<a href="../index.html" class="pic-wrap"><img src="../img/乐智家.png" /></a>
+				<div class="loginform">
+					<form  id="loginform" name="loginform" method="post" action="../index.html">
+						<div class="form-group">
+							<input type="text" placeholder="请输入账号" class="form-control" name="phone" id="phone" ng-model="phone" required/>
+							<span style="color: red;"></span>
+							<!--<span ng-cloak style="color:red" ng-show="loginform.phone.$dirty && loginform.phone.$invalid">
+  							<span ng-show="loginform.phone.$error.required">用户名是必须的。</span>-->
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="请输入密码" class="form-control" name="pass" id="pass" ng-model="pass" vail-Pwd/>
+							<span style="color: red;"></span>
+							<!--<span style="color:red" ng-show="loginform.pass.$dirty && loginform.pass.$invalid">-->
+							<!--<span ng-show="loginform.pass.$error.required">请填写密码。</span>-->
+							<!--<span ng-show="loginform.pass.$error. || loginform.pass.$error.maxlength">密码长度必须在6-12位</span>-->
+							<!--<span ng-cloak style="color:red" ng-show="loginform.phone.$dirty && loginform.phone.$invalid">-->
+							<!--<span ng-cloak ng-show="loginform.pass.$error.pass">{{vail}}</span>-->
+
+						</div>
+						<div class="form-group">
+							<span class="autologin">
+            					<input type="radio" value="autologin" name="autologin" />
+								<!--<label name="autologin">下次自动登录</label>-->
+							</span>
+							<a href="retrievePass.html">忘记密码！</a>
+						</div>
+						<input id="login" type="button" value="登录" class="submitbtn"/>
+					</form>
+				</div>
+				<span class="loginbottom">还没账号,请<a href="Rigister.html">注册</a></span>
+			</div>
+			<!--最外层div结束 -->
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+	<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/loginBase.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script type="text/javascript" src="../js/validate.js" ></script>-->
+	<script type="text/javascript">
+		$(function() {
+			/*
+			 * 模拟单选框
+			 */
+			$('.autologin label').click(function() {
+				var radioId = $(this).attr('name');
+				$('.autologin label').removeAttr('class') && $(this).attr('class', 'checked');
+				$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+			});
+			/*
+			 * form-control 获得/失去焦点事件
+			 */
+			$('.form-control').focus(function(){
+				$(this).addClass('activeinput');
+			});
+			$('.form-control').blur(function(){
+				$(this).removeClass('activeinput');
+			});
+//			/*
+//			 * 获取输入的用户名和密码字符串
+//			 */
+//			var inputphone,inputpass;
+//			$('#phone').blur(function(){
+//				inputphone=$(this).val();
+//			});
+//			$('#pass').blur(function(){
+//				inputpass=$(this).val();
+//			});
+			
+			var inputphone,inputpass;
+			//登录
+			$("#login").click(function(){
+				var $phone = $('#phone');
+				var $pass = $("#pass");
+				var $span = $(".form-group span");
+				inputphone=$('#phone').val();
+				inputpass=$('#pass').val();
+				if(inputphone == '' || $.trim(inputphone) == ''){
+					$phone.next().show();
+					$phone.next().html('账号不能为空');
+					return false;
+				}
+				if(!isMobile.test(inputphone)){
+					$phone.next().show();
+					$phone.next().html('请输入正确的手机号码')
+					return false;
+				}
+				if(inputpass == '' || $.trim(inputpass) == ''){
+					$span.hide();
+					$pass.next().html('密码不能为空')
+					$pass.next().show();
+					return false;
+				}
+				$span.hide();
+				
+				$.ajax({
+					type:"get",
+					url:ip+"api/member/login/submit",
+					async:true,
+					data:{
+						username:inputphone,
+						password:inputpass
+					},
+					success:function(json){
+						if(json.api_code == 0){
+							var data = json.api_data;
+							var userInfo = data;
+							localStorage.setItem('userInfo',JSON.stringify(userInfo));
+							
+							//var a = JSON.parse(localStorage.getItem('userInfo')); a=null
+							window.location.href = '../index.html';
+						}else{
+							var vail = json.api_message;
+							$pass.next().html(vail);
+							$pass.next().show();
+							
+						}
+					},
+					error:function(){
+						
+					}
+					
+				});	
+			})
+			
+			
+		});
+	</script>
+
+</html>

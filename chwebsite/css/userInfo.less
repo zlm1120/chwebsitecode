@@ -1,0 +1,865 @@
+.productIndex {
+  width: 100%;
+  height: 400px;
+  background: url(../img/product/storeTitle.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.productIndex .logo {
+  float: left;
+  margin-top: 15px;
+}
+.productIndex .comm1100 {
+  /*overflow: hidden;*/
+}
+.productIndex .menuProduct {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.68);
+}
+.productIndex .menuProduct span {
+  display: inline-block;
+  height: 58px;
+  line-height: 58px;
+  font-size: 16px;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.productIndex .menuProduct span.active {
+  border-bottom: 2px solid #01BF71;
+}
+.productIndex .menuProduct i {
+  height: 30px;
+  line-height: 60px;
+  border-left: 1px solid #fff;
+}
+.productIndex .menuProduct .collect {
+  position: absolute;
+  top: 21px;
+  right: 0px;
+}
+.productIndex .menuProduct .collect img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.productIndex .menuProduct .collect em {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #fff;
+}
+.productIndex .menuProduct .collect .collectNum {
+  font-size: 12px;
+}
+.productIndex .userImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.productIndex .userName {
+  font-size: 18px;
+  color: #fff;
+  margin: 0px 6px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+div.menu {
+  text-align: center;
+  padding: 30px 0px;
+}
+div.menu ul {
+  overflow: hidden;
+  width: 700px;
+  margin: 0 auto;
+}
+div.menu ul li {
+  float: left;
+  width: 140px;
+}
+div.menu ul li span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+div.menu ul li span.active {
+  background: #fe8202;
+  color: #fff;
+  font-size: 18px;
+}
+div.content div.filter span {
+  display: inline-block;
+  width: 140px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+div.content div.filter span.active {
+  font-size: 24px;
+  color: #01BF71;
+}
+div.content section {
+  padding: 0px 0px 20px;
+}
+div.content section .title {
+  padding: 0px 0px 20px;
+}
+div.content section .title span {
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+div.content section .title em {
+  font-size: 14px;
+  color: #666;
+  display: inline-block;
+  vector-effect: middle;
+  margin-left: 5px;
+}
+div.content section div.item {
+  width: 515px;
+  height: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 15px;
+}
+div.content section .itemBox {
+  margin-left: -15px;
+}
+div.content section .itemBox .proImg {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.content section .itemBox div.textBox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 370px;
+  margin-left: 20px;
+}
+div.content section .itemBox .textTitle {
+  line-height: 30px;
+  height: 30px;
+}
+div.content section .itemBox .textTitle span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 178px;
+  margin-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.content section .itemBox .textTitle .starBox {
+  display: inline-block;
+}
+div.content section .itemBox .textTitle .starBox i {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.content section .itemBox .textTitle em {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.content section .itemBox .operaBox {
+  height: 50px;
+  position: relative;
+}
+div.content section .itemBox .operaBox em {
+  position: absolute;
+  bottom: 8px;
+}
+div.content section .itemBox .operaBox button {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  padding: 5px 10px;
+  color: #fff;
+  border: 5px;
+  border-radius: 5px;
+}
+div.content section .itemBox p {
+  font-size: 12px;
+  color: #999;
+  height: 40px;
+  line-height: 20px;
+}
+.evalFloat {
+  display: none;
+  border: 1px solid #999;
+  width: 458px;
+  height: 500px;
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  padding: 20px;
+  top: 0px;
+  border-radius: 9px;
+}
+.evalFloat .title {
+  font-size: 18px;
+  padding: 0px 0px 20px;
+}
+.evalFloat ul li {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 0px;
+  margin-top: -1px;
+}
+.evalFloat ul li .liLeft {
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+}
+.evalFloat ul li .liRight {
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+.evalFloat ul li .eval-title {
+  padding: 10px 0px;
+}
+.evalFloat ul li .eval-title i {
+  margin: 0px;
+}
+.evalFloat ul li .eval-title span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: #999;
+}
+.evalFloat ul li p {
+  line-height: 30px;
+}
+.evalFloat .pageSite {
+  position: absolute;
+  bottom: 0px;
+}
+.evalFloat .leftSanIcon {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #999;
+}
+.evalFloat .leftSanIcon2 {
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+}
+.evalFloat .rightSanIcon {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #999;
+}
+.evalFloat .rightSanIcon2 {
+  position: absolute;
+  top: 10px;
+  right: -8px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+}
+.storeIntro {
+  clear: both;
+  padding: 70px 0px 0px;
+}
+.storeIntro img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.storeIntro .storeText {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.storeIntro .storeText h1 {
+  color: #fff;
+  font-size: 34px;
+  padding: 5px 0px;
+  font-weight: normal;
+}
+.storeIntro .storeText i {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.storeIntro .storeText em {
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.headerperson{
+    margin: 0 auto;
+    width: 1100px;
+    padding-left: 89px;
+    font-family: "微软雅黑";
+    color: #333333;
+    position: relative;
+}
+.headerperson .media-body{
+    padding-top: 49px;
+}
+.headerperson .media-body span{
+    display: block;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.headerperson .media-body span b{
+    font-size: 24px;
+    font-weight: normal;
+    padding-left: 15px;
+}
+.headerperson .media-body img:nth-child(2){
+    position: relative;
+}
+.headerperson .media-body span.badge{
+    display: inline-block !important;
+    position: relative;
+    height:16px;
+    width: 16px;
+    top: -15px;
+    left: -10px;
+    min-width: 14px;
+    background-color: #FE8202;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: normal;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0px !important;
+}
+.productIndex .menuProduct span{
+    font-family: "微软雅黑";
+    height: 60px !important;
+}
+.productIndex .menuProduct span a{
+    color: #FFFFFF;
+}
+.productIndex .menuProduct span.active{
+    border-bottom: 4px solid #01BF71;
+}
+
+/*
+ * ordercontent style
+ */
+table.ordercontent{
+    width: 1100px;
+    margin: 0 auto;
+    min-width: 1100px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+    border: 0px !important;
+    margin-top:30px;
+}
+table.ordercontent thead th{
+    font-size: 14px;
+    color: #999999;
+    font-weight: normal;
+}
+table.ordercontent tbody tr{
+    height: 110px;
+}
+table.ordercontent tbody tr td:nth-child(2) i{
+    display: block;
+    color: #666666;
+    font-style: normal;
+}
+table.ordercontent tbody tr td:nth-child(3){
+    width: 369px;
+}
+table.ordercontent tbody tr td:nth-child(3) .media-body .media-heading{
+    font-size: 16px;
+    color: #333333;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+table.ordercontent tbody tr td:nth-child(3) .media-body span{
+    display: block;
+    font-size: 14px;
+    color: #666666;
+}
+table.ordercontent tbody tr td:nth-child(4){
+    color: #FE8202;
+}
+table.ordercontent tbody tr td:last-child {
+    width: 85px;
+}
+table.ordercontent tbody tr td:last-child a{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-align: center;
+    outline: none;
+}
+table.ordercontent tbody tr td:last-child a:first-child{
+    color: #01BF71;
+    border: 1px solid #01BF71;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 23px;
+    line-height: 23px;
+}
+table.ordercontent tbody tr td:last-child a:last-child{
+    color: #999999;
+}
+
+.modal-content{
+    width: 400px;
+    height: 149px;
+}
+.modal-dialog{
+    top: 50%;
+    transform: translate(-50%);
+    margin-top: 20%;
+}
+.modal-body{
+    height: 88px;
+    text-align: center;
+    line-height: 88px;
+    padding: 0px !important;
+}
+.modal-body b{
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #000000;
+    font-weight: normal;
+}
+.modal-footer{
+    border-top:0px !important;
+    text-align: center;
+}
+.btn-default {
+    background-color: #01bf71;
+    border: 0px !important;
+    width: 100px;
+    border-radius: 0px !important;
+    color: #FFFFFF;
+}
+.btn-primary {
+    background-color: #FFFFFF;
+    color: #999999;
+}
+.btn{
+    border:0px !important;
+    touch-action: none !important;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.btn-primary:hover{
+     background-color: #FFFFFF;
+    color: #999999;
+}
+.btn-default{
+    background-color: #01bf71 !important;
+    border: 0px !important;
+    width: 100px;
+    border-radius: 0px !important;
+    color: #FFFFFF !important;
+}
+
+.contentnav label.datatitle{
+    font-size: 16px;
+    color: #666666;
+    display: block;
+}
+.contentnav label.datatitle a{
+    display: inline-block;
+    float: right;
+    background-color: #01BF71;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.contentnav label.datatitle a:hover{
+    text-decoration: none;
+}
+.contentnav div.listdata{
+    margin-bottom: 20px;
+}
+.listdata input{
+    display: none;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    padding: 10px 12px;
+}
+.imglistdiv{
+    margin-top: 30px;
+}
+.contentnav div.listdata span{
+    font-size: 14px;
+    color: #666666;
+    text-align: right;
+    display: inline-block;
+    width: 60px;
+    margin-right: 20px;
+}
+.contentnav div.listdata label{
+    font-size: 14px;
+    color: #333333;
+    font-weight: normal;
+}
+.contentnav .listdata span.imglist{
+    display: block;
+}
+.contentnav .listdata img.img{
+    margin-left: 100px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+.imglistdiv{
+    position: relative;
+}
+.imglistdiv img{
+    position: relative;
+    opacity: 50%;
+}
+.imglistdiv .imgGrey{
+    position: absolute;
+    top: 65px;
+    left: 130px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    width: 120px;
+    height: 120px;
+    top: 0px;
+    left: 100px;
+    border-radius: 50%;
+    line-height: 120px;
+    text-align: center;
+    opacity: 50%;
+    background: rgba(0,0,0,.1);
+    z-index: 9999;
+    display: none;
+}
+.imglistdiv a.hoverimg {
+    background: rgba(0,0,0,.5) !important;
+}
+.imgBox{
+    position: relative;
+}
+.imgBox a{
+    position: absolute;
+}
+.labelGroup{
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+}
+
+.labelGroup label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px !important;
+}
+.listdata em{
+    font-size: 12px;
+    color: red;
+    display: none;
+    margin-left: 20px;
+}
+.payPwd h1{
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.payPwd .item{
+    padding: 10px 0px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.payPwd .item span{
+    width: 130px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+}
+.payPwd .item input{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    width: 200px;
+}
+.payPwd .opera{
+    text-align: center;
+}
+.payPwd button{
+    padding: 10px 25px;
+    margin: 20px;
+}
+.payPwd .confirm{
+    background: #01BF71;
+    color: #fff;
+    border: 0px;
+}
+.payPwd .cancel{
+    border: 0px;
+    background: #fff;
+}
+.pwd label{
+    display: inline-block;
+    width: 200px;
+}
+.pwd .valiInput{
+    width: 120px !important;
+}
+.pwd .item button{
+    background: #01BF71;
+    color: #fff;
+    border: 0px;
+
+    margin: 0px;
+    margin-left: 10px;
+}
+span.noticetitle {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #FF0000;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: #EEEEEE;
+  text-align: center;
+}
+.noticewrapper {
+  padding-top: 30px;
+  font-family: "微软雅黑";
+    overflow: hidden;
+}
+.noticewrapper .rigthBox {
+  float: left;
+  width: 249px;
+  height: 500px;
+  background-color: #EEEEEE;
+}
+.noticewrapper .rigthBox span {
+  display: block;
+  font-size: 18px;
+  color: #333333;
+  font-family: "SimHei";
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  border-left: 3px solid #EEEEEE;
+}
+.noticewrapper .rigthBox span b {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: #FE8202;
+  font-size: 14px !important;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 15px;
+}
+.noticewrapper .rigthBox span.clickspan {
+  border-left: 3px solid #01BF71;
+  color: #01BF71;
+}
+.noticewrapper .navcontentBox {
+  float: left;
+  margin-left: 20px;
+  width: 829px;
+}
+.noticewrapper .navcontentBox .ordertitle {
+  font-size: 24px;
+  color: #333333;
+  padding: 0px !important;
+  border-bottom: 1px solid #CCCCCC;
+}
+.noticewrapper .navcontentBox .ordertitle span {
+  background: url(../img/person/wuye.png) no-repeat left center;
+  padding-left: 70px;
+  display: inline-block;
+  line-height: 98px;
+}
+.noticewrapper .navcontentBox .ordertitle b {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: #FE8202;
+  font-size: 14px !important;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 15px;
+}
+.noticewrapper .navcontentBox .orderlist {
+  border-bottom: 1px solid #CCCCCC;
+  width: 100%;
+  padding: 20px 0px;
+}
+.noticewrapper .navcontentBox .orderlist span {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: 10px;
+}
+.noticewrapper .navcontentBox .orderlist span b {
+  display: inline-block;
+  float: right;
+  font-weight: normal !important;
+}
+.noticewrapper .navcontentBox .orderlist b {
+  color: #666666;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  font-weight: normal;
+}
+.modaldiv {
+  width: 800px;
+  height: 450px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "微软雅黑";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1050;
+}
+.modaldiv h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+}
+.modaldiv p {
+  font-size: 14px;
+  color: #666666;
+}
+.modaldiv p i {
+  display: block;
+  width: 100%;
+  height: 38px;
+}
+.modaldiv p span {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+.modaldiv p span.firstaddress {
+  margin-top: 60px;
+}
+.location {
+  height: 60px;
+  line-height: 60px;
+}
+.location span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  margin-right: 10px;
+  float: left;
+}
+.location span a {
+  color: #0089dc;
+  cursor: pointer;
+}
+.profile {
+  overflow: hidden;
+}
+ul.profile-sidebar {
+  width: 170px;
+  float: left;
+  margin-top: 10px;
+}
+ul.profile-sidebar h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+ul.profile-sidebar li {
+  margin-bottom: 20px;
+}
+ul.profile-sidebar li dl dd {
+  line-height: 20px;
+  height: 20px;
+  padding: 4px 0px;
+  color: #666;
+}
+ul.profile-sidebar li.active h2 {
+  color: #01bf71;
+}
+.profile-panel {
+  margin-left: 170px;
+  background: #fff;
+  min-height: 500px;
+  margin-bottom: 50px;
+}
+.profile-panel marquee {
+  color: #d20c1c;
+  height: 60px;
+  line-height: 60px;
+}

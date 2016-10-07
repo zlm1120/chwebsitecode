@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+    .paycontentBox {
+        background-color: #f2f2f2;
+        height: 100%;
+        width: 100%;
+        font-family: "微软雅黑";
+        border: 1px solid #F2F2F2;
+        .centerBox {
+            width: 1100px;
+            margin: 0 auto;
+            height: 560px;
+            background-color: #FFFFFF;
+            margin-top: 20px;
+            .payinfor {
+                margin-top: 34px;
+                span.totalprice {
+                    font-size: 16px;
+                    color: #999999;
+                    display: block;
+                    padding-left: 33px;
+                    padding-top:20px;
+                    i {
+                        color: #FE8202;
+                        font-size: 18px;
+                    }
+                }
+                
+                span.packageinput {
+                    font-size: 18px;
+                    color: #666666;
+                    display: block;
+                    padding-left: 33px;
+//                  margin-top: 34px;
+                    div{
+                        display: inline-block;
+                        input{
+                            display: none;
+                            margin: 3px 3px 0 5px;
+                        }
+                        label{
+                            padding-left: 40px;
+                            cursor: pointer;
+                            background: url("../img/product/shape-29.png") no-repeat left center;
+                             padding-right: 10px;
+                             display: inline-block;
+                        }
+                        label.checked{
+                            background-position: left bottom;
+                            background: url("../img/product/shape-1.png") no-repeat left center;
+                            display: inline-block;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        width: 100px;
+                        height: 25px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #F1A400;
+                        border: 1px solid #F1A400;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                    }
+                    b {
+                        font-size: 16px;
+                        color: #999999;
+                        display: inline-block;
+                        margin-left: 5px;
+                        i {
+                            color: #333333；;
+                        }
+                    }
+                }
+                label {
+                    display: block;
+                    padding-left: 33px;
+                    margin-top: 34px;
+                    font-size: 16px;
+                    color: #666666;
+                }
+                div.methodimg {
+                    overflow: hidden;
+                    padding-left: 33px;
+                    div {
+                        float: left;
+                        margin-right: 52px;
+                        input[type="radio"] {
+                            margin: 3px 3px 0 5px;
+                            display: none;
+                        }
+                        label {
+                            padding-left: 20px;
+                            cursor: pointer;
+                            background: url("../img/person/椭圆-1-拷贝-2.png") no-repeat left center;
+                            padding-right: 10px;
+                            img {
+                                margin-left: 10px;
+                            }
+                        }
+                        label.checked {
+                            background-position: left bottom;
+                            background: url("../img/person/组-5.png") no-repeat left center;
+                        }
+                    }
+                }
+            }
+            a{
+                display: block;
+                margin-left: 33px;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                text-decoration: none;
+                text-align: center;
+                font-family: "微软雅黑";
+                font-size: 18px;
+                color: #FFFFFF;
+                background-color: #01BF71;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                margin-top: 34px;
+            }
+        }
+    }
+   .alertBox {
+        padding-top: 30px !important;
+        height: 140px !important;
+    }
+    //支付密码
+   div.paypwd {
+        padding-left: 33px;
+        //display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 300px;
+        label{
+            color: #666666;
+            font-size: 16px;
+            font-family: "微软雅黑";
+            display: block;
+            padding-left: 0px !important;
+        }
+        input{
+              width: 201px;
+              height: 50px;
+              line-height: 50px;
+              border: 1px solid #01BF71 !important;
+              display: inline-block;
+              margin-top: 20px;
+              padding-left: 10px;
+        }
+        a.forgatepwd{
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 20px;
+            font-size: 16px;
+             color: #01BF71;
+        }
+    }
+    
+}

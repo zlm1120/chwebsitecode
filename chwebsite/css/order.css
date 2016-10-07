@@ -1,0 +1,121 @@
+
+/*
+ * ordercontent style
+ */
+table.ordercontent{
+	width: 1100px;
+	margin: 0 auto;
+	min-width: 1100px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	font-size: 16px;
+	color: #333333;
+	border: 0px !important;
+	margin-top:30px;
+}
+table.ordercontent thead th{
+	font-size: 14px;
+	color: #999999;
+	font-weight: normal;
+}
+table.ordercontent tbody tr{
+	height: 110px;
+}
+table.ordercontent tbody tr td:nth-child(2) i{
+	display: block;
+	color: #666666;
+	font-style: normal;
+}
+table.ordercontent tbody tr td:nth-child(3){
+	width: 369px;
+}
+table.ordercontent tbody tr td:nth-child(3) .media-body .media-heading{
+	font-size: 16px;
+	color: #333333;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+table.ordercontent tbody tr td:nth-child(3) .media-body span{
+	display: block;
+	font-size: 14px;
+	color: #666666;
+}
+table.ordercontent tbody tr td:nth-child(4){
+	color: #FE8202;
+}
+table.ordercontent tbody tr td:last-child {
+	width: 85px;
+}
+table.ordercontent tbody tr td:last-child a{
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-align: center;
+	outline: none;
+}
+table.ordercontent tbody tr td:last-child a:first-child{
+	color: #01BF71;
+	border: 1px solid #01BF71;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 23px;
+	line-height: 23px;
+}
+table.ordercontent tbody tr td:last-child a:last-child{
+	color: #999999;
+}
+
+.modal-content{
+	width: 400px;
+    height: 149px;
+}
+.modal-dialog{
+	top: 50%;
+    transform: translate(-50%);
+    margin-top: 20%;
+}
+.modal-body{
+	height: 88px;
+    text-align: center;
+    line-height: 88px;
+    padding: 0px !important;
+}
+.modal-body b{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #000000;
+	font-weight: normal;
+}
+.modal-footer{
+    border-top:0px !important;
+    text-align: center;
+}
+.btn-default {
+    background-color: #01bf71;
+    border: 0px !important;
+    width: 100px;
+    border-radius: 0px !important;
+    color: #FFFFFF;
+}
+.btn-primary {
+    background-color: #FFFFFF;
+    color: #999999;
+}
+.btn{
+	border:0px !important;
+	touch-action: none !important;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.btn-primary:hover{
+	 background-color: #FFFFFF;
+    color: #999999;
+}
+.btn-default{
+	background-color: #01bf71 !important;
+    border: 0px !important;
+    width: 100px;
+    border-radius: 0px !important;
+    color: #FFFFFF !important;
+}

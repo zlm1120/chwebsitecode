@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>通知公告</title>
+		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+
+		<link rel="stylesheet" href="../css/order.css" />
+		<!--<link rel="stylesheet" href="../css/notice.css" />-->
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+
+		<link rel="stylesheet" href="../css/notices.css" />
+	</head>
+
+	<body ng-app="webapp">
+		<div class="headerwrapper"></div>
+		<span class="noticetitle">
+			尊敬的住户:&nbsp; &nbsp;你们好!现本小区已进入装修阶段,进出苑区人员日益增多,管理处为加强小区人员进出管理,
+			确保苑区的安全和谐,&nbsp;需对苑区住户办理业主卡，住户须凭业主
+		</span>
+		<div class="noticewrapper mainbody" ng-controller="mynoticeCtr">
+			<!--右边导航-->
+			<div class="rigthBox">
+				<span class="clickspan" ng-click="clickspans(1)"><i>物业公告</i><b ng-bind="consize"></b></span>
+				<span ng-click="clickspans(2)"><i>通知消息</i><b>6</b></span>
+				<span><i>订单信息</i><b>6</b></span>
+			</div>
+			<div class="navcontentBox">
+				<div class="ordertitle">
+					<span>物业公告</span><b>6</b>
+				</div>
+				<!--通知列表-->
+				<div class="orderlist" ng-repeat="lists in noticedata">
+					<span class="activefont" ng-cloak>{{ lists.title }}<b>{{ lists.date }}</b></span>
+					<b>{{ lists.content }}</b>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="position: relative;">
+			<p>©2016 四川长虹物业服务有限责任公司 版权所有</p>
+		</div>
+
+		<div class="modaldiv">
+			<div class="modaldivcontent">
+				<h3>小区关于办理业主卡的通知</h3>
+				<p>
+					尊敬的住户：
+					<i></i> 你们好！现本小区进入装修阶段，进出园区的人员日益增多，管理处为加强小区人员进出管理，确保园区的安全和谐，需对 园区的住户办理业主卡，住户须ping业主卡进出园区
+					<i></i> 办理业主卡须带资料
+					<br /> 一：业主及家人：一寸照片，省份证复印件1张
+					<br /> 一：业主及家人：一寸照片，省份证复印件1张
+					<br /> 一：业主及家人：一寸照片，省份证复印件1张
+					<span class="firstaddress">**上午公寓</span>
+					<span>**年***月</span>
+				</p>
+			</div>
+		</div>
+		<div class="shade"></div>
+	</body>
+
+	<script type="text/javascript" src="../js/angular.min.js" ></script>
+	<script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="../js/config.js" ></script>
+	<script type="text/javascript" src="../js/comment.js"></script>
+	<script type="text/javascript" src="../js/notice.js" ></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".orderlist a.sessmore").click(function() {
+				$(".modaldiv").css("display", "block"); //弹窗显示
+				$(".shade").show();
+			});
+			$(".shade").click(function() { //弹框影藏
+				$(".shade").hide();
+				$(".modaldiv").hide();
+			});
+
+			//点击右边导航添加相应的样式
+			$(".rigthBox span").click(function() {
+				var spanhtml = "";
+				$(this).addClass("clickspan").siblings().removeClass("clickspan");
+				$(".ordertitle").html('');
+				var spanb = $(this).find('b').text();
+				spanhtml = '<span>' + $(this).find("i").text() + '<b>' + spanb + '</b></span>'
+				$(".ordertitle").append(spanhtml);
+				
+				if($(this).find("i").text()==="物业公告"){
+					$(".ordertitle").find("span").css("background",'url(../img/person/wuye.png) no-repeat left center');
+				}else if($(this).find("i").text()==="订单信息"){
+					$(".ordertitle").find("span").css("background",'url(../img/person/order.png) no-repeat left center');
+				}else{
+					$(".ordertitle").find("span").css("background",'url(../img/person/组-7.png) no-repeat left center');
+				}
+			});
+		});
+	</script>
+
+</html>

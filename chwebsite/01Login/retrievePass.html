@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>找回密码</title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/comment.css" />
+
+		<link rel="stylesheet" href="../commentCss/01header.css" />
+		<link rel="stylesheet" href="../commentCss/footer.css" />
+		<link rel="stylesheet" href="../css/01Logincss/rigister.css" />
+		<style type="text/css">
+			.rigistercon .form-group{
+				position: relative;
+			}
+			.form-group span{
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="rigisterwrapper">
+			<!--描述：顶部-->
+			<div class="headerwrapper"></div>
+			<!--描述：注册的主要内容-->
+			<div class="rigistermain" style="height: 843px;">
+				<div class="rigistertitle"><b>找回密码</b></div>
+				<div class="rigistercon">
+					<form id="loginform">
+						<div class="form-group">
+							<label for="phone">手机号</label>
+							<input class="form-control" name="phone" type="text" placeholder="请输入注册手机号" id="phone">
+							<span style="color: red;">123123</span>
+						</div>
+						<div class="form-group codegroup">
+							<label for="code">验证码</label>
+							<input class="form-control" name="code" type="text" placeholder="请输入手机验证码" id="code">
+							<span style="color: red;">123123</span>
+						</div>
+						<b>获取验证码</b>
+						<div class="form-group passgroup">
+							<label for="pass">新密码</label>
+							<input class="form-control" name="pass" type="password" placeholder="请输入新密码（至少6位）" id="pass">
+							<span style="color: red;">123123</span>
+							<input class="form-control" name="conpass" type="password" placeholder="请再次输入一样的密码" id="conpass" style="margin-top: 20px;">
+							<span style="color: red;">123123</span>
+						</div>
+						<input  type="button" value="确定" class="submitbtn"/>
+					</form>
+				</div>
+			</div>
+			<!--描述：页面的底部-->
+			<div class="footerwrapper"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.7.2.js"></script>
+	<script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*
+			 * 模拟复选框
+			 */
+			$('.checkboxcomm label').click(function() {
+				var radioId = $(this).attr('name');
+				$('.checkboxcomm label').removeAttr('class') && $(this).attr('class', 'checked');
+				$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+			});
+			/*
+			 * form-control 获得/失去焦点事件
+			 */
+			$('.form-control').focus(function() {
+				$(this).addClass('activeinput');
+			});
+			$('.form-control').blur(function() {
+				$(this).removeClass('activeinput');
+			});
+			/*
+			 * 获取输入的用户名和密码字符串
+			 */
+			var inputphone, inputcode,inputpass,inputconpass,inputcommnityname,inputhousename;
+			var $phone = $("#phone");
+			var $code = $("#code");
+			var $pass = $("#pass");
+			var $conpass = $("#conpass");	
+			var $span = $(".form-group span");
+			var isPhoneStatus = true;
+			var correctStatus = true;
+			
+			//判断手机号是否存在
+			function isPhoneHas(phone){
+				$.ajax({
+					type:"get",
+					url:ip+"api/common/mobileExists",
+					async:false,
+					data:{
+						mobile:phone
+					},
+					success:function(json){
+						var data = json.api_data;
+						if(data == false){
+							$phone.next().html('该手机号未注册')
+							$phone.next().show();
+							isPhoneStatus = false;
+						}
+					},
+					error:function(){
+						
+					}
+				});
+			}
+			
+			
+			function sendSms(phone){
+				$.ajax({
+					type:"get",
+					url:ip+"api/common/getCode",
+					async:true,
+					data:{
+						mobile:phone
+					},
+					success:function(json){
+						if(json.api_code == 0){
+							$code.val(json.api_data);
+						}
+					},
+					error:function(){
+						
+					}
+				});
+			}
+			
+			function checkSms(phone,code){
+				$.ajax({
+					type:"get",
+					url:ip + "api/common/validateCode",
+					async:false,
+					data:{
+						mobile:phone,
+						code:code
+					},
+					success:function(json){
+						if(json.api_data.status ==  false){
+							correctStatus = false;
+							$code.next().html('您输入的验证码有误')
+							$code.next().show();
+						}
+					}
+				});
+			}
+			
+			var sec,int;
+			var cutdown = function(){
+			  sec--;
+			  $(".rigistercon b").html(sec+'s');
+			  if(sec < 1){
+			    $(".rigistercon b").css('background','#01BF71');
+			    $(".rigistercon b").html('获取验证码');
+			    clearInterval(int);
+			    $(".rigistercon b").removeClass('mui-disabled');
+			  }
+			}
+			
+			function secEndTime(obj){
+			  obj.addClass('mui-disabled')
+			  sec = 59;
+			  $(".rigistercon b").html(sec+'s');
+			//  obj.off();
+			  int = setInterval(function(){
+			  	cutdown();
+			  },1000);
+			   $(".rigistercon b").css('background','#cccccc');
+			}
+			
+			/*
+			 * 发送验证码
+			 */
+			$("b").click(function(){
+				inputphone = $phone.val();
+				inputpass = $pass.val();
+				inputCode = $code.val();
+				if(!isMobile.test(inputphone)){
+					$phone.next().html('请输入正确的手机号码');
+					$phone.next().show();
+					return false;
+				}
+				$phone.next().hide();
+				
+				isPhoneHas(inputphone);
+				if(isPhoneStatus == false){
+					return false;
+				}
+				
+				if(!$(".rigistercon b").hasClass('mui-disabled')){
+					secEndTime($(this));
+				}else{
+					return false;
+				}
+				
+				sendSms(inputphone);
+				
+			})
+			
+			
+			/*
+			 * 点击登录按钮
+			 */
+			$('.submitbtn').click(function() {
+				inputphone = $phone.val();
+				inputpass = $pass.val();
+				inputCode = $code.val();
+				inputconpass = $conpass.val();
+				if(!isMobile.test(inputphone)){
+					$phone.next().html('请输入正确的手机号码');
+					$phone.next().show();
+					return false;
+				}
+				
+				if(inputCode == '' || $.trim(inputCode) == '' || inputCode.length != 4){
+					$span.hide();
+					$code.next().html('请输入验证码');
+					$code.next().show();
+					return false;
+				}
+				
+				
+				
+				if(inputpass.length < 6 || inputpass.length > 12){
+					$span.hide();
+					$pass.next().html('请输入6-12位密码')
+					$pass.next().show();
+					return false;
+				}
+				
+				if(inputconpass != inputpass){
+					$span.hide();
+					$conpass.next().html('两次输入的密码不一致');
+					$conpass.next().show();
+					return false;
+				}
+				
+				
+				
+				
+				//调用接口
+				$.ajax({
+					type:"get",
+					url:ip+"api/member/password/submit",
+					async:true,
+					data:{
+						username:inputphone,
+						password:inputpass,
+						validateCode:inputCode
+						
+					},
+					success:function(json){
+						console.log(json);
+						$span.hide();
+						if(json.api_code == 0){
+							alert('找回密码成功！');
+							window.location.href = 'Login.html';
+						}else{
+							$code.next().html(json.api_message);
+							$code.next().show();
+						}
+					},
+					error:function(){
+						
+					}
+				});
+			});
+			/*引用头部和底部页面*/
+			$.ajax({
+				type: "get",
+				url: 'http://' + window.location.host + "/chwebsite/commentPage/01header.html",
+				async: true,
+				success: function(json) {
+					$('.headerwrapper').html(json);
+				}
+			});
+			$.ajax({
+				type: "get",
+				url: 'http://' + window.location.host + "/chwebsite/commentPage/footer.html",
+				async: true,
+				success: function(json) {
+					$('.footerwrapper').html(json);
+				}
+			});
+		});
+	</script>
+
+</html>
